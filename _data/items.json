@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "summary": ""
+  },
+  {
    "beat": "grok-bot",
    "date": "2026-11-10",
    "summary": ""
@@ -43,6 +48,83 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-11-configuration-based-sandbox-escape-cbse-in-ai-coding-tools",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "Configuration-Based Sandbox Escape (CBSE) in AI coding tools",
+   "author": "Cymulate",
+   "summary": "Cymulate reports that coding agents can escape their sandbox when they write a configuration file the host later trusts; in Claude Code, a .claude/settings.json with a SessionStart hook ran silently on the next host launch, and similar paths were reported for Gemini CLI and Codex CLI. Agent-writable config is a host-execution path.",
+   "url": "https://cymulate.com/blog/the-race-to-ship-ai-tools-left-security-behind-part-1-sandbox-escape/",
+   "also_fits": [],
+   "seq": 56
+  },
+  {
+   "id": "2026-11-11-feat-installer-auto-approve-postman-s-codex-hook",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "feat(installer): auto-approve Postman's Codex hook",
+   "author": "Postman (postmanlabs/postman-plugin pull request)",
+   "summary": "Postman's plugin installer wrote a trusted hash for its own Codex session-start hook, effectively approving its own hook after install; Postman later removed the behavior and added a revocation routine. A real example of a vendor tool granting itself trust inside a coding agent.",
+   "url": "https://github.com/postmanlabs/postman-plugin/pull/124",
+   "also_fits": [],
+   "seq": 57
+  },
+  {
+   "id": "2026-11-11-devin-review-2-0",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "Devin Review 2.0",
+   "author": "Cognition",
+   "summary": "Cognition says Devin Review 2.0 typically costs $0.25 to $0.75 per pull request, about 80% of PRs cost under $1 including every push, and re-reviews only analyze what changed. A published per-PR cost figure for AI code review.",
+   "url": "https://devin.ai/blog/devin-review-2",
+   "also_fits": [],
+   "seq": 58
+  },
+  {
+   "id": "2026-11-11-vibench-2-0-a-benchmark-for-long-horizon-software-building",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
+   "author": "Daniel Furman et al. (Replit)",
+   "summary": "Replit's ViBench 2.0 has 17 full-stack web products built through successive feature requests to an agent, and Replit uses it to pick models for its platform. It evaluates the long, multi-request building that coding agents actually do.",
+   "url": "https://arxiv.org/abs/2611.05620",
+   "also_fits": [],
+   "seq": 59
+  },
+  {
+   "id": "2026-11-11-agentscript-eval-benchmarking-llms-and-agents-for-code-gener",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
+   "author": "Dipin Khati et al. (Salesforce)",
+   "summary": "Salesforce benchmarks models and agents on writing AgentScript, an enterprise domain-specific language for declaring agents, and studies how skill wording affects results. Relevant to any team asking agents to write in internal DSLs.",
+   "url": "https://arxiv.org/abs/2611.13183",
+   "also_fits": [],
+   "seq": 60
+  },
+  {
+   "id": "2026-11-11-launching-the-langfuse-ai-gateway",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "Launching the Langfuse AI Gateway",
+   "author": "Langfuse",
+   "summary": "Langfuse opened a public beta of an open-source gateway for OpenAI and Anthropic traffic with gateway keys, central provider credentials, model allowlists, and a trace for every request. One place to control and attribute model spend.",
+   "url": "https://langfuse.com/changelog/2026-11-04-ai-gateway-public-beta",
+   "also_fits": [],
+   "seq": 61
+  },
+  {
+   "id": "2026-11-11-gemini-4-carbon-is-now-available",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-11",
+   "title": "Gemini 4 Carbon is now available",
+   "author": "Google",
+   "summary": "Google's Gemini 4 Carbon launched at introductory API prices of $2 per million input tokens and $10 per million output tokens through Nov 30, rising to $4 and $20 on Dec 1. A price change to plan for before it hits.",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+   "also_fits": [],
+   "seq": 62
+  },
   {
    "id": "2026-11-10-introducing-alphaproof-code-verifying-complex-software-at-de",
    "beat": "formal-verification",
