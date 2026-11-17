@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "summary": ""
+  },
+  {
    "beat": "ai-enablement",
    "date": "2026-11-06",
    "summary": ""
@@ -78,6 +83,72 @@
    "url": "https://medium.com/capital-one-tech/advancing-ai-fluency-at-capital-one-2388f75e0139",
    "also_fits": [],
    "seq": 17
+  },
+  {
+   "id": "2026-11-06-teammates-are-agents-for-complex-ongoing-work",
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "title": "Teammates are agents for complex, ongoing work",
+   "author": "Perplexity",
+   "summary": "On Nov 4 Perplexity launched Teammates, always-on agents built on Perplexity Computer that own ongoing projects, monitor connected tools, follow up on their own, and coordinate with other teammates and with people in Slack. The research preview is for individual Max subscribers on the web. It is a direct competitor to running a set of Grok Bot agents for ongoing work.",
+   "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+   "also_fits": [],
+   "seq": 18
+  },
+  {
+   "id": "2026-11-06-grok-bot-changelog-0-78-releases",
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "title": "Grok Bot changelog: 0.78 releases",
+   "author": "xAI",
+   "summary": "xAI's 0.78 releases added shopping product cards and order tracking, Shop Pay in the Vault, subscription templates, cloud agents in custom modes, and Team Bot login sharing, followed by subscription refund requests and smoother checkout in 0.78.4. These change what bots can buy and which logins a Team Bot can use on everyone's behalf.",
+   "url": "https://x.ai/changelog/bot",
+   "also_fits": [],
+   "seq": 19
+  },
+  {
+   "id": "2026-11-06-introducing-openteam-an-open-source-grok-bot-alternative",
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "title": "Introducing OpenTeam: an open-source Grok Bot alternative",
+   "author": "Raghav Pillai (OpenTeam)",
+   "summary": "OpenTeam is a GPL-3.0, self-hosted take on Grok Bot that runs a team of bots in Docker, each with a persistent Linux desktop, shared workspace, memory, group chats, and routines, on any model provider. Its authors say its tools, prompt, and skills are built for compatibility with Grok Bot's. It is a reference point if you ever need bots running on hardware you control.",
+   "url": "https://openteam.so/blog/introducing-openteam",
+   "also_fits": [],
+   "seq": 20
+  },
+  {
+   "id": "2026-11-06-put-claude-to-work-on-your-computer-dispatch-and-computer-us",
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "title": "Put Claude to work on your computer (Dispatch and computer use)",
+   "author": "Anthropic",
+   "summary": "Anthropic's guide describes Dispatch, which lets you message Claude from your phone and have it work on your desktop with your files, connectors, and apps, including computer use on macOS and Windows. The desktop has to stay awake with Claude Desktop open. It shows how Anthropic is handling the same phone-to-desktop handoff that Grok Bot handles with its own box.",
+   "url": "https://claude.com/resources/articles/dispatch-and-computer-use",
+   "also_fits": [],
+   "seq": 21
+  },
+  {
+   "id": "2026-11-06-introducing-pivra-desk-ai-teammates-on-your-own-computer-tha",
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "title": "Introducing Pivra Desk: AI teammates on your own computer that ask before they act",
+   "author": "Pivra",
+   "summary": "Pivra Desk is a local-first agent for Mac and Windows that reads files and uses apps on its own but holds every send, publish, payment, or change on an approval card, with Touch ID or a typed phrase for critical actions and plain-language \"never\" rules. It is a concrete design for approval gates on a desktop agent.",
+   "url": "https://www.pivra.ai/blog/introducing-pivra-desk",
+   "also_fits": [],
+   "seq": 22
+  },
+  {
+   "id": "2026-11-06-grok-bot-skills-vs-routines-what-to-save-and-when",
+   "beat": "grok-bot",
+   "date": "2026-11-06",
+   "title": "Grok Bot skills vs routines: what to save and when",
+   "author": "Grok Bot Wiki",
+   "summary": "The guide separates a skill, reusable instructions for how to do a task that can be shared across bots, from a routine, which belongs to one bot and sets when the task runs. It recommends building and testing the skill first and only then scheduling it. That matches how the beat routines and vault skills are set up.",
+   "url": "https://www.grokbotwiki.com/guides/skills-vs-routines",
+   "also_fits": [],
+   "seq": 23
   },
   {
    "id": "2026-11-05-the-harness-and-memory-architecture-behind-self-updating-doc",
