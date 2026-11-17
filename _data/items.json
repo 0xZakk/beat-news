@@ -3,6 +3,11 @@
  "issues": [
   {
    "beat": "grok-bot",
+   "date": "2026-11-12",
+   "summary": ""
+  },
+  {
+   "beat": "grok-bot",
    "date": "2026-11-11",
    "summary": ""
   },
@@ -58,6 +63,52 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-12-introducing-grok-bot-1-0",
+   "beat": "grok-bot",
+   "date": "2026-11-12",
+   "title": "Introducing Grok Bot 1.0",
+   "author": "xAI",
+   "summary": "xAI's 1.0 and 1.0.1 releases let bots on Team, Enterprise, and Ultra plans join Google Meet, Zoom, and Microsoft Teams calls from a link, answer in the meeting chat, and send a summary afterward; they also added Team Bots in Microsoft Teams and admin-controlled shared logins. Shared logins change whose account a team member's request runs through, which matters for approvals and audit.",
+   "url": "https://x.ai/news/grok-bot-1-0",
+   "also_fits": [],
+   "seq": 74
+  },
+  {
+   "id": "2026-11-12-dylan-patel-45-of-semianalysis-ai-spend-now-goes-to-persiste",
+   "beat": "grok-bot",
+   "date": "2026-11-12",
+   "title": "Dylan Patel: 45% of SemiAnalysis AI spend now goes to persistent agents",
+   "author": "Advance Intelligence, reporting Dylan Patel's post on X",
+   "summary": "Dylan Patel said SemiAnalysis's AI spending went from zero to 45% persistent agents by the week ending Nov 8, mostly Perplexity Computer, which he said won on multi-model support and its harness; he criticized Claude Tags and OpenAI's Slack agent. It is a rare spend breakdown from a research firm running always-on agents.",
+   "url": "https://www.advanceintelligence.ai/story/2026-11-11-15",
+   "also_fits": [],
+   "seq": 75
+  },
+  {
+   "id": "2026-11-12-databricks-launches-new-always-on-genie-autonomous-ai-for-co",
+   "beat": "grok-bot",
+   "date": "2026-11-12",
+   "title": "Databricks launches new always-on Genie: autonomous AI for complex enterprise work",
+   "author": "Databricks",
+   "summary": "Databricks announced on Nov 11 an always-on Genie agent that runs in the background, manages long-running tasks, delegates to subagents, and alerts users through a priority inbox and email; it is coming to preview with no date or price. A data-platform vendor is now shipping the persistent-agent pattern inside the warehouse.",
+   "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 76
+  },
+  {
+   "id": "2026-11-12-fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate",
+   "beat": "grok-bot",
+   "date": "2026-11-12",
+   "title": "Fireflies.ai evolves from AI notetaker to AI teammate",
+   "author": "Fireflies.ai",
+   "summary": "Fireflies turned its notetaker Fred into a general AI teammate and added FredBots, no-code bots built in chat that keep context between runs and run on a schedule or after meetings, rolling out from a waitlist. Meeting-notes vendors are moving into the same recurring-bot space.",
+   "url": "https://www.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+   "also_fits": [],
+   "seq": 77
+  },
   {
    "id": "2026-11-11-configuration-based-sandbox-escape-cbse-in-ai-coding-tools",
    "beat": "ai-assisted-engineering",
