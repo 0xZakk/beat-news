@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign all = site.data.items.items %}
+<section class="latest-strip">
+  {% for b in site.data.beats %}
+  {% assign bi = site.data.items.items | where: "beat", b.id %}
+  {% assign last = bi | first %}
+  <a class="beat-card" href="{{ '/beats/' | append: b.id | append: '/' | relative_url }}" style="--c:{{ b.color }}">
+    <span class="bc-name">{{ b.short }}</span>
+    <span class="bc-meta">{{ bi | size }} items{% if last %} · last {{ last.date | date: "%b %-d" }}{% endif %}</span>
+  </a>
+  {% endfor %}
+</section>
+{% assign groups = all | group_by: "date" %}
+{% for g in groups limit: 7 %}
+<section class="day">
+  <h4 class="day-head">{{ g.name | date: "%A, %B %-d, %Y" }}</h4>
+  <div class="masonry">
+    {% for it in g.items %}{% include item.html item=it show_beat=true %}{% endfor %}
+  </div>
+</section>
+{% endfor %}
+<p class="more">Older items are on each beat's page in the menu above.</p>

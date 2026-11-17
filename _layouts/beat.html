@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign b = site.data.beats | where: "id", page.beat_id | first %}
+{% assign items = site.data.items.items | where: "beat", page.beat_id %}
+<section class="beat-head" style="--c:{{ b.color }}">
+  <h2>{{ b.name }}</h2>
+  <p>{{ items | size }} items · {{ b.schedule }}</p>
+</section>
+{% assign groups = items | group_by: "date" %}
+{% for g in groups %}
+{% assign issue = site.data.items.issues | where: "beat", page.beat_id | where: "date", g.name | first %}
+<section class="day" style="--c:{{ b.color }}">
+  <h4 class="day-head">{{ g.name | date: "%A, %B %-d, %Y" }}</h4>
+  {% if issue.summary and issue.summary != "" %}<p class="issue-summary">{{ issue.summary }}</p>{% endif %}
+  <div class="masonry">
+    {% for it in g.items %}{% include item.html item=it %}{% endfor %}
+  </div>
+</section>
+{% endfor %}

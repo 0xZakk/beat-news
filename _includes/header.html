@@ -1,0 +1,16 @@
+<header id="masthead">
+  <div class="masthead-top">
+    <span>{{ site.data.items.updated | date: "%A, %B %-d, %Y" }}</span>
+    <span>{{ site.data.items.items | size }} items · {{ site.data.beats | size }} beats</span>
+  </div>
+  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <p class="tagline">{{ site.description }}</p>
+  <nav class="beat-nav" aria-label="Beats">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}" style="--c:#111827">Latest</a></li>
+      {% for b in site.data.beats %}
+      <li><a href="{{ '/beats/' | append: b.id | append: '/' | relative_url }}" class="{% if page.beat_id == b.id %}active{% endif %}" style="--c:{{ b.color }}">{{ b.short }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

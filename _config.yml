@@ -1,0 +1,12 @@
+title: Beat News
+description: Zakk's research beats, collected by Grok Bot. Every item links to its original source.
+baseurl: "/beat-news"
+url: ""
+timezone: America/Chicago
+markdown: kramdown
+exclude:
+  - README.md
+  - LICENSE-THEME.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

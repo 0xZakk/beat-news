@@ -1,0 +1,67 @@
+{
+ "updated": "2026-11-17T09:51:42-06:00",
+ "issues": [
+  {
+   "beat": "agents",
+   "date": "2026-11-05",
+   "summary": ""
+  }
+ ],
+ "items": [
+  {
+   "id": "2026-11-05-the-harness-and-memory-architecture-behind-self-updating-doc",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "The harness and memory architecture behind self-updating docs",
+   "author": "Mintlify",
+   "summary": "Mintlify describes a background agent that tunes triggers, skills, and shared memory daily, runner agents that execute triggered skills and open docs PRs, and memory kept as fixed-schema JSON files in a Git repo. Mintlify says the redesign raised internal PR acceptance from 70% to 90%. A production harness with memory under version control.",
+   "url": "https://www.mintlify.com/blog/harness-and-memory-architecture-behind-self-updating-docs",
+   "also_fits": [],
+   "seq": 1
+  },
+  {
+   "id": "2026-11-05-learning-by-doing-autonomously-compiling-and-curating-agent",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Learning by Doing: Autonomously Compiling and Curating Agent Skills from Verified Traces",
+   "author": "Daniel Chalef et al. (Zep)",
+   "summary": "Zep describes Zep Agent Skills, a production service that turns verified agent runs into reusable skills, giving deployed agents procedural memory alongside facts and episodes. It is a worked method for bots that write their own skills from what succeeded.",
+   "url": "https://arxiv.org/abs/2611.01386",
+   "also_fits": [],
+   "seq": 2
+  },
+  {
+   "id": "2026-11-05-harness-2-recursive-agent-harnessing-for-an-open-world",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+   "author": "Ruiyao Xu et al.",
+   "summary": "The paper uses recursive self-improvement to evolve agent harnesses for open-world tasks that were not seen when the harness was designed. It is research on letting agents rewrite their own harness safely.",
+   "url": "https://arxiv.org/abs/2610.14224",
+   "also_fits": [],
+   "seq": 3
+  },
+  {
+   "id": "2026-11-05-how-agent-skills-evolve-a-large-scale-empirical-study-of-ski",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "How Agent Skills Evolve: A Large-Scale Empirical Study of Skills on GitHub",
+   "author": "Jinjun Huang et al.",
+   "summary": "The authors studied 84,200 agent skills and 750,898 commits on GitHub and built taxonomies of skill components and the changes people make to them. It shows how skills are actually maintained over time.",
+   "url": "https://arxiv.org/abs/2611.04456",
+   "also_fits": [],
+   "seq": 4
+  },
+  {
+   "id": "2026-11-05-just-in-time-skill-retrieval-via-long-horizon-state-tracking",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Just-in-Time Skill Retrieval via Long-Horizon State Tracking",
+   "author": "Xin Lin et al.",
+   "summary": "The paper argues that picking a fixed skill set before a long task starts fails, and retrieves skills during execution based on tracked task state instead. Relevant to how bots with many skills decide which to load.",
+   "url": "https://arxiv.org/abs/2611.01701",
+   "also_fits": [],
+   "seq": 5
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{% assign it = include.item %}{% assign ib = site.data.beats | where: "id", it.beat | first %}
+<article class="item" style="--c:{{ ib.color }}">
+  <div class="item-meta">
+    {% if include.show_beat %}<a class="beat-tag" href="{{ '/beats/' | append: ib.id | append: '/' | relative_url }}">{{ ib.short }}</a>{% endif %}
+    <time datetime="{{ it.date }}">{{ it.date | date: "%b %-d, %Y" }}</time>
+  </div>
+  <h3><a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.title }}</a></h3>
+  {% if it.author %}<p class="author">{{ it.author }}</p>{% endif %}
+  <p class="summary">{{ it.summary }}</p>
+  <p class="links"><a href="{{ it.url }}" target="_blank" rel="noopener">Read the source ↗</a>
+  {% for af in it.also_fits %}{% assign ab = site.data.beats | where: "id", af | first %}{% if ab %}<a class="also" href="{{ '/beats/' | append: ab.id | append: '/' | relative_url }}" style="--a:{{ ab.color }}">Also fits: {{ ab.short }}</a>{% endif %}{% endfor %}</p>
+</article>

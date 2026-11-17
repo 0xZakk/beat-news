@@ -1,0 +1,56 @@
+/* Adapted from "The Interesting Times" Jekyll theme by Alvaro Duran (MIT): masthead, nav bar, masonry columns.
+   Restyled to a clean, minimal look with one solid color per beat (set inline as --c). */
+* { box-sizing: border-box; }
+body { margin: 0; background: #FAFAF9; color: #111827;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.page { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+
+#masthead { padding-top: 14px; border-bottom: 3px double #111827; margin-bottom: 18px; }
+.masthead-top { display: flex; justify-content: space-between; font-size: 12px; color: #6B7280;
+  text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #E5E7EB; padding-bottom: 8px; }
+#masthead h1 { font-family: "Libre Baskerville", Georgia, serif; text-align: center; font-size: 56px;
+  margin: 18px 0 4px; letter-spacing: -0.5px; }
+.tagline { text-align: center; color: #4B5563; font-size: 14px; margin: 0 0 14px; }
+.beat-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;
+  border-top: 1px solid #111827; }
+.beat-nav li a { display: block; padding: 11px 14px; font-size: 14px; font-weight: 600; color: var(--c);
+  border-bottom: 3px solid transparent; }
+.beat-nav li a:hover { text-decoration: none; border-bottom-color: var(--c); }
+.beat-nav li a.active { background: var(--c); color: #fff; }
+
+.latest-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 6px 0 22px; }
+.beat-card { display: block; background: var(--c); color: #fff; border-radius: 4px; padding: 10px 12px; }
+.beat-card:hover { text-decoration: none; opacity: .92; }
+.bc-name { display: block; font-weight: 700; font-size: 14px; }
+.bc-meta { display: block; font-size: 12px; opacity: .9; margin-top: 2px; }
+
+.beat-head { border-left: 8px solid var(--c); padding: 4px 0 4px 14px; margin: 8px 0 18px; }
+.beat-head h2 { font-family: "Libre Baskerville", Georgia, serif; margin: 0; font-size: 30px; color: var(--c); }
+.beat-head p { margin: 4px 0 0; color: #6B7280; font-size: 14px; }
+
+.day { margin-bottom: 26px; }
+.day-head { font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; color: #374151;
+  border-bottom: 1px solid #D1D5DB; padding-bottom: 6px; margin: 0 0 12px; }
+.issue-summary { font-size: 15px; line-height: 1.55; color: #374151; max-width: 860px; margin: 0 0 14px; }
+
+.masonry { column-count: 3; column-gap: 18px; }
+.item { break-inside: avoid; display: inline-block; width: 100%; background: #fff; border: 1px solid #E5E7EB;
+  border-top: 4px solid var(--c); border-radius: 3px; padding: 12px 14px 10px; margin: 0 0 18px; }
+.item-meta { display: flex; gap: 10px; align-items: center; font-size: 12px; color: #6B7280; }
+.beat-tag { color: var(--c); font-weight: 700; text-transform: uppercase; letter-spacing: .6px; font-size: 11px; }
+.item h3 { font-family: "Libre Baskerville", Georgia, serif; font-size: 17px; line-height: 1.35; margin: 6px 0 4px; }
+.item h3 a:hover { color: var(--c); text-decoration: none; }
+.author { margin: 0 0 6px; font-size: 13px; color: #6B7280; }
+.summary { margin: 0 0 8px; font-size: 14px; line-height: 1.5; color: #374151; }
+.links { margin: 0; font-size: 13px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.links > a:first-child { color: var(--c); font-weight: 600; }
+.also { font-size: 11px; border: 1px solid var(--a); color: var(--a); border-radius: 10px; padding: 1px 8px; }
+
+.more { color: #6B7280; font-size: 14px; text-align: center; }
+.site-footer { border-top: 1px solid #D1D5DB; margin-top: 30px; padding: 16px 0 30px; font-size: 12px; color: #6B7280; }
+.site-footer a { text-decoration: underline; }
+
+@media (max-width: 1000px) { .masonry { column-count: 2; } }
+@media (max-width: 640px) { .masonry { column-count: 1; } #masthead h1 { font-size: 38px; } }
