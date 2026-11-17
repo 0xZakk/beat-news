@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "summary": ""
+  },
+  {
    "beat": "agents",
    "date": "2026-11-16",
    "summary": ""
@@ -144,6 +149,74 @@
    "url": "https://manuotel.com/blog/building-a-harness-from-scratch",
    "also_fits": [],
    "seq": 105
+  },
+  {
+   "id": "2026-11-16-security-bank-trains-more-staff-develops-ai-agents",
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "title": "Security Bank trains more staff, develops AI agents",
+   "author": "Philstar",
+   "summary": "Philstar reports that Security Bank in the Philippines has trained more than 3,000 employees in agentic AI and that staff have built 3,100 small agents across business, operations, finance, and risk, with people keeping decisions that affect customers. A high count of staff-built agents at a mid-size bank.",
+   "url": "https://www.philstar.com/business/2026/11/15/2570124/security-bank-trains-more-staff-develops-ai-agents",
+   "also_fits": [],
+   "seq": 106
+  },
+  {
+   "id": "2026-11-16-cisco-goldman-and-jpmorgan-are-reconsidering-ai-access-at-wo",
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "title": "Cisco, Goldman, and JPMorgan are reconsidering AI access at work",
+   "author": "Business Insider",
+   "summary": "Business Insider reports Goldman limits frontier-model access to work that needs it, Cisco is giving managers token budgets after unlimited use by coding teams, and JPMorgan capped some engineers' Claude Code spend at $2,000 a month; Rippling also has caps. Large firms are moving from open access to budgets.",
+   "url": "https://www.businessinsider.com/cisco-goldman-jpmorgan-reconsidering-ai-access-work-2026-11",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 107
+  },
+  {
+   "id": "2026-11-16-zurich-reaches-93-copilot-adoption-to-better-serve-customers",
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "title": "Zurich reaches 93% Copilot adoption to better serve customers with Microsoft AI",
+   "author": "Microsoft Customer Stories (Zurich North America)",
+   "summary": "Zurich North America gave more than 10,000 employees Copilot and reports 93% active use, crediting role-based training, 1,200 prepared managers, and a peer Copilot Champions Network; it also cites 20% fewer service desk tickets. Another case where managers and champions drove adoption.",
+   "url": "https://www.microsoft.com/en/customers/story/27588-zurich-microsoft-365-copilot",
+   "also_fits": [],
+   "seq": 108
+  },
+  {
+   "id": "2026-11-16-ai-in-uk-financial-services-looking-beyond-the-numbers-in-th",
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "title": "AI in UK financial services: looking beyond the numbers in the 2026 Bank of England and FCA survey",
+   "author": "Freshfields",
+   "summary": "Freshfields' Nov 16 read of the Bank of England and FCA survey says only about half of firms monitor AI after deployment, third-party AI makes up 53% of high-materiality systems, only 2% of agents have broad autonomy, and 57% rate cyber risk high or severe. A regulator dataset on where financial-firm AI governance is thin.",
+   "url": "https://www.freshfields.com/en/our-thinking/blogs/risk-and-compliance/ai-in-uk-financial-services-looking-beyond-the-numbers-in-the-2026-bank-of-engla-102o9pb",
+   "also_fits": [],
+   "seq": 109
+  },
+  {
+   "id": "2026-11-16-ai-is-boosting-productivity-gains-as-asset-and-wealth-manage",
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "title": "AI is boosting productivity gains as asset and wealth managers balance client priorities: MMI-Broadridge survey",
+   "author": "Broadridge and Money Management Institute",
+   "summary": "The 2026 MMI-Broadridge Pulse survey says 79% of firms using AI report efficiency gains, but only 45% of asset managers and 55% of wealth managers say formal AI training is widely available. Training still trails tool rollout in finance.",
+   "url": "https://www.broadridge.com/press-release/2026/ai-is-boosting-productivity-gains",
+   "also_fits": [],
+   "seq": 110
+  },
+  {
+   "id": "2026-11-16-t-rowe-price-works-with-anthropic-to-bring-claude-to-more-of",
+   "beat": "ai-enablement",
+   "date": "2026-11-16",
+   "title": "T. Rowe Price works with Anthropic to bring Claude to more of its investment process",
+   "author": "T. Rowe Price",
+   "summary": "T. Rowe Price is retiring its internal ChatTRP assistant and expanding Claude, including Claude Cowork for research and Claude Code for developers building investment tools. A large asset manager replacing a homegrown assistant with a vendor's.",
+   "url": "https://www.troweprice.com/en/us/press/2026/press-release--t--rowe-price-works-with-anthropic-to-bring-claud",
+   "also_fits": [],
+   "seq": 111
   },
   {
    "id": "2026-11-13-all-code-is-slop-except-mine",
