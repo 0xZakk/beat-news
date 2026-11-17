@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "grok-bot",
+   "date": "2026-11-13",
+   "summary": ""
+  },
+  {
    "beat": "ai-enablement",
    "date": "2026-11-13",
    "summary": ""
@@ -204,6 +209,65 @@
    "url": "https://lmg.london/news/oxbow-partners-and-london-market-group-launch-report-on-the-future-of-ai-in-insurance-talent/",
    "also_fits": [],
    "seq": 95
+  },
+  {
+   "id": "2026-11-13-grok-bot-on-mac-can-now-use-messages-mail-notes-reminders-ca",
+   "beat": "grok-bot",
+   "date": "2026-11-13",
+   "title": "Grok Bot on Mac can now use Messages, Mail, Notes, Reminders, Calendar, Location, and Contacts",
+   "author": "Grok Bot (xAI) on X",
+   "summary": "On Nov 12 xAI announced that Grok Bot for Mac can connect to Apple's Messages, Mail, Notes, Reminders, Calendar, Contacts, and Location, each enabled separately with a macOS permission prompt; Messages can read and send texts. It puts personal messaging inside a bot's reach, so the approval rules for sending matter more.",
+   "url": "https://x.com/bot/status/2120946968403095906",
+   "also_fits": [],
+   "seq": 96
+  },
+  {
+   "id": "2026-11-13-alex-finn-anthropic-has-the-best-model-grok-has-the-best-har",
+   "beat": "grok-bot",
+   "date": "2026-11-13",
+   "title": "Alex Finn: Anthropic has the best model, Grok has the best harness (TWiAI 39)",
+   "author": "This Week in AI with Jason Calacanis and Alex Finn",
+   "summary": "On the episode, Alex Finn tested whether Grok Bot, Claude Duet, and ChatGPT Dots would send a $1,000 PayPal payment; he says only Grok Bot completed it, while the other two stopped on safety restrictions. Finn used it to argue Grok Bot has the stronger harness. It is a public test of how far each assistant will go with money.",
+   "url": "https://exa.ai/library/podcast/plxwszsrtt8/episode/9jpygfwrzz9",
+   "also_fits": [],
+   "seq": 97
+  },
+  {
+   "id": "2026-11-13-operate-claude-managed-agents-inside-your-security-perimeter",
+   "beat": "grok-bot",
+   "date": "2026-11-13",
+   "title": "Operate Claude Managed Agents inside your security perimeter",
+   "author": "Anthropic",
+   "summary": "Anthropic launched self-hosted Claude Managed Agents in private beta on Nov 12: customers run the agent server, database, loop, and sandbox workers in their own cloud or on-premises, while model calls go to Anthropic, Bedrock, Google, Microsoft, or their own gateway. It is the first major-vendor managed agent runtime you can keep inside your own perimeter.",
+   "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 98
+  },
+  {
+   "id": "2026-11-13-introducing-ai-skills-in-coworker-turn-your-best-practices-i",
+   "beat": "grok-bot",
+   "date": "2026-11-13",
+   "title": "Introducing AI Skills in Coworker: turn your best practices into reusable workflows",
+   "author": "Salesforce",
+   "summary": "Salesforce made AI Skills in Agentforce Coworker generally available on Nov 10: users write multi-step workflows in plain language, refine them in Skill Builder, and share them with chosen teammates, and skills run under each user's permissions with approval before record changes. It is the enterprise version of shared bot skills.",
+   "url": "https://www.salesforce.com/blog/ai-skills-in-coworker/",
+   "also_fits": [],
+   "seq": 99
+  },
+  {
+   "id": "2026-11-13-artil-connect-let-your-agents-message-teammates-and-other-ag",
+   "beat": "grok-bot",
+   "date": "2026-11-13",
+   "title": "Artil Connect: let your agents message teammates and other agents",
+   "author": "Artil (YC launch)",
+   "summary": "Artil open-sourced Connect, an MIT-licensed self-hosted server that lets existing agents message each other and people over HTTP, Telegram, and Slack, connecting through plugins, a CLI, or MCP, with incoming messages able to trigger runs. It is plumbing for agent-to-agent handoffs across vendors.",
+   "url": "https://github.com/artilai/connect",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 100
   },
   {
    "id": "2026-11-12-introducing-grok-bot-1-0",
