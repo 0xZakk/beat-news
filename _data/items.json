@@ -62,6 +62,72 @@
    "url": "https://arxiv.org/abs/2611.01701",
    "also_fits": [],
    "seq": 5
+  },
+  {
+   "id": "2026-11-05-decision-grade-intelligence-everywhere-introducing-superanal",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Decision-grade intelligence everywhere: introducing SuperAnalyst MCP",
+   "author": "AlphaSense",
+   "summary": "AlphaSense launched SuperAnalyst MCP on Nov 4, a single MCP server that lets an outside agent delegate research and analysis to AlphaSense's own agent and get back cited answers or workbooks drawn from more than 500 million documents. It is an example of a vendor exposing a whole agent, not raw tools, over MCP.",
+   "url": "https://www.alpha-sense.com/resources/product-articles/superanalyst-mcp/",
+   "also_fits": [],
+   "seq": 6
+  },
+  {
+   "id": "2026-11-05-memcurrent-designing-persistent-memory-for-production-agents",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "MemCurrent: designing persistent memory for production agents",
+   "author": "Databricks",
+   "summary": "Databricks describes MemCurrent, the design behind its Agent Memory beta: managed sessions, a durable memory store for facts, preferences, and workflows, and background pipelines that distill sessions, remove duplicates, and resolve contradictions. A production memory architecture from a large platform vendor.",
+   "url": "https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents",
+   "also_fits": [],
+   "seq": 7
+  },
+  {
+   "id": "2026-11-05-introducing-strands-box-ai-agent-sandboxes-powered-by-dogwoo",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Introducing Strands Box: AI agent sandboxes powered by Dogwood",
+   "author": "AWS Open Source Blog",
+   "summary": "AWS released Strands Box in preview on Oct 7, an Apache-2.0 sandbox that works with any harness and pairs OS isolation with Dogwood policies controlling shell, Python, MCP, file, and network actions, where forbid rules override permits. It is a policy layer for what an agent may do inside its box.",
+   "url": "https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/",
+   "also_fits": [],
+   "seq": 8
+  },
+  {
+   "id": "2026-11-05-sandbox-agents-openai-agents-sdk-guide",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Sandbox Agents (OpenAI Agents SDK guide)",
+   "author": "OpenAI",
+   "summary": "OpenAI's guide separates the harness, which owns the agent loop, tool routing, approvals, tracing, and secrets, from sandbox compute, where files, commands, and ports live, and recommends keeping credentials outside the sandbox. It is a clear statement of where the trust boundary sits in an agent.",
+   "url": "https://developers.openai.com/api/docs/guides/agents/sandboxes",
+   "also_fits": [],
+   "seq": 9
+  },
+  {
+   "id": "2026-11-05-using-agent-memory-claude-managed-agents-memory-stores",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Using agent memory (Claude Managed Agents memory stores)",
+   "author": "Anthropic",
+   "summary": "Anthropic's docs describe memory stores for Managed Agents: workspace-scoped collections of text documents mounted into a session, up to eight per session, with every change saved as an immutable, redactable version. Versioned memory gives an audit trail for what an agent remembered.",
+   "url": "https://platform.claude.com/docs/en/managed-agents/memory",
+   "also_fits": [],
+   "seq": 10
+  },
+  {
+   "id": "2026-11-05-build-agents-your-way-parloa-s-agent-management-api-sdk-cli",
+   "beat": "agents",
+   "date": "2026-11-05",
+   "title": "Build agents your way: Parloa's Agent Management API, SDK, CLI, and MCP",
+   "author": "Parloa",
+   "summary": "Parloa's Nov 2 release lets builders review, edit, test, and compare agent versions from Claude Code, Cursor, or ChatGPT over MCP, read-only by default, with changes saved as drafts and publishing kept as a separate controlled step. A pattern for managing agents with coding agents while keeping deployment gated.",
+   "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
+   "also_fits": [],
+   "seq": 11
   }
  ]
 }
