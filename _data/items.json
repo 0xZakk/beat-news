@@ -2,12 +2,83 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "summary": ""
+  },
+  {
    "beat": "agents",
    "date": "2026-11-05",
    "summary": ""
   }
  ],
  "items": [
+  {
+   "id": "2026-11-06-to-innovate-faster-bny-upskills-100-of-staff-on-eliza-powere",
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "title": "To innovate faster, BNY upskills 100% of staff on Eliza, powered by Microsoft AI",
+   "author": "Microsoft Customer Stories (BNY)",
+   "summary": "BNY says it has trained all of its roughly 50,000 employees on Eliza, its in-house AI platform built on Microsoft Azure and Foundry, through more than 400,000 hours of tiered training, and that about half of staff are building their own agents. It is a reference case for company-wide training at a large regulated financial firm.",
+   "url": "https://www.microsoft.com/en/customers/story/27320-bny-microsoft-foundry",
+   "also_fits": [],
+   "seq": 12
+  },
+  {
+   "id": "2026-11-06-how-bottom-line-focused-financial-firms-are-finding-roi-in-a",
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "title": "How bottom-line focused financial firms are finding ROI in AI",
+   "author": "Fortune",
+   "summary": "Fortune's Sept 29 report collects bank ROI numbers: Wells Fargo says AI support lifted branch product sales 31%, Bank of America says about 140 use cases cost $400 million and returned $800 million, and JPMorgan says about $2 billion of AI investment was matched by similar benefits. These are the figures leadership teams cite when asking what AI rollout should return.",
+   "url": "https://fortune.com/2026/09/29/how-banks-are-using-ai-agents-copilots-roi/",
+   "also_fits": [],
+   "seq": 13
+  },
+  {
+   "id": "2026-11-06-sound-practices-for-responsible-adoption-of-artificial-intel",
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "title": "Sound Practices for Responsible Adoption of Artificial Intelligence: final report",
+   "author": "Financial Stability Board",
+   "summary": "On Oct 15 the FSB published 12 non-binding practices for financial institutions covering board oversight, accountability, risk documentation, data governance, explainability, monitoring, human oversight, cyber risk, and third-party AI risk. It is the global regulator baseline that financial firms' AI programs will be measured against.",
+   "url": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+   "also_fits": [],
+   "seq": 14
+  },
+  {
+   "id": "2026-11-06-cio-pulse-survey-enterprise-ai-readiness-insights",
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "title": "CIO Pulse Survey: enterprise AI readiness insights",
+   "author": "Accenture",
+   "summary": "Accenture's Nov 3 survey of 300 technology leaders says 64% are scaling AI but only 7% optimize at scale, 70% use it mainly for individual productivity versus 37% for end-to-end agent workflows, and governance, data readiness, and training are the top barriers. It quantifies the gap between handing out tools and changing workflows.",
+   "url": "https://www.accenture.com/en/insights/ai-data/cio-pulse-survey",
+   "also_fits": [],
+   "seq": 15
+  },
+  {
+   "id": "2026-11-06-jpmorgan-chase-goldman-sachs-underscore-security-in-ai-plans",
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "title": "JPMorgan Chase, Goldman Sachs underscore security in AI plans",
+   "author": "CIO Dive",
+   "summary": "At Evident's Oct 22 symposium, JPMorgan CIO Lori Beer said the bank enforces 15 agent controls including identity and access management, guardrails, and evaluations, and Goldman CIO Marco Argenti said agents must be contained with zero-trust-style controls and gates before transactions. It shows how two large banks frame agent rollout around controls.",
+   "url": "https://www.ciodive.com/news/jpmorgan-chase-goldman-sachs-AI-security/833764/",
+   "also_fits": [],
+   "seq": 16
+  },
+  {
+   "id": "2026-11-06-advancing-ai-fluency-at-capital-one",
+   "beat": "ai-enablement",
+   "date": "2026-11-06",
+   "title": "Advancing AI fluency at Capital One",
+   "author": "Capital One Tech",
+   "summary": "Capital One describes an enterprise AI learning hub for more than 60,000 associates, running from basic AI literacy to advanced agentic coding programs, with dedicated time set aside for experimentation. It is a model for tiered fluency training with protected time.",
+   "url": "https://medium.com/capital-one-tech/advancing-ai-fluency-at-capital-one-2388f75e0139",
+   "also_fits": [],
+   "seq": 17
+  },
   {
    "id": "2026-11-05-the-harness-and-memory-architecture-behind-self-updating-doc",
    "beat": "agents",
