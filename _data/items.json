@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "summary": ""
+  },
+  {
    "beat": "agents",
    "date": "2026-11-09",
    "summary": ""
@@ -99,6 +104,72 @@
    "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
    "also_fits": [],
    "seq": 30
+  },
+  {
+   "id": "2026-11-09-deutsche-bank-private-bank-launches-ai-academy-for-more-than",
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "title": "Deutsche Bank Private Bank launches AI Academy for more than 20,000 employees",
+   "author": "Deutsche Bank",
+   "summary": "Deutsche Bank's Private Bank launched the PB AI Academy on Nov 5, a role-based program of self-paced courses, instructor-led sessions, workshops, and communities covering prompting, responsible use, and agents, with five to ten trainings per pathway. About 3,500 staff have access now, with rollout to more than 20,000 planned. It is a role-based curriculum design from a large bank.",
+   "url": "https://www.db.com/news/detail/20261105-deutsche-bank-private-bank-launches-ai-academy-for-more-than-20-000-employees?language_id=1",
+   "also_fits": [],
+   "seq": 31
+  },
+  {
+   "id": "2026-11-09-nab-deploys-ai-for-staff-called-ruby-that-is-built-on-anthro",
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "title": "NAB deploys AI for staff called 'Ruby' that is built on Anthropic",
+   "author": "iTnews",
+   "summary": "National Australia Bank rolled out Ruby, an internal assistant built on Anthropic, to more than 40,000 staff and set up about 50 business-led AI squads with Anthropic and AWS to build use cases such as faster credit memos and loan approvals. It pairs a company-wide tool with small squads that own specific workflows.",
+   "url": "https://www.itnews.com.au/news/nab-deploys-ai-for-staff-called-ruby-that-is-built-on-anthropic-630151",
+   "also_fits": [],
+   "seq": 32
+  },
+  {
+   "id": "2026-11-09-ai-gains-ground-at-jp-morgan-but-returns-remain-elusive",
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "title": "AI gains ground at JP Morgan, but returns remain elusive",
+   "author": "Paperjam",
+   "summary": "Paperjam reports that usage of Spectrum IQ at J.P. Morgan Asset Management rose fivefold in 2026 to about 750 weekly users, roughly 70-80% of the relevant investment staff, while measurable returns are still unclear. A usage-versus-value data point from a large asset manager.",
+   "url": "https://en.paperjam.lu/article/j-p-morgan-am-sees-fivefold-surge-in-ai-platform-usage",
+   "also_fits": [],
+   "seq": 33
+  },
+  {
+   "id": "2026-11-09-lenovo-s-ai-adoption-and-change-management-model-helps-drive",
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "title": "Lenovo's AI adoption and change management model helps drive 36% higher daily Copilot use",
+   "author": "Lenovo",
+   "summary": "Lenovo says a cohort that got Copilot plus role-specific guidance, tailored training, manager involvement, and feedback used it daily at a 91% rate, against 67% for a license-only cohort. It is a controlled comparison showing training and managers matter more than licenses.",
+   "url": "https://news.lenovo.com/ai-adoption-change-management-model-36-higher-daily-copilot-use/",
+   "also_fits": [],
+   "seq": 34
+  },
+  {
+   "id": "2026-11-09-franklin-templeton-uses-openai-to-support-investment-researc",
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "title": "Franklin Templeton uses OpenAI to support investment research",
+   "author": "OpenAI",
+   "summary": "OpenAI's case study describes Franklin Templeton's network of investment AI champions turning Codex hackathon experiments into production research workflows with security review and data controls, plus hands-on labs. It is a champions-network model tied to a specific workflow.",
+   "url": "https://openai.com/index/franklin-templeton/",
+   "also_fits": [],
+   "seq": 35
+  },
+  {
+   "id": "2026-11-09-kpmg-ai-quarterly-pulse-survey-q3-2026-asset-management-and",
+   "beat": "ai-enablement",
+   "date": "2026-11-09",
+   "title": "KPMG AI Quarterly Pulse Survey, Q3 2026: asset management and private equity",
+   "author": "KPMG",
+   "summary": "KPMG's Q3 survey of 100 U.S. asset management and private equity leaders says 81% report measurable AI value, agent deployment rose to 30% from 19%, and data readiness is the top barrier at 76%, with 75% requiring human oversight for sensitive data. Benchmarks for where finance peers are on agents.",
+   "url": "https://kpmg.com/us/en/articles/2026/quarterly-ai-pulse-survey-asset-management-private-equity.html",
+   "also_fits": [],
+   "seq": 36
   },
   {
    "id": "2026-11-06-to-innovate-faster-bny-upskills-100-of-staff-on-eliza-powere",
