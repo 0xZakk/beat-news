@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "grok-bot",
+   "date": "2026-11-16",
+   "summary": ""
+  },
+  {
    "beat": "ai-security",
    "date": "2026-11-16",
    "summary": ""
@@ -299,6 +304,56 @@
    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
    "also_fits": [],
    "seq": 118
+  },
+  {
+   "id": "2026-11-16-the-rise-of-ai-coworkers-lauren-tan-and-roman-ugarte-on-ligh",
+   "beat": "grok-bot",
+   "date": "2026-11-16",
+   "title": "The Rise of AI Coworkers: Lauren Tan and Roman Ugarte on Lightcone",
+   "author": "Y Combinator (Lightcone podcast)",
+   "summary": "On Nov 14 Grok Bot's Lauren Tan and Roman Ugarte told YC's Lightcone how they think about persistent bots with their own identities and tools, giving bots access gradually as trust builds, shared team bots, and guardrails that let coding agents verify and merge work. Their argument is that as execution gets cheap, setting goals and judging the product becomes the bottleneck.",
+   "url": "https://x.com/ycombinator/status/2121632207303582049",
+   "also_fits": [
+    "agentic-engineering"
+   ],
+   "seq": 119
+  },
+  {
+   "id": "2026-11-16-sam-sokolin-grok-bot-harness-optimizations-give-about-7-more",
+   "beat": "grok-bot",
+   "date": "2026-11-16",
+   "title": "Sam Sokolin: Grok Bot harness optimizations give about 7% more usage, up to 15% on routines",
+   "author": "Sam Sokolin (xAI) on X",
+   "summary": "On Nov 13 Sam Sokolin said harness optimizations had shipped that give about 7% more usage per plan and up to 15% more on routine runs, figures repeated by Matt Palmer in a Friday Q&A broadcast. It is the follow-up to the Nov 8 usage complaints and directly stretches routine budgets.",
+   "url": "https://x.com/SamSokolin/status/2121303079803089179",
+   "also_fits": [],
+   "seq": 120
+  },
+  {
+   "id": "2026-11-16-agent-initiative-benchmark",
+   "beat": "grok-bot",
+   "date": "2026-11-16",
+   "title": "Agent Initiative Benchmark",
+   "author": "Deepnote Research",
+   "summary": "Deepnote's benchmark tests 12 models on 50 workplace scenarios inside a synthetic company with six years of records, scoring whether an agent should step in and help or stay quiet; Deepnote reports GPT-6 Astra at 8.97 of 10 and Claude Fable 5.2 at 8.17. It measures the judgment proactive bots need, not just task completion.",
+   "url": "https://deepnote.com/research/benchmark",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 121
+  },
+  {
+   "id": "2026-11-16-releasing-personal-agent-protocol-1-0-poppy",
+   "beat": "grok-bot",
+   "date": "2026-11-16",
+   "title": "Releasing Personal Agent Protocol 1.0 (Poppy)",
+   "author": "Sierra",
+   "summary": "Sierra released Poppy 1.0, an open standard for a person's agent to discover and act with a company: the company publishes a /.well-known/poppy.json file listing channels and capabilities, sessions identify the agent and user, and OAuth authorizes account actions. It is a proposed standard for how personal bots talk to businesses.",
+   "url": "https://sierra.ai/blog/releasing-poppy",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 122
   },
   {
    "id": "2026-11-13-all-code-is-slop-except-mine",
