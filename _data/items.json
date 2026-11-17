@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "summary": ""
+  },
+  {
    "beat": "grok-bot",
    "date": "2026-11-12",
    "summary": ""
@@ -108,6 +113,83 @@
    "url": "https://www.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
    "also_fits": [],
    "seq": 77
+  },
+  {
+   "id": "2026-11-12-workflowarena-benchmarking-executable-workflow-orchestration",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+   "author": "Zheng Jiang et al.",
+   "summary": "WorkflowArena is a benchmark of 145 long-horizon tasks that scores how well a model designs the executable workflow coordinating its own worker agents, separate from end-to-end task success. It measures the orchestration skill that matters when a lead agent spawns workers.",
+   "url": "https://arxiv.org/abs/2611.12856",
+   "also_fits": [],
+   "seq": 78
+  },
+  {
+   "id": "2026-11-12-cursor-projects-is-now-multiplayer",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "Cursor Projects is now multiplayer",
+   "author": "Cursor",
+   "summary": "Cursor made Projects multiplayer in beta on Nov 10: teammates share one task board and context while each keeps their own coordinator and worker agents, so agents can hand work across people. It is a shipped design for several people's agent swarms working one project.",
+   "url": "https://cursor.com/blog/projects-multiplayer",
+   "also_fits": [],
+   "seq": 79
+  },
+  {
+   "id": "2026-11-12-async-subagents-in-deep-agents",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "Async subagents in Deep Agents",
+   "author": "LangChain",
+   "summary": "LangChain's Deep Agents added async subagents that run on an Agent Protocol server and return a task ID immediately, with tools to check, update, cancel, and list tasks and a choice to interrupt or queue follow-ups. A concrete API for a lead agent that keeps working while subagents run.",
+   "url": "https://docs.langchain.com/oss/python/deepagents/async-subagents",
+   "also_fits": [],
+   "seq": 80
+  },
+  {
+   "id": "2026-11-12-swarms-v17-interlink-comms-channels-phased-fan-out-workflows",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "Swarms v17 InterLink: comms channels, phased fan-out workflows, and RouteHub",
+   "author": "Swarms",
+   "summary": "Swarms v17 adds PhasedFanOutWorkflow, where a lead agent writes a validated JSON plan, phases run in order with parallel steps, and for-each steps spawn one fresh worker per item, with caps on total and concurrent agents. An open-source implementation of fan-out with limits.",
+   "url": "https://www.swarms.ai/blog/swarms-v17-interlink-release",
+   "also_fits": [],
+   "seq": 81
+  },
+  {
+   "id": "2026-11-12-unprompted-coordination-through-shared-memory-in-llm-agents",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
+   "author": "Pekka Abrahamsson et al. (GPT-Lab, Tampere University)",
+   "summary": "The study tests whether agents start coordinating through shared state alone when nothing tells them other agents exist, using two independent implementations. Relevant to bots that share a workspace and memory without being told about each other.",
+   "url": "https://arxiv.org/abs/2611.12412",
+   "also_fits": [],
+   "seq": 82
+  },
+  {
+   "id": "2026-11-12-steering-emergent-behavior-in-multi-agent-llm-systems-via-in",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks",
+   "author": "Sepehr Ilami and Babak Heydari",
+   "summary": "With ten identical agents playing repeated group games, the authors show that controlling who can observe whom, without touching payoffs or messages, changes collective outcomes. It treats visibility between agents as a design lever.",
+   "url": "https://arxiv.org/abs/2611.11714",
+   "also_fits": [],
+   "seq": 83
+  },
+  {
+   "id": "2026-11-12-what-breaks-when-you-fan-out-claude-code-to-multiple-subagen",
+   "beat": "swarms",
+   "date": "2026-11-12",
+   "title": "What breaks when you fan out Claude Code to multiple subagents",
+   "author": "tomakl (Bits, Bugs, and Opinions)",
+   "summary": "The post sorts fan-out failures into transient tool errors, ambiguous delegation, and latent failures that retries cannot fix, such as stale inherited context, conflicting outputs nobody reconciles, and actions taken before dependencies are ready. It recommends a reconciliation pass after fan-out. Practical failure modes for parallel agents.",
+   "url": "https://tomakl.dev/posts/orchestration-failure-modes/",
+   "also_fits": [],
+   "seq": 84
   },
   {
    "id": "2026-11-11-configuration-based-sandbox-escape-cbse-in-ai-coding-tools",
