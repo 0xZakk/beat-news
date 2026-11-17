@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "agents",
+   "date": "2026-11-16",
+   "summary": ""
+  },
+  {
    "beat": "grok-bot",
    "date": "2026-11-13",
    "summary": ""
@@ -83,6 +88,63 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-16-how-much-skill-orchestration-can-llm-agents-compile-away-exe",
+   "beat": "agents",
+   "date": "2026-11-16",
+   "title": "How Much Skill Orchestration Can LLM Agents Compile Away? Execution-Grounded Specialization for Token-Efficient Skill Use",
+   "author": "Jiayi Ni et al. (NVIDIA)",
+   "summary": "The paper (SkillCache) compiles the orchestration inside a reusable skill into an executable fast path based on real executions, so the model does not re-interpret the skill on every call. It targets the token cost of bots that run the same skills over and over.",
+   "url": "https://arxiv.org/abs/2611.10022",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 101
+  },
+  {
+   "id": "2026-11-16-discern-preserve-at-write-resolve-at-read-for-persistent-llm",
+   "beat": "agents",
+   "date": "2026-11-16",
+   "title": "DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory",
+   "author": "Chirag Ahuja et al. (Amazon)",
+   "summary": "On a 310-query enterprise sales-agent memory benchmark, the authors show plain retrieval already matches strong memory systems on recall; what remains unsolved is resolving which entity and which time-state a query means. They keep everything at write time and resolve at read time. Useful framing for bots whose memory holds conflicting facts.",
+   "url": "https://arxiv.org/abs/2611.15729",
+   "also_fits": [],
+   "seq": 102
+  },
+  {
+   "id": "2026-11-16-mirix-2-0-multi-agent-memory-system",
+   "beat": "agents",
+   "date": "2026-11-16",
+   "title": "MIRIX-2.0: Multi-Agent Memory System",
+   "author": "Wei-Chieh Huang et al.",
+   "summary": "MIRIX-2.0 is a multi-agent memory system designed to be accurate and efficient without training, and the authors report it is the most accurate of the compared systems on four of five benchmarks. Another open memory design to compare against.",
+   "url": "https://arxiv.org/abs/2611.12068",
+   "also_fits": [],
+   "seq": 103
+  },
+  {
+   "id": "2026-11-16-build-agent-harnesses-for-any-llm-using-the-open-source-open",
+   "beat": "agents",
+   "date": "2026-11-16",
+   "title": "Build agent harnesses for any LLM using the open-source OpenWorker Agent Harness SDK",
+   "author": "Andrew Ng (The Batch, DeepLearning.AI)",
+   "summary": "In The Batch on Nov 13, Andrew Ng introduced the OpenWorker Agent Harness SDK, an open-source, model-agnostic TypeScript SDK with tools, context management, guardrails, approvals, and durable sessions. A small, readable reference harness.",
+   "url": "https://www.deeplearning.ai/the-batch/how-to-build-an-agent-harness-in-one-prompt",
+   "also_fits": [],
+   "seq": 104
+  },
+  {
+   "id": "2026-11-16-my-biggest-engineering-work-building-a-harness-from-scratch",
+   "beat": "agents",
+   "date": "2026-11-16",
+   "title": "My biggest engineering work: building a harness from scratch",
+   "author": "Manu Otel",
+   "summary": "Manu Otel walks through a bounded streaming agent loop that builds context, calls the model, runs tools in parallel, returns results in call order, and enforces turn, time, and token limits. A first-hand account of the decisions inside a harness.",
+   "url": "https://manuotel.com/blog/building-a-harness-from-scratch",
+   "also_fits": [],
+   "seq": 105
+  },
   {
    "id": "2026-11-13-all-code-is-slop-except-mine",
    "beat": "agentic-engineering",
