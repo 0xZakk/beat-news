@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "summary": ""
+  },
+  {
    "beat": "swarms",
    "date": "2026-11-12",
    "summary": ""
@@ -68,6 +73,76 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-13-all-code-is-slop-except-mine",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "All Code Is Slop (Except Mine)",
+   "author": "Lauren Tan (xAI), AI Engineer CODE 2026",
+   "summary": "Lauren Tan argues agent-written code can be trusted at high volume when constraints live in the codebase itself, through API design, lint rules, types, tests, and verification, instead of ever-growing AGENTS.md files; her team enforces directory boundaries with dependency checks and bans risky patterns in product code. A first-hand method from the team that builds Grok Bot.",
+   "url": "https://ai.engineer/code/2026/talks/lauren-tan",
+   "also_fits": [],
+   "seq": 85
+  },
+  {
+   "id": "2026-11-13-feat-pstack-make-orchestrate-agentic-and-delete-the-orch-scr",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "feat(pstack): make Orchestrate agentic and delete the orch scripts (#1043)",
+   "author": "cursor/plugins (pstack)",
+   "summary": "The change replaced pstack's script-based Orchestrate with an agentic coordinator that spawns workers with Task, keeps state in a project tracker, and subscribes to PR and CI events, deleting the old orchestration scripts. It shipped in pstack 0.15.36 on Oct 27. A real switch from scripted to agent-led orchestration.",
+   "url": "https://github.com/cursor/plugins/commit/c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 86
+  },
+  {
+   "id": "2026-11-13-how-to-build-an-agent-that-builds-the-culture",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "How to build an agent that builds the culture",
+   "author": "Zach Bruggeman (Ramp), AI Engineer CODE 2026",
+   "summary": "Zach Bruggeman says Ramp's internal coding agent Inspect keeps sessions public by default so engineers learn from each other's prompts and tools, and that about 75% of Ramp's code is now written and shipped through it. Shared sessions double as an adoption and training mechanism.",
+   "url": "https://ai.engineer/code/2026/talks/zach-bruggeman",
+   "also_fits": [
+    "ai-enablement"
+   ],
+   "seq": 87
+  },
+  {
+   "id": "2026-11-13-a-new-age-of-software-engineering",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "A New Age of Software Engineering",
+   "author": "Walden Yan (Cognition), AI Engineer CODE 2026",
+   "summary": "Walden Yan says Cognition replaced large teams with two- to three-person pods that own bug reports, QA, product, and their own Linear board, using swarms of agents for implementation, with work starting from a customer's bug video sent to Devin in Slack. A team structure built around agents.",
+   "url": "https://ai.engineer/code/2026/talks/walden-yan",
+   "also_fits": [],
+   "seq": 88
+  },
+  {
+   "id": "2026-11-13-rethinking-claude-code-best-practices",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Rethinking Claude Code best practices",
+   "author": "Lydia Hallie (Anthropic), AI Engineer CODE 2026",
+   "summary": "Lydia Hallie advises keeping CLAUDE.md to facts the model cannot infer, pruning it after model upgrades, using auto mode with deny rules for irreversible actions, and using hooks to lint after edits and block completion on failing tests (exit code 2, not 1). Specific, checkable settings for coding agents.",
+   "url": "https://ai.engineer/talks/vlfCjWuv4es-rethinking-claude-code-best-practices",
+   "also_fits": [],
+   "seq": 89
+  },
+  {
+   "id": "2026-11-13-build-the-company-around-the-agent-not-a-pilot-project",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Build the company around the agent, not a pilot project",
+   "author": "Quinn Slack (Amp), AI Engineer CODE 2026",
+   "summary": "Quinn Slack said Amp deploys about 130 times a day with roughly ten minutes from push to production, and argued for organizing the company around the agent rather than running pilots. A data point on delivery speed when agents write most code.",
+   "url": "https://ai.engineer/code/2026/talks/quinn-slack",
+   "also_fits": [],
+   "seq": 90
+  },
   {
    "id": "2026-11-12-introducing-grok-bot-1-0",
    "beat": "grok-bot",
