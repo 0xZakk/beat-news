@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "summary": ""
+  },
+  {
    "beat": "formal-verification",
    "date": "2026-11-10",
    "summary": ""
@@ -103,6 +108,73 @@
    "url": "https://developertoolkit.ai/en/workflows/test/property-based-testing/",
    "also_fits": [],
    "seq": 49
+  },
+  {
+   "id": "2026-11-10-brian-armstrong-on-running-lead-agents-under-a-chief-of-staf",
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "title": "Brian Armstrong on running lead agents under a chief-of-staff agent",
+   "author": "Brian Armstrong (Coinbase) on X",
+   "summary": "On Nov 7 Coinbase CEO Brian Armstrong described a chief-of-staff agent that oversees always-on lead agents, each managing sub-agents that write code, test it, and chase reviews. Every decision and review lands in one prioritized queue in a local web app with screenshots and demos, which he clears in batches. It is a public example from a crypto company's CEO of the one-queue pattern for supervising many agents.",
+   "url": "https://x.com/brian_armstrong/status/2119112609223827547",
+   "also_fits": [],
+   "seq": 50
+  },
+  {
+   "id": "2026-11-10-import-from-other-agents-hermes-migrate-grok-bot",
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "title": "Import from other agents: hermes migrate grok-bot",
+   "author": "Nous Research (Hermes Agent docs)",
+   "summary": "Hermes Agent added an importer: hermes migrate grok-bot installs a plugin, has each bot write an export file, and brings its skills, memories, and routines across, with routines arriving as paused cron jobs. It shows what a bot's portable state looks like and gives an exit path if you ever leave Grok Bot.",
+   "url": "https://hermes-agent.nousresearch.com/docs/user-guide/import-from-other-agents",
+   "also_fits": [],
+   "seq": 51
+  },
+  {
+   "id": "2026-11-10-grok-bot-changelog-0-79-2-and-0-79-3",
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "title": "Grok Bot changelog: 0.79.2 and 0.79.3",
+   "author": "xAI",
+   "summary": "The 0.79.2 release added a warning when a web page contains instructions hidden for AI agents, saying the bot found them and did not follow them, along with Tailscale and SSH support; 0.79.3 added shared Page theme switching and fixes. The hidden-instructions warning is a visible prompt-injection defense for bots that browse.",
+   "url": "https://x.ai/changelog/bot",
+   "also_fits": [],
+   "seq": 52,
+   "allow_same_url": true
+  },
+  {
+   "id": "2026-11-10-leaked-xai-building-grok-academy-at-learn-grok-com",
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "title": "Leaked: xAI building Grok Academy at learn.grok.com",
+   "author": "AGI Hunt",
+   "summary": "AGI Hunt reported on Nov 10 that xAI is building an official Grok Academy at learn.grok.com with 15 courses on AI fluency, Grok Bot, and Grok Build and planned completion certificates; the site was not yet open. If it ships, it is ready-made training material for rolling bots out to a team.",
+   "url": "https://agihunt.info/en/p/1a1c4b8c36785dae761156d1fcc",
+   "also_fits": [],
+   "seq": 53
+  },
+  {
+   "id": "2026-11-10-qianwen-office-2-0-proactive-and-collaborative-toward-the-te",
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "title": "Qianwen Office 2.0: proactive and collaborative, toward the Team Agent era",
+   "author": "Alibaba Qianwen Office (QwenWork)",
+   "summary": "Alibaba launched Qianwen Office 2.0 on Nov 9, a team agent that shares a workspace with a group, reads linked DingTalk chats, documents, spreadsheets, and meeting notes, summarizes progress, assigns tasks, and follows up, with event-triggered tasks. It is a large vendor shipping one shared agent per team instead of one per person.",
+   "url": "https://docs.qwenwork.cn/podcasts/qwenwork-2-team-agent",
+   "also_fits": [],
+   "seq": 54
+  },
+  {
+   "id": "2026-11-10-claude-connect-a-grok-bot-template-that-forwards-tasks-to-cl",
+   "beat": "grok-bot",
+   "date": "2026-11-10",
+   "title": "Claude Connect: a Grok Bot template that forwards tasks to Claude",
+   "author": "Martin Gontovnikas (@mgonto)",
+   "summary": "On Nov 8 Martin Gontovnikas published a Grok Bot template that sends tasks to Claude through the owner's own Claude subscription and returns the answer unchanged, with guided login, read-only connectors, and answer comparisons. It is a working example of one bot acting as a proxy to another vendor's model.",
+   "url": "https://grokbotsdirectory.com/bots/claude-connect-pyKYe5",
+   "also_fits": [],
+   "seq": 55
   },
   {
    "id": "2026-11-09-the-components-of-agent-memory",
