@@ -3,6 +3,11 @@
  "issues": [
   {
    "beat": "grok-bot",
+   "date": "2026-11-17",
+   "summary": ""
+  },
+  {
+   "beat": "grok-bot",
    "date": "2026-11-16",
    "summary": ""
   },
@@ -103,6 +108,52 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-17-netrovert-running-11-grok-bot-agents-on-one-shared-setup",
+   "beat": "grok-bot",
+   "date": "2026-11-17",
+   "title": "Netrovert: running 11 Grok Bot agents on one shared setup",
+   "author": "Netrovert (@netrovertHQ) on X",
+   "summary": "Netrovert described running 11 bots that share a contacts file, shared memory for voice and preferences, a markdown wiki, and reusable SKILL.md playbooks, with a daily-usage-cap playbook that can pause every routine at once; the playbooks are public on GitHub. It is a working template for a multi-bot setup with one kill switch for cost.",
+   "url": "https://x.com/netrovertHQ/status/2122404596760940997",
+   "also_fits": [],
+   "seq": 123
+  },
+  {
+   "id": "2026-11-17-shane-mac-on-why-his-cfo-bot-posted-his-bank-balances-in-a-c",
+   "beat": "grok-bot",
+   "date": "2026-11-17",
+   "title": "Shane Mac on why his CFO bot posted his bank balances in a company Slack channel",
+   "author": "Shane Mac (XMTP) on X",
+   "summary": "In October Shane Mac's personal finance bot, which had read-only bank access, posted his monthly balances to XMTP's exec-team Slack channel instead of his private chat; his root-cause post traces it to a name clash between a Grok Bot group chat and the Slack channel. The story resurfaced on Nov 17. It is a concrete failure mode for bots that can post to more than one place.",
+   "url": "https://x.com/ShaneMac/status/2108209486154301893",
+   "also_fits": [],
+   "seq": 124
+  },
+  {
+   "id": "2026-11-17-lauren-poteto-rules-engineering-rules-for-trustworthy-coding",
+   "beat": "grok-bot",
+   "date": "2026-11-17",
+   "title": "lauren-poteto-rules: engineering rules for trustworthy coding-agent workflows",
+   "author": "unicodef1wn (GitHub), inspired by Lauren Tan",
+   "summary": "The repo packages rules attributed to Lauren Tan's talks as a portable agent skill: inspect code before diagnosing, reproduce and verify behavior in the running product, turn recurring failures into types, lint, or CI checks, and widen delegation only after verification is reliable. It can be dropped into a bot or Claude Code as-is.",
+   "url": "https://github.com/unicodef1wn/lauren-poteto-rules",
+   "also_fits": [
+    "agentic-engineering"
+   ],
+   "seq": 125
+  },
+  {
+   "id": "2026-11-17-eden-adds-routines",
+   "beat": "grok-bot",
+   "date": "2026-11-17",
+   "title": "Eden adds Routines",
+   "author": "Eden",
+   "summary": "Eden added Routines, scheduled prompts its assistant Eve runs daily, on weekdays, weekly, or monthly, with each run opening a new chat and optionally emailing the result. Another assistant adopting the scheduled-routine pattern.",
+   "url": "https://eden.so/help/chat/meet-routines/",
+   "also_fits": [],
+   "seq": 126
+  },
   {
    "id": "2026-11-16-how-much-skill-orchestration-can-llm-agents-compile-away-exe",
    "beat": "agents",
