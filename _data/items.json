@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-17T09:51:42-06:00",
+ "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
+  {
+   "beat": "ai-enablement",
+   "date": "2026-11-11",
+   "summary": ""
+  },
   {
    "beat": "ai-assisted-engineering",
    "date": "2026-11-11",
@@ -124,6 +129,63 @@
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
    "also_fits": [],
    "seq": 62
+  },
+  {
+   "id": "2026-11-11-client-zero-inside-bcg-s-ai-transformation",
+   "beat": "ai-enablement",
+   "date": "2026-11-11",
+   "title": "Client Zero: inside BCG's AI transformation",
+   "author": "BCG",
+   "summary": "BCG describes using itself as client zero, with a four-level AI Fluency Ladder from explorer to practitioner to automator to multiplier, the first two levels mandatory. BCG says nearly all staff reached level 1 within four months and more than 20% completed level 4. It is a ready-made fluency framework with completion numbers.",
+   "url": "https://www.bcg.com/publications/2026/bcg-ai-transformation-client-zero",
+   "also_fits": [],
+   "seq": 63
+  },
+  {
+   "id": "2026-11-11-commercial-bank-of-dubai-s-ai-first-banking-push",
+   "beat": "ai-enablement",
+   "date": "2026-11-11",
+   "title": "Commercial Bank of Dubai's AI-first banking push",
+   "author": "Kazasec",
+   "summary": "The report says Commercial Bank of Dubai has 92% Microsoft Copilot adoption among employees and an internal tool called Merlin that analyzes financial information and drafts credit proposals, with staff keeping the final decision. An adoption figure plus a specific credit workflow from a regional bank.",
+   "url": "https://kazasec.com/news/commercial-bank-of-dubai-s-ai-first-banking-push",
+   "also_fits": [],
+   "seq": 64
+  },
+  {
+   "id": "2026-11-11-dfsa-ai-survey-2026-ai-adoption-among-difc-financial-service",
+   "beat": "ai-enablement",
+   "date": "2026-11-11",
+   "title": "DFSA AI Survey 2026: AI adoption among DIFC financial services firms has more than doubled since 2024",
+   "author": "Dubai Financial Services Authority",
+   "summary": "The DFSA's Nov 2 survey says 71% of DIFC-authorized firms use AI, up from 33% in 2024; 53% are exploring or piloting agents but only 14% have deployed them, and 61% of adopters have governance frameworks. A regulator's view of where financial firms actually are on agents.",
+   "url": "https://www.dfsa.ae/news/ai-adoption-among-difc-financial-services-firms-has-more-doubled-2024",
+   "also_fits": [],
+   "seq": 65
+  },
+  {
+   "id": "2026-11-11-how-huntington-is-turning-employees-into-ai-enthusiasts",
+   "beat": "ai-enablement",
+   "date": "2026-11-11",
+   "title": "How Huntington is turning employees into AI enthusiasts",
+   "author": "American Banker",
+   "summary": "Huntington Bank runs two-day AI hackathons whose projects often go to production, ideathons that pair business and technology staff to pitch executives, and a Day of the Dead session where employees present failed projects and lessons. It is a set of adoption tactics that reward experimentation, including failure.",
+   "url": "https://www.americanbanker.com/news/how-huntington-is-turning-employees-into-ai-enthusiasts",
+   "also_fits": [],
+   "seq": 66
+  },
+  {
+   "id": "2026-11-11-how-salesforce-scaled-engineering-ai-adoption-without-stifli",
+   "beat": "ai-enablement",
+   "date": "2026-11-11",
+   "title": "How Salesforce scaled engineering AI adoption without stifling innovation",
+   "author": "Salesforce Engineering",
+   "summary": "Salesforce describes embedding AI champions in scrum teams across about 500 engineers, who brought guidance into teams, fed problems back to an AI steering committee, and met weekly to demo new capabilities. It is a champions model for engineering teams that keeps team autonomy.",
+   "url": "https://engineering.salesforce.com/how-salesforce-scaled-engineering-ai-adoption-without-stifling-innovation/",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 67
   },
   {
    "id": "2026-11-10-introducing-alphaproof-code-verifying-complex-software-at-de",
