@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "ai-enablement",
+   "date": "2026-11-13",
+   "summary": ""
+  },
+  {
    "beat": "agentic-engineering",
    "date": "2026-11-13",
    "summary": ""
@@ -142,6 +147,63 @@
    "url": "https://ai.engineer/code/2026/talks/quinn-slack",
    "also_fits": [],
    "seq": 90
+  },
+  {
+   "id": "2026-11-13-jpmorganchase-expands-claude-code-to-more-employees",
+   "beat": "ai-enablement",
+   "date": "2026-11-13",
+   "title": "JPMorganChase expands Claude Code to more employees",
+   "author": "Anthropic",
+   "summary": "Anthropic said on Nov 9 that JPMorganChase is extending Claude Code beyond engineers to product, infrastructure, risk and controls, and asset and wealth management teams, inside a controlled environment with staged access, model approvals, and human production gates. No headcount, cost, or productivity numbers were given. It is a large bank putting a coding agent in non-engineers' hands with explicit gates.",
+   "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 91
+  },
+  {
+   "id": "2026-11-13-tools-trust-and-talent-how-fund-managers-are-putting-gen-ai",
+   "beat": "ai-enablement",
+   "date": "2026-11-13",
+   "title": "Tools, Trust, and Talent: how fund managers are putting Gen AI to work",
+   "author": "Alternative Investment Management Association (AIMA)",
+   "summary": "AIMA surveyed 104 fund managers with about $998 billion under management: 97% are implementing generative AI, mostly for research and memos, but only 31% use it in portfolio construction, and accuracy and data leakage are the main barriers. A peer benchmark for AI use at investment firms.",
+   "url": "https://www.aima.org/compass/insights/artificial-intelligence-ai/how-fund-managers-are-putting-gen-ai-to-work.html",
+   "also_fits": [],
+   "seq": 92
+  },
+  {
+   "id": "2026-11-13-the-finance-professionals-scared-of-ai-might-just-be-using-t",
+   "beat": "ai-enablement",
+   "date": "2026-11-13",
+   "title": "The finance professionals scared of AI might just be using the wrong tools",
+   "author": "eFinancialCareers",
+   "summary": "In a survey of about 2,500 finance professionals, eFinancialCareers found 39% of people using their employer's internal AI tools said they do not trust AI at all, against 27% of ChatGPT users and 29% of Claude users, citing hallucinations and slow verification. Some respondents bypass internal tools. A warning that a weak internal tool can hurt adoption.",
+   "url": "https://www.efinancialcareers.com/news/worst-ai-tools-finance",
+   "also_fits": [],
+   "seq": 93
+  },
+  {
+   "id": "2026-11-13-nh-nonghyup-bank-unveils-10-ai-agents-to-automate-back-offic",
+   "beat": "ai-enablement",
+   "date": "2026-11-13",
+   "title": "NH NongHyup Bank unveils 10 AI agents to automate back-office work",
+   "author": "Seoul Economic Daily",
+   "summary": "NH NongHyup Bank picked 10 agent projects from 39 employee proposals, covering compliance, fraud and AML, recommendations, loan review, and remittance, and built prototypes with a vendor in about a month. Sourcing agent projects from staff proposals is a repeatable intake model.",
+   "url": "https://en.sedaily.com/finance/2026/11/05/nh-nonghyup-bank-unveils-10-ai-agents-to-automate-back",
+   "also_fits": [],
+   "seq": 94
+  },
+  {
+   "id": "2026-11-13-oxbow-partners-and-london-market-group-launch-report-on-the",
+   "beat": "ai-enablement",
+   "date": "2026-11-13",
+   "title": "Oxbow Partners and London Market Group launch report on the future of AI in insurance talent",
+   "author": "London Market Group and Oxbow Partners",
+   "summary": "Based on discussions with 20 senior insurance HR leaders, the Nov 12 report says AI will automate routine work and remove the groundwork junior staff learn from, so insurers need new apprenticeship and career models. It raises the junior-pipeline question that applies to any team leaning on agents.",
+   "url": "https://lmg.london/news/oxbow-partners-and-london-market-group-launch-report-on-the-future-of-ai-in-insurance-talent/",
+   "also_fits": [],
+   "seq": 95
   },
   {
    "id": "2026-11-12-introducing-grok-bot-1-0",
