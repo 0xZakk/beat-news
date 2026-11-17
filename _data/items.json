@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "summary": ""
+  },
+  {
    "beat": "ai-enablement",
    "date": "2026-11-11",
    "summary": ""
@@ -186,6 +191,72 @@
     "ai-assisted-engineering"
    ],
    "seq": 67
+  },
+  {
+   "id": "2026-11-11-grok-bot-can-join-company-tailscale-tailnets",
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "title": "Grok Bot can join company Tailscale tailnets",
+   "author": "Cursor plugins (Tailscale plugin README)",
+   "summary": "As of Nov 10, a team admin can let Grok Bot join a company Tailscale tailnet so bots reach private MCP servers and internal tools; members authenticate their own bot device, which carries a custom:grokbot posture attribute that tailnet policy can restrict. It is the sanctioned route for bots to reach private services without opening them to the internet.",
+   "url": "https://github.com/cursor/plugins/blob/main/third_party/tailscale/README.md",
+   "also_fits": [],
+   "seq": 68
+  },
+  {
+   "id": "2026-11-11-musk-grok-4-8-finishes-pretraining-soft-rollout-to-bot-users",
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "title": "Musk: Grok 4.8 finishes pretraining, soft rollout to Bot users this week",
+   "author": "PANews, reporting Elon Musk's posts",
+   "summary": "Elon Musk said Grok 4.8 had finished pretraining, was in reinforcement learning, and would start a small rollout to Grok Bot users that week. No eligibility rules or pricing were given. A model change under running bots can shift behavior and token use.",
+   "url": "https://www.panews.io/articles/01a1c4fe-0dde-7074-be44-21baa2d23bb3",
+   "also_fits": [],
+   "seq": 69
+  },
+  {
+   "id": "2026-11-11-meet-nod-a-standalone-personal-agent-from-n8n-labs-that-runs",
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "title": "Meet Nod: a standalone personal agent from n8n Labs that runs on your computer",
+   "author": "n8n",
+   "summary": "n8n Labs released Nod, a free, open-source personal agent with its own Linux workspace and browser that connects to Gmail, Slack, Notion, and websites, uses the model provider you choose, and asks before consequential actions. Another self-hosted assistant built on the same pattern as Grok Bot.",
+   "url": "https://blog.n8n.io/meet-nod/",
+   "also_fits": [],
+   "seq": 70
+  },
+  {
+   "id": "2026-11-11-vorflux-autobots-24-7-coworkers-that-live-in-slack",
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "title": "Vorflux AutoBots: 24/7 coworkers that live in Slack",
+   "author": "Vorflux",
+   "summary": "Vorflux 2.0 adds AutoBots, persistent agents hired from a catalog into dedicated Slack channels for standing roles like on-call triage, cloud-cost work, and release management, each with its own daily or weekly budget and approvals in Slack. Per-bot budgets are a concrete answer to bot cost control.",
+   "url": "https://vorflux.com/docs/autobots",
+   "also_fits": [],
+   "seq": 71
+  },
+  {
+   "id": "2026-11-11-what-s-new-in-openbot-1-0",
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "title": "What's new in OpenBot 1.0",
+   "author": "CopilotKit",
+   "summary": "CopilotKit shipped OpenBot 1.0, an MIT-licensed, self-hostable AI-coworker workspace that runs locally or on your own Kubernetes cluster from one Helm chart, with your own models and built-in approval controls. It is the most enterprise-oriented of the open-source Grok Bot alternatives so far.",
+   "url": "https://www.copilotkit.ai/blog/openbot-whats-new",
+   "also_fits": [],
+   "seq": 72
+  },
+  {
+   "id": "2026-11-11-grok-bot-on-the-x-subscription-one-shared-weekly-usage-pool",
+   "beat": "grok-bot",
+   "date": "2026-11-11",
+   "title": "Grok Bot on The X Subscription: one shared weekly usage pool",
+   "author": "xAI docs",
+   "summary": "xAI's docs say Grok Bot has no separate quota on The X Subscription: it draws from one weekly pool shared with Grok and Cursor for each paid seat, with prepaid credits past the pool. Every bot and routine on a seat competes for the same allowance.",
+   "url": "https://docs.x.ai/x-subscription/grok-bot",
+   "also_fits": [],
+   "seq": 73
   },
   {
    "id": "2026-11-10-introducing-alphaproof-code-verifying-complex-software-at-de",
