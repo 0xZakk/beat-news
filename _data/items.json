@@ -7,6 +7,11 @@
    "summary": ""
   },
   {
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "summary": "This week's Formal Verification issue is mostly about whether a \"verified\" result means anything. Amazon's BenchProofer and the Verified but Vacuous paper both measure how often passing tests or an accepting verifier hide a wrong answer from an LLM. A six-week port of the CompCert compiler to Lean shows how one expert split proof work across parallel agents. On tooling, Veil 2.0 brings TLA+-style protocol checking to Lean, and Stephan Merz says he is starting a TLA+ proof assistant on Lean's kernel. Two testing items round it out: how the Claude Code team uses property and differential tests to check agent work, and a study of property tests written from the spec instead of the code."
+  },
+  {
    "beat": "grok-bot",
    "date": "2026-11-16",
    "summary": ""
@@ -153,6 +158,87 @@
    "url": "https://eden.so/help/chat/meet-routines/",
    "also_fits": [],
    "seq": 126
+  },
+  {
+   "id": "2026-11-17-benchproofer-formally-verified-coding-benchmarks-on-demand",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "BenchProofer: formally verified coding benchmarks on demand",
+   "author": "Amazon Science",
+   "summary": "On Nov 16 Amazon released an open-source tool that turns a coding benchmark task's test suite into a formal spec, a reference implementation, and a machine-checked proof. Amazon says it flagged nearly a third of Claude Opus 4.8's test-passing patches, and in a sample that people reviewed, 21 of 41 flagged patches had real bugs. It gives a hard number on how often \"tests pass\" hides a wrong fix from an agent.",
+   "url": "https://www.amazon.science/blog/benchproofer-formally-verified-coding-benchmarks-on-demand",
+   "also_fits": [],
+   "seq": 127
+  },
+  {
+   "id": "2026-11-17-verified-but-vacuous-three-failure-surfaces-of-llm-driven-ve",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation",
+   "author": "Aditya Vempaty et al.",
+   "summary": "The paper splits \"verified\" into three checks: the verifier accepts the code, the proof is actually tied to the spec, and the spec matches what was wanted. The authors reran a Dafny pipeline with Opus 4.7 on HumanEval; the verifier accepted 99.1% of results, but only 1.9% of those proofs were tied to a spec. It tells you what to report besides the pass rate if you show people verifier results.",
+   "url": "https://arxiv.org/abs/2611.05590",
+   "also_fits": [],
+   "seq": 128
+  },
+  {
+   "id": "2026-11-17-compcert4lean-porting-a-verified-c-compiler-to-lean-in-six-w",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "CompCert4Lean: Porting a Verified C Compiler to Lean in Six Weeks with Parallel Coding Agents",
+   "author": "Cong Wang et al.",
+   "summary": "One expert directing parallel LLM agents ported the core of CompCert 3.17 from Rocq to Lean, with all 4,908 proof obligations discharged and no project-specific axioms. The authors say 88.8% of the 1,071 human interventions dealt with workflow and coordination, and only three gave technical direction. It is a detailed account of splitting proof work so agents can rebuild proofs in parallel against stable interfaces.",
+   "url": "https://arxiv.org/abs/2611.21084",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 129
+  },
+  {
+   "id": "2026-11-17-veil-2-0-distributed-protocol-verification-in-lean-4",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "Veil 2.0: distributed protocol verification in Lean 4",
+   "author": "verse-lab (George Pîrlea et al.)",
+   "summary": "verse-lab released Veil 2.0, which adds verified safety and liveness checkers, a PlusCal-style language, and a tla-to-veil skill that coding agents can use to translate TLA+ specs. According to Lean Weekly, George Pîrlea says Veil now covers what people use the TLA+ Toolbox for and its safety checker runs 2 to 20 times faster than TLC. It lets you keep writing TLA+-style models and have them checked by Lean's kernel.",
+   "url": "https://github.com/verse-lab/veil",
+   "also_fits": [],
+   "seq": 130
+  },
+  {
+   "id": "2026-11-17-how-the-claude-code-team-thinks-about-verification",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "How the Claude Code team thinks about verification",
+   "author": "Addy Osmani (Anthropic)",
+   "summary": "Addy Osmani's Nov 16 post describes how the Claude Code team uses end-to-end, property, and differential tests so agents can show evidence their work is correct, and how the team keeps those checks honest. The property-test examples carry over to finance code: round-trips, invariants like \"balance never goes negative,\" and retries that are safe to repeat.",
+   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 131
+  },
+  {
+   "id": "2026-11-17-spec-driven-pbt-deriving-semantic-invariants-from-code-speci",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "Spec-Driven PBT: Deriving Semantic Invariants from Code Specifications for Agentic Property-based Testing",
+   "author": "Aditya Shukla et al. (Georgian Partners)",
+   "summary": "The researchers built an agent that writes property tests from the spec or product requirements first and reads the code only afterward, and compared it with code-first agents across 25 ViBench apps. Both found about the same number of bugs, but nearly 60% of the 169 bugs were caught by only one approach, and the spec-first agent was better at catching broken product workflows. It is a cheap change to how you ask an agent to test its own code.",
+   "url": "https://arxiv.org/abs/2611.15920",
+   "also_fits": [],
+   "seq": 132
+  },
+  {
+   "id": "2026-11-17-thread-a-tla-proof-assistant-built-on-lean-s-kernel",
+   "beat": "formal-verification",
+   "date": "2026-11-17",
+   "title": "Thread: a TLA+ proof assistant built on Lean's kernel",
+   "author": "Giuliano Losa and Stephan Merz (tlaplus mailing list)",
+   "summary": "Giuliano Losa asked for TLA+ tooling with a smaller trusted base, noting that LLMs can exploit soundness bugs in TLAPM, which has a large trusted codebase. Stephan Merz replied that he is starting a TLA+ proof assistant built on Lean's kernel, while saying it is very early. Worth watching if you want agents writing TLA+ proofs you can trust.",
+   "url": "https://discuss.tlapl.us/msg06846.html",
+   "also_fits": [],
+   "seq": 133
   },
   {
    "id": "2026-11-16-how-much-skill-orchestration-can-llm-agents-compile-away-exe",
