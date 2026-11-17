@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "agents",
+   "date": "2026-11-09",
+   "summary": ""
+  },
+  {
    "beat": "grok-bot",
    "date": "2026-11-06",
    "summary": ""
@@ -18,6 +23,83 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-09-the-components-of-agent-memory",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "The components of agent memory",
+   "author": "Anthropic",
+   "summary": "Anthropic lays out memory as layers: raw transcripts, notes written when something seems important, linked wiki-style structures, and a small context block loaded at each session start, plus offline \"dreaming\" that corrects stale notes and promotes what matters. A clear model for designing bot memory.",
+   "url": "https://www.anthropic.com/research/components-of-agent-memory",
+   "also_fits": [],
+   "seq": 24
+  },
+  {
+   "id": "2026-11-09-anatomy-of-a-frontier-harness-side-models-lifecycle-hooks-an",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "Anatomy of a frontier harness: side models, lifecycle hooks, and durable time",
+   "author": "Julien Hovan",
+   "summary": "Julien Hovan argues that multi-day coding agents need a fast side model for recall and supervision, hooks that save raw session evidence before memory is consolidated, and three ways to wait: synchronous commands, background monitors, and scheduled wakeups that resume a session hours or days later. A practitioner's design notes for long-running agents.",
+   "url": "https://julienhovan.com/writing/anatomy-of-a-frontier-harness/",
+   "also_fits": [],
+   "seq": 25
+  },
+  {
+   "id": "2026-11-09-delivered-not-used-evaluating-agent-memory-at-its-point-of-u",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "Delivered, Not Used: Evaluating Agent Memory at Its Point of Use",
+   "author": "Changran Xu et al.",
+   "summary": "MemUse checks, in recorded runs, whether an agent actually used a memory that was delivered to it and what followed, instead of scoring retrieval quality. It is a way to test whether bot memory changes behavior.",
+   "url": "https://arxiv.org/abs/2611.01718",
+   "also_fits": [],
+   "seq": 26
+  },
+  {
+   "id": "2026-11-09-memoir-a-training-free-memory-lifecycle-for-long-horizon-llm",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents",
+   "author": "Mayank Anand et al.",
+   "summary": "The paper argues that writing memories with fixed importance scores lets consolidation destroy evidence later queries need, and revises memories based on how they are used. Relevant to bots that summarize and prune their own memory.",
+   "url": "https://arxiv.org/abs/2611.07631",
+   "also_fits": [],
+   "seq": 27
+  },
+  {
+   "id": "2026-11-09-reglos-a-self-evolving-personal-memory-agent-with-recursive",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "Reglos: A Self-Evolving Personal Memory Agent with Recursive Self-Improvement",
+   "author": "Sen Yang et al.",
+   "summary": "Reglos lets a coding agent patch the harness that turns a personal agent's memory into context, and guards against patches that only fix the failures they were tested on. A study of safe self-modification for personal agents.",
+   "url": "https://arxiv.org/abs/2611.06049",
+   "also_fits": [],
+   "seq": 28
+  },
+  {
+   "id": "2026-11-09-caliban-a-from-scratch-rust-agent-harness",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "Caliban: a from-scratch Rust agent harness",
+   "author": "caliban-ai (GitHub)",
+   "summary": "Caliban is a provider-agnostic Rust coding-agent harness that gives the operator control of model routing, memory, skills, permissions, MCP, and sub-agents. A readable open-source harness to compare against hosted ones.",
+   "url": "https://github.com/caliban-ai/caliban",
+   "also_fits": [],
+   "seq": 29
+  },
+  {
+   "id": "2026-11-09-openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-secu",
+   "beat": "agents",
+   "date": "2026-11-09",
+   "title": "OpenKruise Agents v0.6.0: leaping ahead in agent sandbox security and automation",
+   "author": "CNCF (OpenKruise)",
+   "summary": "OpenKruise Agents v0.6.0 adds traffic controls for Kubernetes agent sandboxes, including an MCP tool policy that allows or denies tools/call requests by tool name at the gateway. A per-tool allowlist enforced outside the agent.",
+   "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
+   "also_fits": [],
+   "seq": 30
+  },
   {
    "id": "2026-11-06-to-innovate-faster-bny-upskills-100-of-staff-on-eliza-powere",
    "beat": "ai-enablement",
