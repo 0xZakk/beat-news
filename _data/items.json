@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "summary": ""
+  },
+  {
    "beat": "grok-bot",
    "date": "2026-11-09",
    "summary": ""
@@ -33,6 +38,72 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-10-introducing-alphaproof-code-verifying-complex-software-at-de",
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "title": "Introducing AlphaProof Code: verifying complex software at depth",
+   "author": "Google DeepMind",
+   "summary": "DeepMind's AlphaProof Code has people approve Lean specifications and agents generate proofs that Lean's kernel checks; DeepMind used it to verify libsignal compiled to AArch64 machine code, proving PQXDH and Triple Ratchet properties such as forward secrecy. The Lean development is public. It is agent-written proofs reaching shipped cryptographic code at the machine-code level.",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "also_fits": [],
+   "seq": 44
+  },
+  {
+   "id": "2026-11-10-pdd-kit-proof-driven-development",
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "title": "PDD Kit (Proof-Driven Development)",
+   "author": "GitHub Next and Microsoft Research",
+   "summary": "PDD Kit turns approved feature intent into Verus specifications and proves that agent-written Rust satisfies them for every modeled input, while parts that cannot be proved, like UI and I/O, are tested and labeled as empirical evidence. It is a workflow for asking a coding agent for proof instead of review.",
+   "url": "https://githubnext.com/projects/pdd-kit/",
+   "also_fits": [],
+   "seq": 45
+  },
+  {
+   "id": "2026-11-10-progress-on-provable-inference-for-large-language-models-fla",
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "title": "Progress on provable inference for large language models (FlashProve)",
+   "author": "Anthropic",
+   "summary": "Anthropic's open-source FlashProve lets a provider commit to model weights and produce a proof that given outputs came from that model, verifiable without the weights; a Lean 4 formalization machine-checks the verifier's soundness, while the fast production verifier is tested against it, not proved. It is formal methods applied to checking which model actually answered.",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "also_fits": [],
+   "seq": 46
+  },
+  {
+   "id": "2026-11-10-lean-now-ships-with-verified-kernels",
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "title": "Lean now ships with verified kernels",
+   "author": "Leonardo de Moura",
+   "summary": "Leonardo de Moura announced that Lean 4.35 includes lake check, which re-checks a project's export in a sandbox, and a paranoid mode that passes only if several independent kernels, including lean4lean and nanoda, all accept it. It shrinks how much you have to trust when agents write the proofs.",
+   "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
+   "also_fits": [],
+   "seq": 47
+  },
+  {
+   "id": "2026-11-10-specula-scaling-formal-specifications-for-autonomous-model-c",
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "title": "Specula: Scaling formal specifications for autonomous model checking of system code",
+   "author": "Qian Cheng et al.",
+   "summary": "Specula uses coding agents to write TLA+ specifications, including invariants and implementation models, for large system code and then model-checks them to find bugs, fully autonomously. A push-button route from code to TLA+ checking.",
+   "url": "https://arxiv.org/abs/2607.25333",
+   "also_fits": [],
+   "seq": 48
+  },
+  {
+   "id": "2026-11-10-property-based-testing-for-agent-written-code",
+   "beat": "formal-verification",
+   "date": "2026-11-10",
+   "title": "Property-based testing for agent-written code",
+   "author": "Developer Toolkit",
+   "summary": "The guide recommends writing property tests from approved spec invariants before implementation, then locking them so the agent cannot edit them, through agent settings, CODEOWNERS, and running the decisive tests from protected base-branch files. A practical way to keep the test oracle out of the agent's reach.",
+   "url": "https://developertoolkit.ai/en/workflows/test/property-based-testing/",
+   "also_fits": [],
+   "seq": 49
+  },
   {
    "id": "2026-11-09-the-components-of-agent-memory",
    "beat": "agents",
