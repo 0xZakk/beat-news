@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:43-06:00",
  "issues": [
   {
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "summary": ""
+  },
+  {
    "beat": "ai-enablement",
    "date": "2026-11-16",
    "summary": ""
@@ -217,6 +222,83 @@
    "url": "https://www.troweprice.com/en/us/press/2026/press-release--t--rowe-price-works-with-anthropic-to-bring-claud",
    "also_fits": [],
    "seq": 111
+  },
+  {
+   "id": "2026-11-16-php2shell-ai-uncovers-critical-rce-vulnerabilities-affecting",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet",
+   "author": "Wiz (independent co-discovery with Calif and OpenAI)",
+   "summary": "Calif, using an OpenAI model, and Wiz, using its own AI tooling, independently found two PHP memory-safety flaws (CVE-2026-109618 and CVE-2026-109619) allowing unauthenticated remote code execution, patched in the Oct 21 PHP releases. The write-ups describe how each team pointed models at the PHP interpreter and validated findings. An LLM-found bug in core web infrastructure with two independent workflows to compare.",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "also_fits": [],
+   "seq": 112
+  },
+  {
+   "id": "2026-11-16-the-biggest-hack-in-crypto-history-that-never-happened",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "The biggest hack in crypto history that never happened",
+   "author": "Veria Labs",
+   "summary": "Veria Labs says its AI agent found an integer-overflow flaw in the XRP Ledger's payment engine that could have minted about 18.45 trillion XRP in one transaction; it was reported Sept 22, fixed in xrpld 3.4.1 on Sept 25, and paid the program's maximum $250,000 bounty, with no exploitation found. A crypto bounty credited to an AI agent, with the workflow described by the finders.",
+   "url": "https://verialabs.com/blog/biggest-hack-in-crypto-history/",
+   "also_fits": [],
+   "seq": 113
+  },
+  {
+   "id": "2026-11-16-discovering-and-exploiting-vulnerabilities-in-critical-real",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
+   "author": "Anthropic Frontier Red Team",
+   "summary": "On Oct 27 Anthropic's red team reported that an unreleased Claude research model found and chained critical vulnerabilities in Chrome, Safari, Android, Windows, and Linux, producing one-click and zero-click exploits, all disclosed to vendors and patched in Chrome 156 and upstream Linux. It is a team account of what a frontier model can do against hardened targets.",
+   "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+   "also_fits": [],
+   "seq": 114
+  },
+  {
+   "id": "2026-11-16-fuzzers-vs-ai-comparing-fuzzilli-and-bigsleep-on-javascript",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "Fuzzers vs. AI: comparing Fuzzilli and BigSleep on JavaScript engines",
+   "author": "Google Project Zero",
+   "summary": "Project Zero compared Big Sleep and the Fuzzilli fuzzer on V8 from April to September: Big Sleep found 45 actionable bugs and Fuzzilli 37, with only about 25% overlap, and the authors say fuzzing stays faster while Big Sleep is better at complex reasoning and new features. A side-by-side measurement of LLM bug finding against a mature fuzzer.",
+   "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+   "also_fits": [],
+   "seq": 115
+  },
+  {
+   "id": "2026-11-16-a-thousand-fewer-paths-to-root",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "A thousand fewer paths to root",
+   "author": "OpenAI",
+   "summary": "OpenAI describes an autonomous Linux kernel pipeline that found 2,308 candidate flaws, reproduced 1,724, and produced 948 local privilege-escalation exploits plus candidate patches for about $1.21 million in API costs, with stages for discovery, KASAN validation, exploitability testing, patching, and human review. A rare end-to-end workflow with cost numbers.",
+   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+   "also_fits": [],
+   "seq": 116
+  },
+  {
+   "id": "2026-11-16-xsa-523-xen-grant-copy-vulnerabilities",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "XSA-523: Xen grant copy vulnerabilities",
+   "author": "Xen Project Security Team",
+   "summary": "Xen's advisory credits Anthropic with finding two grant-copy flaws (CVE-2026-102703 and CVE-2026-102704) using Claude, validated by Ada Logics and independently reported by CodeAnt AI, that let a malicious guest read and write other domains' memory, including Dom0. A hypervisor escape credited to an LLM in the vendor's own advisory.",
+   "url": "https://xenbits.xen.org/xsa/advisory-523.html",
+   "also_fits": [],
+   "seq": 117
+  },
+  {
+   "id": "2026-11-16-fortinet-november-10-psirt-advisories-found-internally-with",
+   "beat": "ai-security",
+   "date": "2026-11-16",
+   "title": "Fortinet November 10 PSIRT advisories found internally with Claude Mythos",
+   "author": "FortiGuard Labs (Fortinet PSIRT)",
+   "summary": "Fortinet's Nov 10 release included roughly 87 advisories, most credited to Fortinet product security staff using Anthropic's Claude Mythos, among them critical unauthenticated FortiMail remote code execution and an OSPF authentication bypass, with fixes shipped in late October and none known exploited. A vendor using an LLM at scale on its own products.",
+   "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
+   "also_fits": [],
+   "seq": 118
   },
   {
    "id": "2026-11-13-all-code-is-slop-except-mine",
