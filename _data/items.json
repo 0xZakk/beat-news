@@ -2,6 +2,11 @@
  "updated": "2026-11-17T09:51:42-06:00",
  "issues": [
   {
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "summary": ""
+  },
+  {
    "beat": "ai-enablement",
    "date": "2026-11-09",
    "summary": ""
@@ -170,6 +175,83 @@
    "url": "https://kpmg.com/us/en/articles/2026/quarterly-ai-pulse-survey-asset-management-private-equity.html",
    "also_fits": [],
    "seq": 36
+  },
+  {
+   "id": "2026-11-09-grok-bot-token-efficiency-fixes-and-a-one-time-weekly-usage",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Grok Bot token-efficiency fixes and a one-time weekly usage reset",
+   "author": "GrokShelf, reporting posts by xAI and Elon Musk",
+   "summary": "After complaints that usage allowances were draining fast, xAI said on Nov 8 that token-efficiency fixes to model routing and the bot harness and routines were underway, and reset weekly limits for all users on Nov 9. The reset was one-time, not a higher allowance. It bears directly on how many routines a set of bots can run in a week.",
+   "url": "https://grokshelf.com/news/grok-bot-fixes-grok-4-8-opus-5-5",
+   "also_fits": [],
+   "seq": 37
+  },
+  {
+   "id": "2026-11-09-grok-bot-can-now-place-phone-calls",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Grok Bot can now place phone calls",
+   "author": "Grok Bot (xAI) on X",
+   "summary": "On Nov 4 the official Grok Bot account announced phone calls: the bot asks for approval before dialing, shows a live transcript, and lets you take over or end the call. Calls are limited to U.S. numbers and identify themselves as a virtual assistant. It adds a new outbound channel that needs the same approval discipline as email.",
+   "url": "https://x.com/bot/status/2118043939592942052",
+   "also_fits": [],
+   "seq": 38
+  },
+  {
+   "id": "2026-11-09-grok-bot-browser-blocked-from-loopback-127-0-0-1-since-nov-6",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Grok Bot browser blocked from loopback (127.0.0.1) since Nov 6",
+   "author": "Cursor community forum thread",
+   "summary": "Users reported that since Nov 6 the bot's browser could not reach services on 127.0.0.1 inside its own computer while the shell still could, after a security change. The thread later says the block was fixed and that updating the bot's computer restores localhost access. It explains a class of failures for bots that test local web apps.",
+   "url": "https://forum.cursor.com/t/grok-bot-browser-blocked-from-loopback-127-0-0-1-since-nov-6-local-services-unreachable-shell-fine/177563",
+   "also_fits": [],
+   "seq": 39
+  },
+  {
+   "id": "2026-11-09-grok-bot-usage-limit-reached-93-of-my-tokens-were-re-reading",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Grok Bot usage limit reached? 93% of my tokens were re-reading",
+   "author": "Roshel Perera",
+   "summary": "Roshel Perera says his roughly 60 bots used 4.6 billion tokens in a week and 93.2% went to re-reading old chat history, not replies or new prompts. He cut one bot's per-step cost from about 83-94k to 44k tokens with a short handoff file, fresh bot copies, and fewer schedules. It is a measured account of where bot tokens actually go.",
+   "url": "https://www.youtube.com/watch?v=-O_N6V7WNKU",
+   "also_fits": [],
+   "seq": 40
+  },
+  {
+   "id": "2026-11-09-agentforce-coworker-surpasses-185-000-users",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Agentforce Coworker surpasses 185,000 users",
+   "author": "Salesforce",
+   "summary": "Salesforce says more than 185,000 users now use Agentforce Coworker, an assistant that plans and coordinates Salesforce agents and workflows, with usage up 21 times in three months. It is one of the largest reported deployments of a workplace agent assistant.",
+   "url": "https://www.salesforce.com/news/stories/agentforce-coworker-surpasses-185k-users/",
+   "also_fits": [],
+   "seq": 41
+  },
+  {
+   "id": "2026-11-09-introducing-maia-ai-that-makes-teams-better-together",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Introducing MAIA: AI that makes teams better together",
+   "author": "Zyphra",
+   "summary": "Zyphra opened a beta of MAIA, a personal and team agent that runs as a Mac app and in Slack, remembers work context, and acts across connected tools such as Google Workspace. It is free during beta with daily caps. Another Slack-native assistant competing in the same space as Grok Bot.",
+   "url": "https://www.zyphra.com/our-work/introducingmaia",
+   "also_fits": [],
+   "seq": 42
+  },
+  {
+   "id": "2026-11-09-shattering-silos-with-openclaw-multiplayer",
+   "beat": "grok-bot",
+   "date": "2026-11-09",
+   "title": "Shattering silos with OpenClaw Multiplayer",
+   "author": "OpenClaw",
+   "summary": "OpenClaw Multiplayer lets a trusted team share one agent and its sessions, with roles, ownership, participant history, live presence, and configurable steering modes. OpenClaw's docs say it is not an isolation layer for untrusted users. It shows how an open-source assistant handles shared bots for a team.",
+   "url": "https://openclaw.ai/blog/shattering-silos-with-openclaw-multiplayer",
+   "also_fits": [],
+   "seq": 43
   },
   {
    "id": "2026-11-06-to-innovate-faster-bny-upskills-100-of-staff-on-eliza-powere",
