@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T08:35:51-06:00",
+ "updated": "2026-11-18T09:29:53-06:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -10,6 +10,11 @@
    "beat": "ai-enablement",
    "date": "2026-11-18",
    "summary": "This issue is all finance. Evident's Nov 12 Banking Brief has Capital One, Citadel Securities, BBVA and CommBank on feeding internal Slack, meeting notes and expert-labeled data to their AI tools. UBS updated its public AI page with October 2026 training and usage numbers, Scotiabank gave its whole Canadian commercial banking team two credit agents, Evident's 2026 AI Index for Banks found AI enablement is the fastest-growing AI job family at banks, and ALFI's first survey of Luxembourg asset managers found 92% have AI policies but formal reskilling is still rare."
+  },
+  {
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "summary": "This week leans on code review and cost. LangChain shipped LangSmith reporting that ties coding-agent spend to the pull requests it produced, OpenAI cut GPT-6.2 Astra API prices, and Qodo added policy-based auto-approval for low-risk PRs. Two new arXiv studies look at what AI review actually does to reviewer workload, and Anthropic and GitHub both tightened guardrails around coding agents in their Nov 17 releases."
   },
   {
    "beat": "grok-bot",
@@ -257,6 +262,85 @@
    "url": "https://www.alfi.lu/en-gb/news/ai-in-asset-management-widespread-adoption,-but-sc",
    "also_fits": [],
    "seq": 144
+  },
+  {
+   "id": "2026-11-18-langsmith-for-coding-agents-tracks-spend-per-pull-request",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "LangSmith for Coding Agents tracks spend per pull request",
+   "author": "LangChain (Jacob Lee)",
+   "summary": "LangChain added a coding-agent dashboard to LangSmith (public beta) that attributes traced spend from Claude Code, Codex, Cursor, Copilot and Deep Agents to the GitHub PRs each session contributed to, and reports cost per merged PR, unattributed spend, skill usage and cost by thread length. It is a ready-made way to answer what our coding-agent budget buys, and the per-skill cost view is a direct check on whether a skill's instructions are sending agents through extra turns.",
+   "url": "https://www.langchain.com/blog/langsmith-coding-agents-roi",
+   "also_fits": [],
+   "seq": 145
+  },
+  {
+   "id": "2026-11-18-openai-cuts-gpt-6-2-astra-api-prices-by-20-percent",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "OpenAI cuts GPT-6.2 Astra API prices by 20 percent",
+   "author": "OpenAI",
+   "summary": "OpenAI released GPT-6.2 Astra and Sol on Nov 17, pricing Astra at $8 input, $0.40 cached input and $40 output per million tokens (20 percent lower than GPT-6 Astra, 60 percent lower on cached input), while Sol keeps GPT-6.1 Sol's $2/$0.10/$10 rates. OpenAI also says keeping prompt prefixes unchanged and appending new instructions improves cache reuse, which matters more now that cached input is a twentieth of the input price.",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "also_fits": [],
+   "seq": 146
+  },
+  {
+   "id": "2026-11-18-qodo-adds-auto-approval-workflows-and-agent-session-review",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "Qodo adds Auto Approval Workflows and Agent Session Review",
+   "author": "Qodo (Nastasha Casale)",
+   "summary": "Qodo launched Auto Approval Workflows in beta, which let its review bot approve or label PRs that meet criteria like no medium-or-higher security findings and a small blast radius, with guards that keep chosen repos, paths and authors with a person, plus a research-preview skill that bundles every PR a coding agent opened in one session for a single review. It is a concrete pattern for letting agents clear routine PRs while keeping sensitive code under human approval.",
+   "url": "https://www.qodo.ai/blog/introducing-auto-approval-workflows-and-agent-session-review/",
+   "also_fits": [],
+   "seq": 147
+  },
+  {
+   "id": "2026-11-18-level-up-ai-driven-challenges-and-adaptations-to-code-review",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "Level Up! AI-Driven Challenges and Adaptations to Code Review Practices",
+   "author": "arXiv 2611.18939",
+   "summary": "The authors interviewed 24 developers and surveyed 2,590 at a large multinational software company and report that AI-assisted authoring raised reviewer burden through bigger, more frequent PRs and weaker author ownership, and that using AI for review was not correlated with less difficulty keeping up. The strategies developers rated most useful were organizational ones, like resourcing review and pushing review work back upstream to authors, which is useful evidence before leaning on an AI reviewer alone.",
+   "url": "https://arxiv.org/abs/2611.18939",
+   "also_fits": [],
+   "seq": 148
+  },
+  {
+   "id": "2026-11-18-does-the-ai-reviewer-alleviate-or-aggravate-the-maintenance",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "Does the AI Reviewer Alleviate or Aggravate the Maintenance Burden? Evidence from GitHub Copilot Reviewer",
+   "author": "arXiv 2611.22793",
+   "summary": "This study treats the launch of GitHub Copilot Reviewer as a natural experiment across 3,937 Python repositories and finds that maintainers saw a sharp rise in PR submissions after adopting it, human contributions later declined while bot PRs stayed up, and bot PRs took longer to review and merge. It pairs with the Level Up study as outside data on what turning on an AI reviewer does to review queues.",
+   "url": "https://arxiv.org/abs/2611.22793",
+   "also_fits": [],
+   "seq": 149
+  },
+  {
+   "id": "2026-11-18-claude-code-2-1-327-tightens-permissions-auto-mode-and-http",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "Claude Code 2.1.327 tightens permissions, auto mode and HTTP hooks",
+   "author": "Anthropic",
+   "summary": "The Nov 17 Claude Code release makes auto mode ignore broad wildcard shell allow rules, asks before some cp and mv commands, makes some bypass-permissions calls ask or be denied when no one can answer, stops worktree subagents from running git commands that rewrite shared branches, and changes how allowedHttpHookUrls apply to managed hooks. Anyone running Claude Code unattended or with managed settings and hooks should check whether these changes break or tighten existing setups.",
+   "url": "https://code.claude.com/docs/en/changelog",
+   "also_fits": [],
+   "seq": 150
+  },
+  {
+   "id": "2026-11-18-github-adds-secret-scanning-to-copilot-security-review-for-d",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-18",
+   "title": "GitHub adds secret scanning to Copilot security review for developers and agents",
+   "author": "GitHub",
+   "summary": "GitHub's Copilot security review specialist can now run GitHub's secret scanning detectors (500+ provider patterns plus a fine-tuned model) on changes in Copilot CLI, the Copilot app, Copilot SDK agents and Copilot code review, as an opt-in public preview billed in AI credits. It gives agents built on the Copilot SDK a way to check their own changes for secrets before handing them back; this also fits the AI Security beat.",
+   "url": "https://github.blog/changelog/2026-11-17-secret-scanning-on-demand-for-developers-and-agents/",
+   "also_fits": [
+    "ai-security"
+   ],
+   "seq": 151
   },
   {
    "id": "2026-11-17-netrovert-running-11-grok-bot-agents-on-one-shared-setup",
