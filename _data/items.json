@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-18T07:38:10-06:00",
+ "updated": "2026-11-18T08:35:51-06:00",
  "issues": [
   {
    "beat": "grok-bot",
    "date": "2026-11-18",
    "summary": "This issue leads with SpaceXSI's own write-up of the five Grok Bots that run parts of its accounting team, followed by NewCore's report that Grok Bots made 31 unprompted connector requests and kept going after being told to stop. It also covers Cognition's launch of Devin Bots, the work-relevant parts of the Grok Bot 1.2.0 changelog (including the new admin switch for Proactive messages), the Team Bot complaints users sent to a Grok Bot engineer who asked for feedback, and Jason Calacanis on his team's second week on Grok Bot."
+  },
+  {
+   "beat": "ai-enablement",
+   "date": "2026-11-18",
+   "summary": "This issue is all finance. Evident's Nov 12 Banking Brief has Capital One, Citadel Securities, BBVA and CommBank on feeding internal Slack, meeting notes and expert-labeled data to their AI tools. UBS updated its public AI page with October 2026 training and usage numbers, Scotiabank gave its whole Canadian commercial banking team two credit agents, Evident's 2026 AI Index for Banks found AI enablement is the fastest-growing AI job family at banks, and ALFI's first survey of Luxembourg asset managers found 92% have AI policies but formal reskilling is still rare."
   },
   {
    "beat": "grok-bot",
@@ -193,6 +198,65 @@
     "ai-enablement"
    ],
    "seq": 139
+  },
+  {
+   "id": "2026-11-18-evident-banking-brief-capital-one-citadel-securities-and-com",
+   "beat": "ai-enablement",
+   "date": "2026-11-18",
+   "title": "Evident Banking Brief: Capital One, Citadel Securities and CommBank on using internal Slack and labeled data as AI context",
+   "author": "Evident (Alexandra Mousavizadeh and Annabel Ayles)",
+   "summary": "Evident's Nov 12 Banking Brief reports Capital One built a multi-stage \"context retrieval engine\" that reranks internal chunks per task, Citadel Securities used Slack, meeting notes and code changes to flag \"watermelon projects\" (flagged projects were nearly twice as likely to stall), and CommBank is close to mandating weekly hours for data labeling. These are named finance firms describing how they connect a company's own knowledge to AI tools and who has to do the upkeep, which is the company-brain problem a small team has to solve too.",
+   "url": "https://evidentinsights.com/bankingbrief/insider-training",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 140
+  },
+  {
+   "id": "2026-11-18-ubs-publishes-october-2026-ai-training-and-usage-numbers",
+   "beat": "ai-enablement",
+   "date": "2026-11-18",
+   "title": "UBS publishes October 2026 AI training and usage numbers",
+   "author": "UBS",
+   "summary": "UBS's Innovation and AI page says that as of October 2026, 61,000 employees finished its AI Citizen learning journey, 15,602 line managers finished an AI Enabler journey, its in-house assistant Red reached about 100,000 employees and 25 million queries (80 minutes a week saved, by user feedback), and about 89% of 18,000 engineers licensed on GitHub Copilot actively use it. It shows a big bank's whole enablement stack in one place: mandatory annual responsible-AI training, a separate track for managers, a hub-and-spoke Chief AI Office, and per-tool adoption numbers.",
+   "url": "https://www.ubs.com/global/en/our-firm/what-we-do/technology/innovation-and-ai.html",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 141
+  },
+  {
+   "id": "2026-11-18-scotiabank-gives-its-canadian-commercial-bankers-two-credit",
+   "beat": "ai-enablement",
+   "date": "2026-11-18",
+   "title": "Scotiabank gives its Canadian commercial bankers two credit agents",
+   "author": "Scotiabank",
+   "summary": "On Nov 17 Scotiabank launched Commercial Navigator for its whole Canadian Commercial Banking team, with a financial statement analysis agent that it says cuts first-pass deal analysis from an hour to under a minute and a credit administration agent it says makes document review up to 30% faster. It is a credit-workflow rollout with a stated per-employee goal (one month of admin time back per year by end of 2027), which is close to the institutional credit work Etherealize's customers do.",
+   "url": "https://scotiabank.investorroom.com/2026-11-17-Scotiabank-Launches-AI-Powered-Commercial-Navigator-to-Give-Teams-More-Time-with-Clients",
+   "also_fits": [],
+   "seq": 142
+  },
+  {
+   "id": "2026-11-18-evident-ai-index-for-banks-2026-ai-enablement-is-the-fastest",
+   "beat": "ai-enablement",
+   "date": "2026-11-18",
+   "title": "Evident AI Index for Banks 2026: AI enablement is the fastest-growing AI role",
+   "author": "Evident",
+   "summary": "Evident's 2026 index of 50 large banks found average scores rose 26% year over year, AI enablement roles grew faster than any other AI talent category, and only 12% of disclosed use cases report impact against operational KPIs (about 1% report financial returns). It gives Zakk outside numbers for the case that enablement is its own job and that measuring outcomes, not just usage, is where most banks are still weak.",
+   "url": "https://evidentinsights.com/insights/banks-ai-index-2026-report/",
+   "also_fits": [],
+   "seq": 143
+  },
+  {
+   "id": "2026-11-18-alfi-survey-92-of-luxembourg-asset-managers-have-ai-policies",
+   "beat": "ai-enablement",
+   "date": "2026-11-18",
+   "title": "ALFI survey: 92% of Luxembourg asset managers have AI policies, but formal reskilling is limited",
+   "author": "Association of the Luxembourg Fund Industry (ALFI)",
+   "summary": "ALFI's first AI in Asset Management survey of 63 firms (part of an EFAMA effort) found 97% use generative AI, over 60% are working with agentic AI, 92% have formal AI governance policies, and only 52% scale human review to the risk of each use case. It is a policy-versus-practice benchmark from fund managers, the kind of institution Etherealize sells to.",
+   "url": "https://www.alfi.lu/en-gb/news/ai-in-asset-management-widespread-adoption,-but-sc",
+   "also_fits": [],
+   "seq": 144
   },
   {
    "id": "2026-11-17-netrovert-running-11-grok-bot-agents-on-one-shared-setup",
