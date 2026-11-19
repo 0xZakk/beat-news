@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-18T09:29:53-06:00",
+ "updated": "2026-11-19T07:46:01-06:00",
  "issues": [
+  {
+   "beat": "grok-bot",
+   "date": "2026-11-19",
+   "summary": "This issue leads with the Grok Bot 1.2.3 changelog, which adds per-tool permission levels on connector pages and changes how routines handle lost sign-ins. It also covers Microsoft's Copilot Autopilot, an always-on agent with its own Entra identity and a named manager that started rolling out at Ignite; SpaceXSI's write-up of Data Bot, a Team Bot run on shared skills and manager-approved memory; Nous Research's Hermes Enterprise for Microsoft Teams with team skill sharing; and features an unofficial tracker spotted in Grok Bot 1.3.0 prerelease builds."
+  },
   {
    "beat": "grok-bot",
    "date": "2026-11-18",
@@ -128,6 +133,70 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-19-grok-bot-changelog-1-2-3-adds-per-tool-permissions-and-routi",
+   "beat": "grok-bot",
+   "date": "2026-11-19",
+   "title": "Grok Bot changelog: 1.2.3 adds per-tool permissions and routine reconnect cards",
+   "author": "SpaceXSI",
+   "summary": "The Nov 18 release (which also rolls up 1.2.1 and 1.2.2) lets you set each connector tool to Always allow, Auto-review, Needs approval, or Blocked; makes a routine that loses a connector sign-in skip its runs until you sign back in and send the reconnect card as a notification and a Slack or Teams DM; lets routines read the earlier conversation in their chat; and splits the Bot's memory into people and organizations, profile, standing instructions, and projects. Per-tool approval levels let you allow read tools and gate send or write tools on the same connector, and the routine sign-in change means a routine like a beat digest now pauses quietly on an expired login instead of running without it.",
+   "url": "https://x.ai/changelog/bot",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 152,
+   "allow_same_url": true
+  },
+  {
+   "id": "2026-11-19-microsoft-starts-rolling-out-copilot-autopilot-an-always-on",
+   "beat": "grok-bot",
+   "date": "2026-11-19",
+   "title": "Microsoft starts rolling out Copilot Autopilot, an always-on agent with its own identity",
+   "author": "Microsoft (Jared Spataro)",
+   "summary": "At Ignite on Nov 17, Microsoft said Autopilot, a personal always-on agent that watches Teams channels, follows up on email, runs recurring work, and manages projects without a prompt, is starting to roll out to Frontier customers, and that each Autopilot gets its own Microsoft Entra Agent ID, a named manager, scoped access IT can block, and actions logged under its own name. This is the closest Microsoft equivalent to Grok Bot Team Bots, and the agent-identity-plus-named-manager model is a useful reference for how a company audits what each bot did (Microsoft's separate post on Foundry autonomous agents, which act as their own Microsoft 365 user, is at https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/from-agents-to-digital-coworkers-with-foundry-autonomous-agents/4572590).",
+   "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/",
+   "also_fits": [
+    "ai-enablement"
+   ],
+   "seq": 153
+  },
+  {
+   "id": "2026-11-19-spacexsi-giving-every-team-a-data-scientist-with-grok-bot-da",
+   "beat": "grok-bot",
+   "date": "2026-11-19",
+   "title": "SpaceXSI: giving every team a data scientist with Grok Bot (Data Bot)",
+   "author": "SpaceXSI (Sally Xu)",
+   "summary": "Sally Xu describes Data Bot, a Team Bot the data science team teaches through shared skills for metrics, experiments, charts and dashboards, and dbt and pipeline conventions; it can propose shared memories that the team's managers approve or reject before anyone else sees them, and SpaceXSI estimates it handled about 70 hours of data-team work in one week. The post is from Nov 2 but was recirculating on X today, and the setup of one team owning a bot's skills plus an approval step on shared memory is the pattern to copy for a shared bot that answers questions for the whole company.",
+   "url": "https://x.ai/news/data-bot",
+   "also_fits": [
+    "ai-enablement"
+   ],
+   "seq": 154
+  },
+  {
+   "id": "2026-11-19-nous-research-brings-hermes-agent-to-microsoft-teams-with-te",
+   "beat": "grok-bot",
+   "date": "2026-11-19",
+   "title": "Nous Research brings Hermes Agent to Microsoft Teams with team skill sharing",
+   "author": "Nous Research",
+   "summary": "Nous Research announced Hermes Enterprise on Nov 18: Hermes Agent in Microsoft Teams and a Windows desktop app, running in Azure Container Apps sandboxes, with a Collective Wisdom feature where employees propose skills the agent learned from their work and publish them to the team after review. It is an open-source competitor aimed at the same enterprise team-agent slot as Grok Bot, and the propose-then-review flow for shared skills is a governance pattern you could apply to a team skill library.",
+   "url": "https://nousresearch.com/press/hermes-enterprise-in-microsoft-teams",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 155
+  },
+  {
+   "id": "2026-11-19-grok-bot-1-3-0-prerelease-builds-show-event-triggered-automa",
+   "beat": "grok-bot",
+   "date": "2026-11-19",
+   "title": "Grok Bot 1.3.0 prerelease builds show event-triggered automations and team MCP connectors",
+   "author": "@blankspeaker (unofficial tracker)",
+   "summary": "@blankspeaker, who tracks Grok Bot prerelease builds and is not affiliated with SpaceXSI, lists features spotted in 1.3.0-pre.14 to pre.23, including Slack, Linear, PagerDuty, and Sentry automations, shared custom MCP connectors, team MCP connectors and team plugins, a dedicated bot email address, and department categories for team bots (shown in a separate Nov 18 video post). None of this is announced and it may change, but event-triggered automations from Linear, Sentry, and PagerDuty would let bots react to tickets and incidents instead of running only on a schedule.",
+   "url": "https://x.com/blankspeaker/status/2123387861848518754",
+   "also_fits": [],
+   "seq": 156
+  },
   {
    "id": "2026-11-18-spacexsi-building-an-accounting-team-with-grok-bot",
    "beat": "grok-bot",
