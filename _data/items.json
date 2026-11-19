@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:30:15-06:00",
+ "updated": "2026-11-19T09:04:41-06:00",
  "issues": [
   {
    "beat": "swarms",
@@ -10,6 +10,11 @@
    "beat": "grok-bot",
    "date": "2026-11-19",
    "summary": "This issue leads with the Grok Bot 1.2.3 changelog, which adds per-tool permission levels on connector pages and changes how routines handle lost sign-ins. It also covers Microsoft's Copilot Autopilot, an always-on agent with its own Entra identity and a named manager that started rolling out at Ignite; SpaceXSI's write-up of Data Bot, a Team Bot run on shared skills and manager-approved memory; Nous Research's Hermes Enterprise for Microsoft Teams with team skill sharing; and features an unofficial tracker spotted in Grok Bot 1.3.0 prerelease builds."
+  },
+  {
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "summary": "Six first-hand accounts of people using LLM agents to find real bugs. Calif disclosed Java4Shell, an OpenJDK Base64 memory-corruption bug that Quang Luong found with Codex in about an hour for under $200 in tokens. XBOW's Brendan Dolan-Gavitt explains how GPT-5.6 Sol agents and his team built a $250,000 Chrome full chain in six days for about $40,000 of compute. Two solo researchers share their harnesses and prompts: bshyuunn used one Claude Code instance to hunt bugs in another, and xplo1t worked with Claude Opus to escape the AWS MCP Server Python sandbox. Sherlock describes its AI auditor flagging a $2.4M rounding bug in a lending protocol before launch, and Zolder shows a one-line Claude goal leading to root on OpenStad in 30 minutes."
   },
   {
    "beat": "grok-bot",
@@ -277,6 +282,78 @@
     "ai-security"
    ],
    "seq": 162
+  },
+  {
+   "id": "2026-11-19-java4shell-calif-found-an-openjdk-rce-with-codex-in-about-an",
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "title": "Java4Shell: Calif found an OpenJDK RCE with Codex in about an hour",
+   "author": "Calif (Quang Luong)",
+   "summary": "Calif disclosed CVE-2026-114938, a heap overwrite in OpenJDK's AVX-512 Base64 intrinsic that it turned into pre-auth RCE on default Jira, Confluence, Jenkins, Keycloak and PingFederate; Luong says he pointed Codex at the JIT, intrinsics and crypto code, threw out about 20 minutes of unusable findings, got the bug in an hour and a first exploit two hours later, for under $200 in tokens, then had agents build the later exploit chains on top of pipelines his team set up. It is the clearest recent write-up of the prompt-hard, discard-the-slop workflow, and Calif's point that banking and other finance systems run on Java makes it directly relevant to finance software.",
+   "url": "https://calif.io/java4shell",
+   "also_fits": [],
+   "seq": 163
+  },
+  {
+   "id": "2026-11-19-zero-to-calc-in-six-days-inside-xbow-s-chrome-full-chain",
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "title": "Zero to Calc in Six Days: Inside XBOW's Chrome Full Chain",
+   "author": "XBOW (Brendan Dolan-Gavitt)",
+   "summary": "Dolan-Gavitt describes how XBOW built a V8, animated-WebP and Crashpad chain from a web page to unsandboxed code on Windows, which Google paid $250,000 for: instead of one agent working end to end, they ran parallel campaigns with narrow goals (broad bug search, V8 memory corruption, V8 sandbox escape, renderer escape, integration) on GPT-5.6 Sol, with humans choosing targets and challenging results, and he puts the six days at about $40,000 in API charges from the Codex logs. The design choice that mattered was giving each stage a clean interface and a backup bug, so a duplicate report would not sink the chain, which is a pattern worth copying for any multi-step agent hunt.",
+   "url": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 164
+  },
+  {
+   "id": "2026-11-19-hacking-claude-code-with-claude-code",
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "title": "Hacking Claude Code with Claude Code",
+   "author": "bshyuunn",
+   "summary": "The researcher ran one Claude Code instance as the hunter and another inside Docker as the target, gave the hunter a small CLI called clab to stand up test environments, plus CLAUDE.md, SCOPE.md, past bug reports and the official docs, and published both versions of the goal prompt; the revised prompt told it to compare documented security guarantees with actual behavior, which led it to a missing fail-closed sandbox check in claude mcp serve that paid a $3,500 bounty. It is a copyable harness: separate hunter and target, written scope, known-bug corpus, and a strict definition of what counts as a valid finding.",
+   "url": "https://bshyuunn.github.io/blog/Hacking-Claude-Code-with-Claude-Code/",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 165
+  },
+  {
+   "id": "2026-11-19-breaking-the-aws-mcp-python-sandbox",
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "title": "Breaking the AWS MCP Python Sandbox",
+   "author": "xplo1t (Manash Saikia)",
+   "summary": "Working with Claude Opus 4.6, xplo1t got past both the AST validator and the runtime proxies in the AWS MCP Server's run_script sandbox by abusing Python match/case class patterns and a mutable type() proxy to reach __builtins__, then subprocess, inside the Lambda container; AWS fixed it as CVE-2026-115845 after a HackerOne report. The post walks through each step and is honest about the limits, since the Lambda role credentials it reached were denied on almost every call, which makes it a good example of how AST-based sandboxes for agent code fail.",
+   "url": "https://xplo1t-sec.github.io/posts/breaking-the-aws-mcp-python-sandbox/",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 166
+  },
+  {
+   "id": "2026-11-19-how-sherlock-ai-uncovered-a-2m-vulnerability-on-mainnet",
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "title": "How Sherlock AI Uncovered a $2M Vulnerability on Mainnet",
+   "author": "Sherlock",
+   "summary": "Sherlock says its AI auditor flagged a withdrawal bug in a lending protocol where small requests rounded the scaled balance change to zero while the full amount still left reserves, putting about $2.4M at risk, and that researcher @vagnerandrei98 validated the AI's report before the fix shipped pre-launch. It is a crypto-specific case of the AI-flags, human-validates loop, and the bug class (integer rounding in accounting helpers) is exactly what Sherlock says its system finds by probing extreme values and checking invariants.",
+   "url": "https://sherlock.xyz/post/how-sherlock-ai-uncovered-a-2m-vulnerability-before-launch",
+   "also_fits": [],
+   "seq": 167
+  },
+  {
+   "id": "2026-11-19-30-minutes-to-root-how-ai-found-a-rce-in-local-government-so",
+   "beat": "ai-security",
+   "date": "2026-11-19",
+   "title": "30 Minutes to Root: How AI Found a RCE in Local Government Software",
+   "author": "Zolder",
+   "summary": "After a string of duplicate rejections in a bounty challenge, a Zolder researcher dropped the OpenStad source in a folder, had Claude deploy it in Docker, and gave it a one-line /goal to find a critical bug locally; he steered it toward template rendering, and in about 30 minutes it found an unsandboxed Nunjucks environment that gave an editor account a root shell (fixed in openstad-headless 2.9.4). It shows how little setup a human-steered agent now needs, and the author is clear that his judgment about which lead to chase did the real work.",
+   "url": "https://zolder.io/blog/30-minutes-to-root/",
+   "also_fits": [],
+   "seq": 168
   },
   {
    "id": "2026-11-18-spacexsi-building-an-accounting-team-with-grok-bot",
