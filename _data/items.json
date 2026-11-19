@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-19T07:46:01-06:00",
+ "updated": "2026-11-19T08:30:15-06:00",
  "issues": [
+  {
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "summary": "This week two separate measurements found that most of the gain from multi-agent teams comes from running more agents, not from the agents talking to each other: Bespoke Labs' new MAC Bench and a meta-analysis of 516 multi-agent configurations. Alongside them, Google, Replit, and SID.ai shipped swarm products with their own published numbers, and a Beijing Institute of Technology paper looks at tracing multi-agent failures back to the message or dependency that caused them."
+  },
   {
    "beat": "grok-bot",
    "date": "2026-11-19",
@@ -196,6 +201,82 @@
    "url": "https://x.com/blankspeaker/status/2123387861848518754",
    "also_fits": [],
    "seq": 156
+  },
+  {
+   "id": "2026-11-19-multi-agent-coordination-bench-mac-bench",
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "title": "Multi Agent Coordination Bench (MAC Bench)",
+   "author": "Bespoke Labs",
+   "summary": "Bespoke Labs released a 12-task benchmark that runs Opus 5.5, GPT-6.1 Sol, and Gemini 4 Argon alone, in teams of eight with a shared message board, and in teams of eight with messaging turned off; teams scored 0.42 versus 0.35 for one agent, but silent teams scored 0.44, and only Opus 5.5 teams gained from messaging. It gives you a clean way to separate \"more agents\" from \"better coordination\" before paying for a swarm, and Bespoke reports that eight agents cost about nine times as much while reaching the single agent's score only about twice as fast, with duplicated work as the most common failure.",
+   "url": "https://benchmarks.bespokelabs.ai/multi-agent-coordination-bench/",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 157
+  },
+  {
+   "id": "2026-11-19-more-agents-more-samples-or-more-thinking-untangling-coordin",
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "title": "More Agents, More Samples, or More Thinking? Untangling Coordination, Ensembling, and Test-Time Compute in Multi-Agent LLMs",
+   "author": "Seyed Mahmoud Sajjadi Mohammadabadi (University of Nevada, Reno)",
+   "summary": "This preprint pools nine studies covering 516 multi-agent configurations and finds that once the baseline gets the same number of samples or the same compute budget, multi-agent systems average 4.2 points lower accuracy and match or lose in 74% of comparisons. The author argues positive returns only show up when agents see different evidence, have an external verifier, or use different models with different errors, which is a usable checklist for deciding when a swarm is worth it, and the paper ships a reviewer checklist and accounting code.",
+   "url": "https://arxiv.org/abs/2611.17610",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 158
+  },
+  {
+   "id": "2026-11-19-gemini-4-carbon-and-swarm-in-google-antigravity",
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "title": "Gemini 4 Carbon and /swarm in Google Antigravity",
+   "author": "Google Antigravity team",
+   "summary": "Google added a /swarm preview to Antigravity where a coordinator starts parallel workers in isolated git worktrees, adversarial verifier agents run tests and challenge diffs, and all agents talk on a shared append-only message board where idle agents park at zero token cost. It is a concrete reference design for a coding swarm harness from a major lab, and Google itself warns that parallel multi-agent runs burn quota much faster than a normal chat.",
+   "url": "https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity/",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 159
+  },
+  {
+   "id": "2026-11-19-introducing-replit-missions",
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "title": "Introducing Replit Missions",
+   "author": "Replit",
+   "summary": "Replit launched Missions, where you set an outcome, budget, and boundaries and a swarm of agents plans, builds, tests, and iterates toward it; on 13 NumPy optimization tasks Replit reports up to 4x speedups with one agent, 17x with 16 agents, and 19x with 32 agents. Read it next to MAC Bench: Replit's gains come from search-style work where agents explore different implementations in parallel and correctness is checked automatically, which is the case the meta-analysis says swarms should win.",
+   "url": "https://replit.com/blog/introducing-replit-missions",
+   "also_fits": [],
+   "seq": 160
+  },
+  {
+   "id": "2026-11-19-sid-2-technical-report-scaling-search-swarms",
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "title": "SID-2 Technical Report: Scaling Search Swarms",
+   "author": "SID.ai",
+   "summary": "SID.ai trained SID-2 Swarm with reinforcement learning as a team of search agents that fork into separate contexts, split the corpus, and share findings; SID reports six agents reach 0.70 NDCG in 18 seconds, matching what it measured for GPT-6 Astra at maximum effort in 135 seconds. It is one of the few cases of a swarm trained end to end for coordination rather than prompted into it, and SID says coordinated swarms improved retrieval quality per FLOP more than fusing independent runs or using a bigger model, which bears on company-search and context-layer designs.",
+   "url": "https://www.sid.ai/research/sid-2-technical-report",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 161
+  },
+  {
+   "id": "2026-11-19-trace-mas-diagnosing-and-repairing-collaboration-failures-in",
+   "beat": "swarms",
+   "date": "2026-11-19",
+   "title": "TRACE-MAS: Diagnosing and Repairing Collaboration Failures in Multi-Agent Systems",
+   "author": "Zekai Chen et al. (Beijing Institute of Technology and others)",
+   "summary": "This preprint learns what normal agent-to-agent message flow and task dependencies look like from good runs, then flags deviations and traces a failure back to the specific message, state change, or dependency that caused it, reporting 60.2% better root-cause localization on five multi-agent benchmarks. Most monitoring asks which agent looks wrong, and this paper argues that the fault often sits in the handoffs, which matters if you want to debug or audit a swarm run after the fact.",
+   "url": "https://arxiv.org/abs/2611.23362",
+   "also_fits": [
+    "ai-security"
+   ],
+   "seq": 162
   },
   {
    "id": "2026-11-18-spacexsi-building-an-accounting-team-with-grok-bot",
