@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T14:36:49-06:00",
+ "updated": "2026-11-20T14:36:50-06:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -155,6 +155,11 @@
    "beat": "agents",
    "date": "2026-11-05",
    "summary": ""
+  },
+  {
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "summary": "Backfilled issue. Lauren Tan's interview with Matt Pocock and two write-ups of it, her first-mile and last-mile loop, the new /correct skill in pstack, Brain Co.'s design system for agents, and Postman's API context graph."
   },
   {
    "beat": "agentic-engineering",
@@ -2328,6 +2333,85 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-10-09-live-poteto-creator-of-pstack-on-shipping-1-000-s-of-pr-s-a",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "LIVE: Poteto (creator of pstack) on shipping 1,000's of PR's a month",
+   "author": "Matt Pocock with Lauren Tan",
+   "summary": "In this 65-minute livestream Lauren Tan explains how she went from supervising one agent to running many coordinated projects: verification first, then changing the codebase and tools until agents face fewer bad choices, and only then parallel work. She calls it the extended Q&A to her talk, and it is the most detailed account of her method on record.",
+   "url": "https://www.youtube.com/watch?v=MN9dGgmLyso",
+   "also_fits": [],
+   "seq": 203
+  },
+  {
+   "id": "2026-10-09-lauren-tan-s-agent-kitchen-how-she-scaled-to-2-500-prs",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "Lauren Tan's agent kitchen: how she scaled to 2,500 PRs",
+   "author": "bsbarkur",
+   "summary": "A written, sectioned guide to the Matt Pocock interview, with timestamps, diagrams, and a note that the 2,500 PRs are Lauren Tan's own count and include maintenance work. Zakk kept it as the readable version of the interview.",
+   "url": "https://bsbarkur.github.io/explainers/poteto-pstack/",
+   "also_fits": [],
+   "seq": 204
+  },
+  {
+   "id": "2026-10-09-what-is-poteto-mode-in-pstack",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "What is poteto-mode in pstack?",
+   "author": "Flavio Copes",
+   "summary": "Flavio Copes explains /poteto-mode, pstack's router skill: it picks one of 23 playbooks, copies the steps into a task list, calls other skills as needed, hands coding to subagents, and requires evidence before reporting done. Zakk kept it as the short reference for the command people will use most.",
+   "url": "https://flaviocopes.com/poteto-mode/",
+   "also_fits": [],
+   "seq": 205
+  },
+  {
+   "id": "2026-10-09-lauren-tan-on-the-first-mile-and-last-mile-of-getting-work-d",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "Lauren Tan on the first mile and last mile of getting work done",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan describes using Grok Bot connectors and routines for the first mile (deciding what work to do) and handing the last mile to Cursor cloud agents, with a loop she runs daily from Slack feedback to a Linear issue to a pstack-run agent fix and an auto-merge unless someone objects. It is a concrete end-to-end loop Zakk could reproduce.",
+   "url": "https://x.com/poteto/status/2107510472601985336",
+   "also_fits": [
+    "grok-bot"
+   ],
+   "seq": 206
+  },
+  {
+   "id": "2026-10-09-feat-pstack-add-correct-skill-494",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "feat(pstack): add /correct skill (#494)",
+   "author": "Lauren Tan (cursor/plugins)",
+   "summary": "The /correct skill mines history for mistakes the operator keeps correcting, fixes each one at the highest level that works, and keeps a table pairing each rule with what enforces it. It turns repeated review comments into lint rules, types, or tests, which is the approach Zakk wants instead of longer instruction files.",
+   "url": "https://github.com/cursor/plugins/commit/9511e60321f7e533a187d62854a3d53a53752874",
+   "also_fits": [],
+   "seq": 207
+  },
+  {
+   "id": "2026-10-09-a-design-system-with-judgment",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "A Design System with Judgment",
+   "author": "Clark Newlove (Brain Co.)",
+   "summary": "Brain Co.'s design lead describes rebuilding the company's design system, Synapse, after engineers had each written their own frontend docs for their coding agents, so that it records the design decisions agents and people need. It shows how a shared system of record replaces many private instruction files.",
+   "url": "https://brain.co/blog/a-design-system-with-judgment",
+   "also_fits": [],
+   "seq": 208
+  },
+  {
+   "id": "2026-10-09-we-mapped-115-microservices-for-our-coding-agents",
+   "beat": "agentic-engineering",
+   "date": "2026-10-09",
+   "title": "We Mapped 115 Microservices for Our Coding Agents",
+   "author": "Kamalakannan Nandagopal (Postman), AI Engineer",
+   "summary": "Postman built an API context graph that maps every service, endpoint, implementation, and call down to databases, grounded in code and production telemetry, and tested it with evals built from real PRs; he reports that 75% of PRs touched APIs and that the graph failed when it went stale. It is a worked example of giving agents context across a distributed system.",
+   "url": "https://www.youtube.com/watch?v=k2ClBT4aqAg",
+   "also_fits": [],
+   "seq": 209
   },
   {
    "id": "2026-10-02-stripe-s-payment-method-factory-orchestrating-agents-for-rep",
