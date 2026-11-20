@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-09-11",
+   "summary": "Backfilled issue. Part two of Lauren Tan's pstack guide, surfaced earlier by Lumi and the Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-09-04",
    "summary": "Backfilled issue. Part one of Lauren Tan's pstack guide, surfaced earlier by Lumi and the Product & Engineering Velocity Assistant."
   },
@@ -2313,6 +2318,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-09-11-the-complete-guide-to-pstack-pt-2",
+   "beat": "agentic-engineering",
+   "date": "2026-09-11",
+   "title": "The Complete Guide to pstack Pt. 2",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Part two covers how Lauren Tan does research, planning, prototyping, and architecture with pstack, built around two failure modes she sees: agents misread intent when underspecified, and they lack context on how to do the work correctly. It describes the planning half of her workflow, which comes before any parallel runs.",
+   "url": "https://x.com/poteto/status/2097732320606507506",
+   "also_fits": [],
+   "seq": 193
   },
   {
    "id": "2026-09-04-the-complete-guide-to-pstack-pt-1",
