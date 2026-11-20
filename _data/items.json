@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-08-28",
+   "summary": "Backfilled issue. Flavio Copes's long guide to pstack, which Zakk kept in his source list."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-08-21",
    "summary": "Backfilled issue. Lauren Tan's summary of her setup, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
   },
@@ -2303,6 +2308,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-08-28-a-deep-dive-into-pstack",
+   "beat": "agentic-engineering",
+   "date": "2026-08-28",
+   "title": "A deep dive into pstack",
+   "author": "Flavio Copes",
+   "summary": "Flavio Copes walks through pstack's install, architecture, playbooks, /how, /why, /architect, /arena, /interrogate, its 23 principles, and running it overnight, and notes the same SKILL.md files load in Claude Code and Codex. It is the most complete outside reference on pstack and the one Zakk chose to keep.",
+   "url": "https://flaviocopes.com/pstack/",
+   "also_fits": [],
+   "seq": 191
   },
   {
    "id": "2026-08-21-here-s-how-i-m-so-productive",
