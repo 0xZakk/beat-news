@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-08-14",
+   "summary": "Backfilled issue. Lauren Tan's Maven workshop on how Cursor uses agents, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-07-31",
    "summary": "Backfilled issue. Lauren Tan's public example of a project-local verification skill, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
   },
@@ -2293,6 +2298,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-08-14-how-cursor-turned-ai-agents-into-better-engineers",
+   "beat": "agentic-engineering",
+   "date": "2026-08-14",
+   "title": "How Cursor Turned AI Agents Into Better Engineers",
+   "author": "Lauren Tan with Colin Matthews (Maven)",
+   "summary": "A 60-minute Maven lightning lesson from Aug 12 in which Lauren Tan walks through how Cursor engineers set up agents to verify their own work. It is one of the longer recorded walkthroughs of her method, useful as training material.",
+   "url": "https://maven.com/p/e23d9c/how-cursor-turned-ai-agents-into-better-engineers",
+   "also_fits": [],
+   "seq": 189
   },
   {
    "id": "2026-07-31-verification-skill-example",
