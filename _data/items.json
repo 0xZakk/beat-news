@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-05-29",
+   "summary": "Backfilled issue. Lauren Tan's post introducing pstack, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-01-23",
    "summary": "Backfilled issue. One item surfaced earlier by Zakk's AI Enablement Assistant: OpenAI's guide to testing agent skills with evals."
   }
@@ -2278,6 +2283,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-05-29-how-i-use-cursor",
+   "beat": "agentic-engineering",
+   "date": "2026-05-29",
+   "title": "How I Use Cursor",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan's X article describes how she moved from Claude Code to Cursor after joining in March, running Opus and Codex side by side with subagents of different models, and it is the post where she open-sourced pstack, her set of engineering skills. It is the starting point for the pstack material Zakk has been collecting.",
+   "url": "https://x.com/poteto/status/2058975157503570132",
+   "also_fits": [],
+   "seq": 186
   },
   {
    "id": "2026-01-23-testing-agent-skills-systematically-with-evals",
