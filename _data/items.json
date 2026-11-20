@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-08-21",
+   "summary": "Backfilled issue. Lauren Tan's summary of her setup, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-08-14",
    "summary": "Backfilled issue. Lauren Tan's Maven workshop on how Cursor uses agents, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
   },
@@ -2298,6 +2303,19 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-08-21-here-s-how-i-m-so-productive",
+   "beat": "agentic-engineering",
+   "date": "2026-08-21",
+   "title": "Here's how I'm so productive",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan says she shipped 1,000 PRs the previous month using cloud agents, and lists her setup: pstack for rigorous engineering and verification, Grok Bot routines that collect bug reports and feature ideas for her outer loop, and heavy use of /goal, /loop, and /swarm. It is a short map of how she splits work between the inner loop and the outer loop.",
+   "url": "https://x.com/poteto/status/2090141955695198633",
+   "also_fits": [
+    "grok-bot"
+   ],
+   "seq": 190
   },
   {
    "id": "2026-08-14-how-cursor-turned-ai-agents-into-better-engineers",
