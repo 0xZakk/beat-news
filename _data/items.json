@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-20T07:39:35-06:00",
+ "updated": "2026-11-20T08:29:32-06:00",
  "issues": [
   {
    "beat": "grok-bot",
    "date": "2026-11-20",
    "summary": "No new Grok Bot release since 1.2.3, so this issue is mostly about competitors and setups. OpenAI started rolling out dots, its always-on personal agents, to all US ChatGPT Business Standard members and testing them with some Plus users. Obsidian now ships an official Grok Bot plugin built on its open-source Obsidian Skills. Microsoft's IT team wrote up how it is rolling out Autopilot to its own employees, with each agent as a real directory identity that reports to a human sponsor. Superhuman announced a personal assistant in Go that manages a user's team of agents, Tony Zhang open-sourced Linger, a personal agent that runs on local models, and Ras Mic's walkthrough with Greg Isenberg shows a one-bot-per-project setup with Grok Bot handing coding to Claude Code."
+  },
+  {
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "summary": "This issue leads with HSBC's CEO giving training and results numbers for the bank's AI Academy, then Sumitomo Life's leader-driven ChatGPT Enterprise rollout and an ACA/NSCP survey showing most financial firms have AI policies but few formally test AI output. It also covers Lloyds Banking Group's public responsible-AI guide, Microsoft IT's account of what it took to get employees using Copilot Cowork after launch, and Maybank's CTO on keeping agents internal until they are auditable."
   },
   {
    "beat": "swarms",
@@ -225,6 +230,78 @@
     "agentic-engineering"
    ],
    "seq": 174
+  },
+  {
+   "id": "2026-11-20-hsbc-ceo-says-73-000-employees-completed-585-000-hours-of-ai",
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "title": "HSBC CEO says 73,000 employees completed 585,000 hours of AI Academy training",
+   "author": "Georges Elhedery, Group CEO, HSBC",
+   "summary": "In a Nov 18 post, HSBC CEO Georges Elhedery says 73,000 employees completed 585,000 hours of AI Academy learning between January 2025 and September 2026 (about eight hours each), that agents handling corporate and institutional customer enquiries cut resolution time by over 30% since January 2025, and that the bank's 150-person AI specialist team in Hong Kong will double. It gives Zakk a CEO-signed training-hours-per-person number and a named operational result from one of the largest banks, useful for sizing what a training program should look like.",
+   "url": "https://www.hsbc.com/news-and-views/views/hsbc-views/our-strategy-built-on-trust-accelerated-with-ai",
+   "also_fits": [],
+   "seq": 175
+  },
+  {
+   "id": "2026-11-20-how-sumitomo-life-s-leaders-helped-teams-adopt-chatgpt-enter",
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "title": "How Sumitomo Life's leaders helped teams adopt ChatGPT Enterprise",
+   "author": "OpenAI (Sumitomo Life customer story)",
+   "summary": "OpenAI's Nov 18 case study says the Japanese life insurer ran a 100-150 person ChatGPT Business pilot that included executives, moved to Enterprise in June 2026, and now sees weekly usage above 80%, with an estimated ROI of 203% overall and 524% for people using it 101+ times a month (both based on self-reported time savings); the president pushed usage in management meetings and on the internal portal. It is a finance-sector example of executive-first rollout, and the next step it describes (mapping, role by role, which tasks AI handles and which stay with people) is the kind of plan Zakk could borrow.",
+   "url": "https://openai.com/business/customer-stories/sumitomo-life/",
+   "also_fits": [],
+   "seq": 176
+  },
+  {
+   "id": "2026-11-20-aca-and-nscp-2026-ai-benchmarking-survey-86-of-financial-fir",
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "title": "ACA and NSCP 2026 AI Benchmarking Survey: 86% of financial firms use AI, 38% formally test it",
+   "author": "ACA Group and National Society of Compliance Professionals",
+   "summary": "The survey of 261 compliance professionals at asset managers, hedge funds, PE firms, and broker-dealers (published Nov 12) found 89% of AI-using firms have employee AI-use policies and 85% use enterprise tools like ChatGPT Enterprise or Claude Enterprise, but only 38% have a formal program to test AI output, 51% are confident they could produce documentation of oversight on short notice, and 18% have an AI incident response plan. It is a benchmark from the kind of small-to-mid financial firms Etherealize deals with, and it points at testing and documentation as the gap after policies are in place.",
+   "url": "https://www.acaglobal.com/news-and-announcements/86-of-financial-services-firms-use-ai-but-formal-testing-and-documented-oversight-lag-aca-and-nscp-survey-finds/",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 177
+  },
+  {
+   "id": "2026-11-20-lloyds-banking-group-publishes-a-practical-guide-to-responsi",
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "title": "Lloyds Banking Group publishes a practical guide to responsible AI",
+   "author": "Computer Weekly (Karl Flinders), reporting on Lloyds Banking Group",
+   "summary": "Computer Weekly reports that on Nov 19 Lloyds published 'Responsible AI: A practical guide for organisations', drawing on its Scottish Widows investing assistant, with three lessons: bring responsible-AI specialists in from the start, test controls and keep monitoring after launch, and make evidence-based value-versus-risk calls; the article also recaps that about 65,000 of 67,000 staff had taken 400,000 AI Academy courses by June and 200 senior leaders are in a separate program. Zakk gets a bank's own governance playbook to compare against, though Lloyds' own page for the guide was returning an error when I checked, so the link is to the coverage.",
+   "url": "https://www.computerweekly.com/news/366654900/Lloyds-Bank-shares-learnings-from-doing-artificial-intelligence-at-scale",
+   "also_fits": [],
+   "seq": 178
+  },
+  {
+   "id": "2026-11-20-microsoft-it-on-what-it-took-to-get-employees-using-copilot",
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "title": "Microsoft IT on what it took to get employees using Copilot Cowork after launch",
+   "author": "Melissa Cafiero, Microsoft Digital (Inside Track)",
+   "summary": "Microsoft's IT org says its #HowICowork campaign, where employees posted real prompts and results, reached about 58% of staff while weekly Cowork users grew from about 35,000 to nearly 45,000, and monthly users went from about 60,000 to 70,900 between mid-August and early October; it also admits it had no clean pre-launch baseline, so it can't prove which communications moved usage. The practical lessons (peer examples from day one, telemetry and campaign markers before launch) apply directly to how Zakk measures his own rollouts.",
+   "url": "https://www.microsoft.com/insidetrack/blog/making-ai-adoption-stick-what-we-learned-after-launching-copilot-cowork-at-microsoft/",
+   "also_fits": [
+    "grok-bot"
+   ],
+   "seq": 179
+  },
+  {
+   "id": "2026-11-20-maybank-cto-keeps-ai-agents-internal-until-they-are-auditabl",
+   "beat": "ai-enablement",
+   "date": "2026-11-20",
+   "title": "Maybank CTO keeps AI agents internal until they are auditable and predictable",
+   "author": "Fortune (Angelica Ang), interviewing Maybank CTO Giorgio Migliarina",
+   "summary": "Maybank's CTO told Fortune on Nov 19 that the bank uses AI heavily for staff assistants and recommendation engines but won't put autonomous agents in front of customers until they give consistent answers and can be audited, as part of a 10 billion ringgit (about $2.5 billion) five-year tech and AI plan. It is a clear statement of the internal-first rollout line a regulated institution is drawing, which matches the staging question Zakk faces with agents.",
+   "url": "https://fortune.com/2026/11/19/maybank-pursuing-gradual-agentic-ai-rollout/",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 180
   },
   {
    "id": "2026-11-19-grok-bot-changelog-1-2-3-adds-per-tool-permissions-and-routi",
