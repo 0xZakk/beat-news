@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "summary": "Backfilled issue. Lauren Tan's ordering of where to invest in agent trust, a pstack skill for formal verification, Shopify's remote mobile environments for agents, Monzo's in-house coding agent, Notion's connector-onboarding agent, and how Kiro tests its own fixes."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-10-16",
    "summary": "Backfilled issue. Anthropic's new source control system, the Claude Code team's review process, Meta's Forum build, Uber's internal agent tooling, OpenAI's maintenance work with GPT-6, and Lauren Tan's pstack quick start."
   },
@@ -2338,6 +2343,74 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-10-23-how-do-you-trust-your-agents-work-more",
+   "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "title": "How do you trust your agents' work more?",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan ranks where to put effort: first codebase improvements (types, invariants, boundaries), then static analysis such as lints, tests, CI, and TLA+, then minimal prose such as AGENTS.md and skills, and human review last. It is a short ordering Zakk can hand to a team or an agent.",
+   "url": "https://x.com/poteto/status/2111133080526495985",
+   "also_fits": [],
+   "seq": 216
+  },
+  {
+   "id": "2026-10-23-feat-pstack-add-create-formal-verification-skill-709",
+   "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "title": "feat(pstack): add /create-formal-verification-skill (#709)",
+   "author": "Lauren Tan (cursor/plugins)",
+   "summary": "The skill generates a project-local skill that formally verifies one property where a bug costs the most and tests reach the least, picking the tool from the question; a follow-up fix stops the agent from weakening the check when the current code already breaks the property. It connects pstack directly to the TLA+ work Zakk is already doing.",
+   "url": "https://github.com/cursor/plugins/commit/4382e687a50b8d2c5ce4d141d001186589cff8d5",
+   "also_fits": [
+    "formal-verification"
+   ],
+   "seq": 217
+  },
+  {
+   "id": "2026-10-23-we-gave-ai-agents-a-mobile-dev-environment",
+   "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "title": "We gave AI agents a mobile dev environment",
+   "author": "Michael Garfinkle, Mauricio de Meirelles, and David Cortes (Shopify)",
+   "summary": "Shopify built Remote Dev after three or four agent workflows maxed out a laptop, giving each session of its Slack agent River its own environment to build, run simulators, test, and open PRs in parallel. It shows that parallel agents need machines of their own, not more worktrees.",
+   "url": "https://shopify.engineering/remote-dev",
+   "also_fits": [],
+   "seq": 218
+  },
+  {
+   "id": "2026-10-23-a-bank-built-its-own-coding-agent-it-took-off",
+   "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "title": "A Bank Built Its Own Coding Agent. It Took Off",
+   "author": "Felippe Felisola Caso and Francesco Galletta (Monzo), AI Engineer",
+   "summary": "Monzo says its in-house agent, which began as a Slack emoji reaction, now authors over 10% of merged PRs and runs more than 1,800 tasks a day, built on an MCP gateway into internal tools and a sandboxed orchestration system designed for a regulated bank. It is a close match to Zakk's own setting in regulated finance.",
+   "url": "https://www.youtube.com/watch?v=adfw3xJBx1o",
+   "also_fits": [],
+   "seq": 219
+  },
+  {
+   "id": "2026-10-23-how-we-connected-notion-ai-to-160-new-apps-in-three-weeks",
+   "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "title": "How we connected Notion AI to 160 new apps in three weeks",
+   "author": "Eileen Jiang (Notion)",
+   "summary": "Notion says it went from 25 to 185 MCP connections in three weeks by building a Notion agent to handle the account setup, app registration, and testing that used to take engineers hours per connector. It is an example of pointing agents at a recurring engineering chore rather than at feature work.",
+   "url": "https://www.notion.com/blog/how-we-connected-notion-ai-to-160-new-apps-in-three-weeks",
+   "also_fits": [],
+   "seq": 220
+  },
+  {
+   "id": "2026-10-23-how-kiro-fixes-itself-and-how-we-keep-the-fixes-honest",
+   "beat": "agentic-engineering",
+   "date": "2026-10-23",
+   "title": "How Kiro fixes itself, and how we keep the fixes honest",
+   "author": "Myeongsoo Kim and others (Kiro, AWS)",
+   "summary": "Kiro's team built kiro-trace, which reads the agent's own runs, proposes changes, and keeps a change only if it survives checks built to reject it; they nearly shipped a fix whose gains came from one lucky run on one host. It is a cautionary example of why self-improving loops need checks the loop cannot grade itself.",
+   "url": "https://kiro.dev/blog/how-kiro-fixes-itself/",
+   "also_fits": [],
+   "seq": 221
   },
   {
    "id": "2026-10-16-redesigning-source-control-at-anthropic",
