@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T09:03:11-06:00",
+ "updated": "2026-11-20T14:36:49-06:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -155,6 +155,11 @@
    "beat": "agents",
    "date": "2026-11-05",
    "summary": ""
+  },
+  {
+   "beat": "agentic-engineering",
+   "date": "2026-01-23",
+   "summary": "Backfilled issue. One item surfaced earlier by Zakk's AI Enablement Assistant: OpenAI's guide to testing agent skills with evals."
   }
  ],
  "items": [
@@ -2273,6 +2278,19 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-01-23-testing-agent-skills-systematically-with-evals",
+   "beat": "agentic-engineering",
+   "date": "2026-01-23",
+   "title": "Testing Agent Skills Systematically with Evals",
+   "author": "OpenAI Developers blog",
+   "summary": "OpenAI's guide treats a Codex skill like any other prompt: define outcome, process, style, and efficiency checks before writing the skill, capture each run's trace and artifacts, then score it with deterministic checks plus a rubric so regressions show up as numbers. It is a concrete method for testing the skills Zakk's team writes instead of judging them by feel.",
+   "url": "https://developers.openai.com/blog/eval-skills",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 185
   }
  ]
 }
