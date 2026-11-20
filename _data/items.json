@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "summary": "Backfilled issue. Anthropic's new source control system, the Claude Code team's review process, Meta's Forum build, Uber's internal agent tooling, OpenAI's maintenance work with GPT-6, and Lauren Tan's pstack quick start."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-10-09",
    "summary": "Backfilled issue. Lauren Tan's interview with Matt Pocock and two write-ups of it, her first-mile and last-mile loop, the new /correct skill in pstack, Brain Co.'s design system for agents, and Postman's API context graph."
   },
@@ -2333,6 +2338,72 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-10-16-redesigning-source-control-at-anthropic",
+   "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "title": "Redesigning source control at Anthropic",
+   "author": "Anthropic Engineering",
+   "summary": "Anthropic says merged code changes rose from about 2,500 a day in May to over 30,000 a day in September, and it built Scion, an in-house version control system, and migrated its monorepo off git in five months. It shows what breaks in developer infrastructure when agents write most of the code.",
+   "url": "https://www.anthropic.com/research/redesigning-source-control",
+   "also_fits": [],
+   "seq": 210
+  },
+  {
+   "id": "2026-10-16-how-the-claude-code-team-does-code-review",
+   "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "title": "How the Claude Code team does code review",
+   "author": "Addy Osmani, Morgan Westlee Lunt, and Qing Wang (Anthropic)",
+   "summary": "The Claude Code team says merged PRs more than doubled from June to September while the share reverted fell by more than 40 percent, after moving most reading to machines, optimizing for human attention, and making mistakes easy to undo. It lays out a layered review process Zakk can compare against his own.",
+   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+   "also_fits": [],
+   "seq": 211
+  },
+  {
+   "id": "2026-10-16-how-meta-built-forum-with-ai-native-engineering",
+   "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "title": "How Meta Built Forum With AI-Native Engineering",
+   "author": "Shengbo Guo, Bohou Luo, and others (Meta)",
+   "summary": "Meta describes building its Forum app with an agent running plan, implement, build, test, and correct cycles while engineers supervise, with a task counted complete only after automated tests and visual checks pass and every change carrying build results and recorded verification sessions. Verification as the definition of done is the central point.",
+   "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+   "also_fits": [],
+   "seq": 212
+  },
+  {
+   "id": "2026-10-16-uber-s-ai-infra-from-the-inside",
+   "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "title": "Uber's AI infra, from the inside",
+   "author": "Gergely Orosz with Uday Kiran Medisetty (Uber), The Pragmatic Engineer",
+   "summary": "Uber Distinguished Engineer Uday Kiran Medisetty walks through the 20-plus internal tools Uber engineers use, how background agents connect to code, services, and knowledge, how code review is changing, and how Uber handles token costs and measures productivity. It is a first-hand account from a large engineering organization.",
+   "url": "https://newsletter.pragmaticengineer.com/p/ubers-ai-infra-from-the-inside",
+   "also_fits": [],
+   "seq": 213
+  },
+  {
+   "id": "2026-10-16-maintaining-software-with-the-gpt-6-family",
+   "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "title": "Maintaining software with the GPT-6 family",
+   "author": "OpenAI Developers blog (Core Experimentation team)",
+   "summary": "An engineer on OpenAI's Core Experimentation team shows how Codex with GPT-6 Astra took a loosely worded request to find and remove dead code, then checked Slack, past PRs, the feature-flag platform, and profiling tables to justify each removal. It is a practical example of using agents for maintenance with evidence attached.",
+   "url": "https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family",
+   "also_fits": [],
+   "seq": 214
+  },
+  {
+   "id": "2026-10-16-try-pstack-10-second-tutorial",
+   "beat": "agentic-engineering",
+   "date": "2026-10-16",
+   "title": "Try pstack: 10 second tutorial",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan's quick start: run /setup-pstack and pick a budget, put /poteto-mode in front of any prompt that should be done rigorously, and ask /poteto-help when unsure which skill to use, with install links for Grok Bot, Cursor, and the source. It is the shortest onboarding path for teammates trying pstack.",
+   "url": "https://x.com/poteto/status/2110757066709356851",
+   "also_fits": [],
+   "seq": 215
   },
   {
    "id": "2026-10-09-live-poteto-creator-of-pstack-on-shipping-1-000-s-of-pr-s-a",
