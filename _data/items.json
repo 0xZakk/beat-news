@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-09-25",
+   "summary": "Backfilled issue. Lauren Tan's 2,500-PR talk, Shopify's Helix migration tool, Linear's CI rework for agent volume, a Kiro team's account of merging 1,000 PRs in a week, and a pstack trim for Opus 5.5."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-09-11",
    "summary": "Backfilled issue. Part two of Lauren Tan's pstack guide, surfaced earlier by Lumi and the Product & Engineering Velocity Assistant."
   },
@@ -2318,6 +2323,61 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-09-25-here-s-how-i-shipped-2-500-prs-last-month",
+   "beat": "agentic-engineering",
+   "date": "2026-09-25",
+   "title": "Here's how I shipped 2,500 PRs last month",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan posted the 38-minute talk she prepared for Cursor Compile London on Sep 21, covering how verification skills, codebase gardening, and supervised agent loops let her ship 2,500 PRs in a month. It is her primary account of the method, and Zakk's Velocity Assistant ranked it the top pstack source.",
+   "url": "https://x.com/poteto/status/2102050467505430555",
+   "also_fits": [],
+   "seq": 194
+  },
+  {
+   "id": "2026-09-25-helix-the-internal-tool-powering-our-shopify-app-s-native-mi",
+   "beat": "agentic-engineering",
+   "date": "2026-09-25",
+   "title": "Helix: The internal tool powering our Shopify app's native migration",
+   "author": "Talha Naqvi (Shopify Engineering)",
+   "summary": "Shopify describes Helix, a set of tools and skills that breaks each React Native screen migration into small checkpoints the engineer approves, with strict quality gates so an imperfect attempt cannot move forward. It shows a team designing the loop around the expectation that the first output will be wrong.",
+   "url": "https://shopify.engineering/helix",
+   "also_fits": [],
+   "seq": 195
+  },
+  {
+   "id": "2026-09-25-ai-coding-has-made-ci-a-bottleneck-so-we-reworked-ours-to-ke",
+   "beat": "agentic-engineering",
+   "date": "2026-09-25",
+   "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+   "author": "Mufeez Amjad (Linear)",
+   "summary": "Linear says its test suites nearly quadrupled this year as agents sped up shipping, and it cut PR wait time from over six minutes to just over five while halving runner time per test, through faster runners, the native TypeScript compiler, and less repeated setup. CI speed is the feedback loop agents depend on, and this is a practical list of where Linear found the time.",
+   "url": "https://linear.app/now/ci-bottleneck-reworked",
+   "also_fits": [],
+   "seq": 196
+  },
+  {
+   "id": "2026-09-25-how-we-built-a-software-factory-with-kiro-crew-to-merge-1-00",
+   "beat": "agentic-engineering",
+   "date": "2026-09-25",
+   "title": "How we built a software factory with Kiro Crew to merge 1,000 PRs in a week",
+   "author": "Zejiang (Joe) Guo, Bolin Chen, and Zezhen Xu (Kiro, AWS)",
+   "summary": "The three engineers building Kiro Crew say they merged 1,000 PRs in seven days, all through CI and review, and describe five stages they went through, from one hand-run session to many sessions with shared memory, a dashboard, cron, and workflows. The stage ladder is a useful way to judge what will break next as a team runs more agents.",
+   "url": "https://kiro.dev/blog/software-factory-1000-prs/",
+   "also_fits": [],
+   "seq": 197
+  },
+  {
+   "id": "2026-09-25-docs-pstack-cut-19-more-instructions-opus-5-5-does-not-need",
+   "beat": "agentic-engineering",
+   "date": "2026-09-25",
+   "title": "docs(pstack): cut 19 more instructions Opus 5.5 does not need (#419)",
+   "author": "Lauren Tan (cursor/plugins)",
+   "summary": "Lauren Tan removed 19 instructions that Opus 5.5 follows without being told from pstack's interrogate, reflect, and tdd skills, four principles, and the feature, bug-fix, and refactoring playbooks. It is an early example of the practice she later applied more broadly: pruning skill text after each model upgrade.",
+   "url": "https://github.com/cursor/plugins/commit/b0b9c7a0baf8b6aa1d00bf77d4101e577d4ba411",
+   "also_fits": [],
+   "seq": 198
   },
   {
    "id": "2026-09-11-the-complete-guide-to-pstack-pt-2",
