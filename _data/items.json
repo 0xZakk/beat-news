@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-09-04",
+   "summary": "Backfilled issue. Part one of Lauren Tan's pstack guide, surfaced earlier by Lumi and the Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-08-28",
    "summary": "Backfilled issue. Flavio Copes's long guide to pstack, which Zakk kept in his source list."
   },
@@ -2308,6 +2313,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-09-04-the-complete-guide-to-pstack-pt-1",
+   "beat": "agentic-engineering",
+   "date": "2026-09-04",
+   "title": "The Complete Guide to pstack Pt. 1",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan says pstack lets her ship about 2,000 PRs a month to production, and part one argues that a high-quality verification skill is the most important piece, something she treats as critical infrastructure for the team rather than an ordinary skill. It is her own explanation of the verification-first approach Zakk wants his team to adopt.",
+   "url": "https://x.com/poteto/status/2094457600259842065",
+   "also_fits": [],
+   "seq": 192
   },
   {
    "id": "2026-08-28-a-deep-dive-into-pstack",
