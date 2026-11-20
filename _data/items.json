@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-06-26",
+   "summary": "Backfilled issue. Lauren Tan's article on managing agent loops, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-05-29",
    "summary": "Backfilled issue. Lauren Tan's post introducing pstack, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
   },
@@ -2283,6 +2288,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-06-26-loops-you-can-trust",
+   "beat": "agentic-engineering",
+   "date": "2026-06-26",
+   "title": "Loops You Can Trust",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan uses the breakfast-factory example from Andy Grove's High Output Management to ask where the limiting step is, how much work to keep in flight, and where to inspect quality when managing agents, and she says the bottleneck with agents is verification. It gives Zakk a management frame for deciding where verification goes in an agent loop.",
+   "url": "https://x.com/poteto/status/2069824386283319343",
+   "also_fits": [],
+   "seq": 187
   },
   {
    "id": "2026-05-29-how-i-use-cursor",
