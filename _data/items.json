@@ -89,7 +89,7 @@
   {
    "beat": "agentic-engineering",
    "date": "2026-11-13",
-   "summary": ""
+   "summary": "This issue covers AI Engineer CODE 2026, where Lauren Tan, Zach Bruggeman, Walden Yan, Lydia Hallie, Quinn Slack, and many others described how their teams run coding agents, plus pstack's switch to agentic orchestration. The backfill added the summit's software-factory and review talks (Yegge, Lloyd, Horthy, McCarthy, Finch, Alvoeiro, Cline, Duolingo, Robinhood, Maersk, Brian Douglas, Ronacher, and recovery testing) and Shopify's 12-week app rebuild."
   },
   {
    "beat": "swarms",
@@ -1424,6 +1424,160 @@
     "swarms"
    ],
    "seq": 100
+  },
+  {
+   "id": "2026-11-13-how-we-rebuilt-the-shopify-app-in-12-weeks",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "How we rebuilt the Shopify app in 12 weeks",
+   "author": "Remi Vanhee (Shopify)",
+   "summary": "Shopify says 30 engineers rebuilt its 300-screen app from React Native to Swift and Kotlin in 12 weeks with agents writing most of the code, after a small group first prepared the architecture, tooling, and feedback loop. It ties together Helix, Remote Dev, and Reflex into one account of what had to change around the code.",
+   "url": "https://shopify.engineering/shopify-app-rebuild",
+   "also_fits": [],
+   "seq": 231
+  },
+  {
+   "id": "2026-11-13-software-factories-escape-from-trash-mountain",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Software Factories: Escape from Trash Mountain",
+   "author": "Steve Yegge (independent), AI Engineer CODE 2026",
+   "summary": "Steve Yegge says a year of trying to make agents run other agents produced stalled work, runaway spending, and confused roles, and that management work did not go away but became the main job. It is a candid account of where agent-led orchestration fails.",
+   "url": "https://ai.engineer/code/2026/talks/steve-yegge",
+   "also_fits": [],
+   "seq": 232
+  },
+  {
+   "id": "2026-11-13-software-engineering-is-becoming-factory-engineering",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Software Engineering Is Becoming Factory Engineering",
+   "author": "Zach Lloyd (Warp), AI Engineer CODE 2026",
+   "summary": "Zach Lloyd describes a software factory as a code-defined, version-controlled system that declares which agents exist, what triggers them, and what they may use, and that improves through PRs tested on the team's own tasks. It gives Zakk a way to think about agent setup as infrastructure under version control.",
+   "url": "https://ai.engineer/code/2026/talks/zach-lloyd",
+   "also_fits": [],
+   "seq": 233
+  },
+  {
+   "id": "2026-11-13-a-software-factory-needs-pressure-in-both-directions",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "A software factory needs pressure in both directions",
+   "author": "Dexter Horthy (Factory), AI Engineer CODE 2026",
+   "summary": "Dexter Horthy argues that agents replace only the build step, and that forward pressure from agents has to be matched by backpressure from tests, linters, and review; he says counting generated lines or agents is a poor measure. It complements his No AI Slop Manifesto covered on Nov 20.",
+   "url": "https://ai.engineer/code/2026/talks/dexter-horthy",
+   "also_fits": [],
+   "seq": 234
+  },
+  {
+   "id": "2026-11-13-brownfield-factories-keep-the-promises-you-already-made",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Brownfield factories keep the promises you already made",
+   "author": "Justin McCarthy (Diffusion), AI Engineer CODE 2026",
+   "summary": "Justin McCarthy argues that agent factories suit existing products better than new ideas, because users, runtime behavior, and support feedback give a maintenance loop something to preserve and check against. It is relevant for teams like Zakk's working on an established codebase.",
+   "url": "https://ai.engineer/code/2026/talks/justin-mccarthy",
+   "also_fits": [],
+   "seq": 235
+  },
+  {
+   "id": "2026-11-13-building-a-safe-software-factory",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Building a Safe Software Factory",
+   "author": "Andrew Finch (Sonar), AI Engineer CODE 2026",
+   "summary": "Andrew Finch splits verification into four loops: evidence at the merge gate, checks after deploying, ongoing maintenance, and curated knowledge for the next pass, with people deciding when the evidence is enough. It is a simple map for checking which loops a team is missing.",
+   "url": "https://ai.engineer/code/2026/talks/andrew-finch",
+   "also_fits": [],
+   "seq": 236
+  },
+  {
+   "id": "2026-11-13-earning-autonomy-from-missions-to-workstreams",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Earning Autonomy: From Missions to Workstreams",
+   "author": "Luke Alvoeiro (Factory), AI Engineer CODE 2026",
+   "summary": "Luke Alvoeiro describes Factory moving from long planned Missions to standing workstreams with shared memory, after adversarial review at each milestone grew one mission from about 60 features to more than 200; checkpoints are removed only once work meets the standard. It shows autonomy being granted step by step based on evidence.",
+   "url": "https://ai.engineer/code/2026/talks/luke-alvoeiro",
+   "also_fits": [],
+   "seq": 237
+  },
+  {
+   "id": "2026-11-13-the-improvement-loop-is-the-product",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "The Improvement Loop Is the Product",
+   "author": "Ara Khan (Cline), AI Engineer CODE 2026",
+   "summary": "Ara Khan demonstrates a supervising agent that runs evaluations, reads the failures, changes the agent's setup, and tests again. It is a concrete version of an eval-driven loop for improving a team's own agent configuration.",
+   "url": "https://ai.engineer/code/2026/talks/online-cline-rsi",
+   "also_fits": [],
+   "seq": 238
+  },
+  {
+   "id": "2026-11-13-duolingo-s-test-writing-agent-is-a-pull-request-lifecycle-no",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Duolingo's Test-Writing Agent Is a Pull-Request Lifecycle, Not a Prompt",
+   "author": "Kush Agrawal (Duolingo), AI Engineer CODE 2026",
+   "summary": "Duolingo turns gaps in iOS test coverage into a work queue for agent-written test PRs that go through CI and repair and merge automatically only after a person approves, on a 1.8-million-line codebase. It is a narrow, repeatable agent job with a clear review gate.",
+   "url": "https://ai.engineer/code/2026/talks/online-duolingo-tests",
+   "also_fits": [],
+   "seq": 239
+  },
+  {
+   "id": "2026-11-13-who-reviews-the-bots",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Who reviews the bots?",
+   "author": "Chetas Joshi (Robinhood), AI Engineer CODE 2026",
+   "summary": "Chetas Joshi says Robinhood combines scripted checks, an agent, and people for protected decisions, and that about 60% of its data-pipeline PRs now merge without human review. It is a financial-services example of deciding which changes still need a person.",
+   "url": "https://ai.engineer/code/2026/talks/online-robinhood-review",
+   "also_fits": [],
+   "seq": 240
+  },
+  {
+   "id": "2026-11-13-agents-made-code-free-maintaining-it-didn-t-get-cheaper",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "Agents Made Code Free. Maintaining It Didn't Get Cheaper.",
+   "author": "Dmitry Buykin (Maersk), AI Engineer CODE 2026",
+   "summary": "Dmitry Buykin replaced destructive rewrites of agent-grown code with small weekly maintenance sweeps and bounded changes backed by evidence of what should survive. It addresses the maintenance cost that follows high agent output.",
+   "url": "https://ai.engineer/code/2026/talks/online-dmitry-maintenance",
+   "also_fits": [],
+   "seq": 241
+  },
+  {
+   "id": "2026-11-13-an-agent-s-change-is-not-safe-until-its-recovery-has-been-te",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "An Agent's Change Is Not Safe Until Its Recovery Has Been Tested",
+   "author": "Tanmay Sah and Dolly Sah, AI Engineer CODE 2026",
+   "summary": "The talk argues that a passing test and a Git revert are not enough when an agent also changed tickets, settings, or releases, and that recovery should be tested before an agent gets more autonomy. It adds rollback to the list of things to verify.",
+   "url": "https://ai.engineer/code/2026/talks/online-undo-button",
+   "also_fits": [],
+   "seq": 242
+  },
+  {
+   "id": "2026-11-13-if-you-are-going-to-verbally-abuse-your-agents-at-least-labe",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "If You Are Going to Verbally Abuse Your Agents, at Least Label the Outcome",
+   "author": "Brian Douglas, AI Engineer CODE 2026",
+   "summary": "Brian Douglas shows how recording and labeling agent sessions turns a senior teammate's corrections into review knowledge that less experienced engineers can reuse. It is a way to spread review judgment across a team.",
+   "url": "https://ai.engineer/code/2026/talks/online-brian-douglas",
+   "also_fits": [],
+   "seq": 243
+  },
+  {
+   "id": "2026-11-13-the-software-atelier",
+   "beat": "agentic-engineering",
+   "date": "2026-11-13",
+   "title": "The Software Atelier",
+   "author": "Armin Ronacher (Earendil), AI Engineer CODE 2026",
+   "summary": "Armin Ronacher says his coding agent became much more capable while its core harness barely changed, and argues for improving the operator's workshop before maximizing factory output. It is a counterweight to the factory talks from someone who builds his own harness.",
+   "url": "https://ai.engineer/code/2026/talks/armin-ronacher",
+   "also_fits": [],
+   "seq": 244
   },
   {
    "id": "2026-11-12-introducing-grok-bot-1-0",
