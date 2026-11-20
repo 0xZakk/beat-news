@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-10-30",
+   "summary": "Backfilled issue. Kiro on keeping a 1,000-PR-a-week factory stable, Enigmatry's guarded production line, BoxLite's lessons from a 13-person team, and Ramp's numbers on its Inspect coding agent."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-10-23",
    "summary": "Backfilled issue. Lauren Tan's ordering of where to invest in agent trust, a pstack skill for formal verification, Shopify's remote mobile environments for agents, Monzo's in-house coding agent, Notion's connector-onboarding agent, and how Kiro tests its own fixes."
   },
@@ -2343,6 +2348,52 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-10-30-keeping-a-software-factory-stable-at-1-000-prs-a-week",
+   "beat": "agentic-engineering",
+   "date": "2026-10-30",
+   "title": "Keeping a software factory stable at 1,000 PRs a week",
+   "author": "Zejiang (Joe) Guo, Bolin Chen, and Zezhen Xu (Kiro, AWS)",
+   "summary": "Kiro's team asks whether a person can be responsible for PRs they did not write or read line by line, and argues the confidence has to come from automated tests and checks strong enough to trust more than manual review. It is a follow-up to their 1,000-PR post that focuses on the verification side.",
+   "url": "https://kiro.dev/blog/software-factory-stability/",
+   "also_fits": [],
+   "seq": 222
+  },
+  {
+   "id": "2026-10-30-from-work-item-to-pull-request-how-the-production-line-works",
+   "beat": "agentic-engineering",
+   "date": "2026-10-30",
+   "title": "From work item to pull request: how the production line works",
+   "author": "Enigmatry",
+   "summary": "Enigmatry describes a fixed line where Claude Code builds in a sandbox, a credential-free job rebuilds each change and checks that new tests fail before and pass after, Codex reviews read-only, and only an engineer can merge. The fail-before, pass-after check run by a job with no model is a verification step Zakk can copy.",
+   "url": "https://www.enigmatry.com/en/insights/from-work-item-to-pull-request/",
+   "also_fits": [],
+   "seq": 223
+  },
+  {
+   "id": "2026-10-30-building-boxlite-with-13-people-what-coding-agents-taught-us",
+   "beat": "agentic-engineering",
+   "date": "2026-10-30",
+   "title": "Building BoxLite With 13 People: What Coding Agents Taught Us",
+   "author": "Dorian Zheng and Sofia Marchetti (BoxLite)",
+   "summary": "The 13-person BoxLite team separates instructions, skills, hooks, an independent auditor, and a gate, and says a gate cannot write its own passing verdict and any code change invalidates an earlier approval. It is a small-team version of the same evidence rules larger teams describe.",
+   "url": "https://blog.boxlite.ai/building-boxlite-with-13-people-what-coding-agents-taught-us",
+   "also_fits": [],
+   "seq": 224
+  },
+  {
+   "id": "2026-10-30-inspect-by-ramp-the-collaborative-coding-agent",
+   "beat": "agentic-engineering",
+   "date": "2026-10-30",
+   "title": "Inspect by Ramp: The Collaborative Coding Agent",
+   "author": "Karim Atiyeh (Ramp)",
+   "summary": "Ramp opened early access to Inspect and says 99% of its engineering, design, and product staff used it in the past month, that it accounts for 74% of merged PRs, and that sessions are multiplayer by default. The post is a launch, but the internal adoption numbers are the useful part for Zakk.",
+   "url": "https://ramp.com/blog/introducing-inspect",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 225
   },
   {
    "id": "2026-10-23-how-do-you-trust-your-agents-work-more",
