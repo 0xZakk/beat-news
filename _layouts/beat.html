@@ -3,18 +3,25 @@ layout: default
 ---
 {% assign b = site.data.beats | where: "id", page.beat_id | first %}
 {% assign items = site.data.items.items | where: "beat", page.beat_id %}
+{% assign shown = items %}
+{% if b.show_also_fits %}
+{% assign cross = site.data.items.items | where_exp: "i", "i.also_fits contains page.beat_id" %}
+{% assign shown = items | concat: cross | sort: "date" | reverse %}
+{% endif %}
 <section class="beat-head" style="--c:{{ b.color }}">
   <h2>{{ b.name }}</h2>
-  <p>{{ items | size }} items · {{ b.schedule }}</p>
+  <p>{{ items | size }} items{% if b.show_also_fits and cross.size > 0 %} · {{ cross | size }} more from other beats{% endif %} · {{ b.schedule }}</p>
 </section>
-{% assign groups = items | group_by: "date" %}
+{% assign groups = shown | group_by: "date" %}
 {% for g in groups %}
 {% assign issue = site.data.items.issues | where: "beat", page.beat_id | where: "date", g.name | first %}
+{% assign own = g.items | where: "beat", page.beat_id | sort: "seq" %}
 <section class="day" style="--c:{{ b.color }}">
   <h4 class="day-head">{{ g.name | date: "%A, %B %-d, %Y" }}</h4>
   {% if issue.summary and issue.summary != "" %}<p class="issue-summary">{{ issue.summary }}</p>{% endif %}
   <div class="masonry">
-    {% for it in g.items %}{% include item.html item=it %}{% endfor %}
+    {% for it in own %}{% include item.html item=it %}{% endfor %}
+    {% for it in g.items %}{% if it.beat != page.beat_id %}{% include item.html item=it show_beat=true %}{% endif %}{% endfor %}
   </div>
 </section>
 {% endfor %}

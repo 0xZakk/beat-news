@@ -1,10 +1,59 @@
 [
-  {"id": "grok-bot", "name": "Grok Bot and Agent Assistants", "short": "Grok Bot", "color": "#2563EB", "schedule": "Weekdays 8:00 AM CT"},
-  {"id": "ai-enablement", "name": "AI Enablement at Large Companies", "short": "AI Enablement", "color": "#0D9488", "schedule": "Mon, Wed, Fri 8:15 AM CT"},
-  {"id": "agents", "name": "Agents", "short": "Agents", "color": "#7C3AED", "schedule": "Mon 8:30 AM CT"},
-  {"id": "swarms", "name": "Swarms", "short": "Swarms", "color": "#EA580C", "schedule": "Thu 8:30 AM CT"},
-  {"id": "formal-verification", "name": "Formal Verification, Completeness, and Assurance", "short": "Formal Verification", "color": "#15803D", "schedule": "Tue 9:00 AM CT"},
-  {"id": "ai-assisted-engineering", "name": "AI-Assisted Engineering, Evals, and Cost", "short": "AI-Assisted Engineering", "color": "#A16207", "schedule": "Wed 9:00 AM CT"},
-  {"id": "agentic-engineering", "name": "Agentic Engineering", "short": "Agentic Engineering", "color": "#DB2777", "schedule": "Fri 9:00 AM CT"},
-  {"id": "ai-security", "name": "AI Security Research (defensive)", "short": "AI Security", "color": "#B91C1C", "schedule": "Thu 9:00 AM CT"}
+ {
+  "id": "grok-bot",
+  "name": "Grok Bot and Agent Assistants",
+  "short": "Grok Bot",
+  "color": "#2563EB",
+  "schedule": "Weekdays 8:00 AM CT"
+ },
+ {
+  "id": "ai-enablement",
+  "name": "AI Enablement at Large Companies",
+  "short": "AI Enablement",
+  "color": "#0D9488",
+  "schedule": "Mon, Wed, Fri 8:15 AM CT"
+ },
+ {
+  "id": "agents",
+  "name": "Agents",
+  "short": "Agents",
+  "color": "#7C3AED",
+  "schedule": "Mon 8:30 AM CT"
+ },
+ {
+  "id": "swarms",
+  "name": "Swarms",
+  "short": "Swarms",
+  "color": "#EA580C",
+  "schedule": "Thu 8:30 AM CT"
+ },
+ {
+  "id": "formal-verification",
+  "name": "Formal Verification, Completeness, and Assurance",
+  "short": "Formal Verification",
+  "color": "#15803D",
+  "schedule": "Tue 9:00 AM CT"
+ },
+ {
+  "id": "ai-assisted-engineering",
+  "name": "AI-Assisted Engineering, Evals, and Cost",
+  "short": "AI-Assisted Engineering",
+  "color": "#A16207",
+  "schedule": "Wed 9:00 AM CT"
+ },
+ {
+  "id": "agentic-engineering",
+  "name": "Agentic Engineering",
+  "short": "Agentic Engineering",
+  "color": "#DB2777",
+  "schedule": "Fri 9:00 AM CT",
+  "show_also_fits": true
+ },
+ {
+  "id": "ai-security",
+  "name": "AI Security Research (defensive)",
+  "short": "AI Security",
+  "color": "#B91C1C",
+  "schedule": "Thu 9:00 AM CT"
+ }
 ]

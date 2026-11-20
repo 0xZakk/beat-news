@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T14:36:50-06:00",
+ "updated": "2026-11-20T14:37:01-06:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -961,7 +961,8 @@
    "summary": "Addy Osmani's Nov 16 post describes how the Claude Code team uses end-to-end, property, and differential tests so agents can show evidence their work is correct, and how the team keeps those checks honest. The property-test examples carry over to finance code: round-trips, invariants like \"balance never goes negative,\" and retries that are safe to repeat.",
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
    "also_fits": [
-    "ai-assisted-engineering"
+    "ai-assisted-engineering",
+    "agentic-engineering"
    ],
    "seq": 131
   },
@@ -1699,7 +1700,9 @@
    "author": "tomakl (Bits, Bugs, and Opinions)",
    "summary": "The post sorts fan-out failures into transient tool errors, ambiguous delegation, and latent failures that retries cannot fix, such as stale inherited context, conflicting outputs nobody reconciles, and actions taken before dependencies are ready. It recommends a reconciliation pass after fan-out. Practical failure modes for parallel agents.",
    "url": "https://tomakl.dev/posts/orchestration-failure-modes/",
-   "also_fits": [],
+   "also_fits": [
+    "agentic-engineering"
+   ],
    "seq": 84
   },
   {
@@ -1832,7 +1835,8 @@
    "summary": "Salesforce describes embedding AI champions in scrum teams across about 500 engineers, who brought guidance into teams, fed problems back to an AI steering committee, and met weekly to demo new capabilities. It is a champions model for engineering teams that keeps team autonomy.",
    "url": "https://engineering.salesforce.com/how-salesforce-scaled-engineering-ai-adoption-without-stifling-innovation/",
    "also_fits": [
-    "ai-assisted-engineering"
+    "ai-assisted-engineering",
+    "agentic-engineering"
    ],
    "seq": 67
   },
