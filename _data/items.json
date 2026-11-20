@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-07-31",
+   "summary": "Backfilled issue. Lauren Tan's public example of a project-local verification skill, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-06-26",
    "summary": "Backfilled issue. Lauren Tan's article on managing agent loops, surfaced earlier by Zakk's Product & Engineering Velocity Assistant."
   },
@@ -2288,6 +2293,17 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-07-31-verification-skill-example",
+   "beat": "agentic-engineering",
+   "date": "2026-07-31",
+   "title": "verification-skill-example",
+   "author": "Lauren Tan (poteto/verification-skill-example)",
+   "summary": "The repository is Lauren Tan's worked example of a project-local verification skill and a feature map for a large fictional app, published Jul 30. It is a template Zakk can copy when writing a verification skill for his own codebase.",
+   "url": "https://github.com/poteto/verification-skill-example",
+   "also_fits": [],
+   "seq": 188
   },
   {
    "id": "2026-06-26-loops-you-can-trust",
