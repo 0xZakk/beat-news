@@ -158,6 +158,11 @@
   },
   {
    "beat": "agentic-engineering",
+   "date": "2026-10-02",
+   "summary": "Backfilled issue. Stripe's Payment Method Factory, two AI Engineer talks on how software factories are built and improved (Factory and Warp), and Laurie Voss on what the data says about code review."
+  },
+  {
+   "beat": "agentic-engineering",
    "date": "2026-09-25",
    "summary": "Backfilled issue. Lauren Tan's 2,500-PR talk, Shopify's Helix migration tool, Linear's CI rework for agent volume, a Kiro team's account of merging 1,000 PRs in a week, and a pstack trim for Opus 5.5."
   },
@@ -2323,6 +2328,52 @@
    "url": "https://www.parloa.com/blog/build-agents-your-way-introducing-parloa-s-agent-management-api-sdk-cli-and-mcp/",
    "also_fits": [],
    "seq": 11
+  },
+  {
+   "id": "2026-10-02-stripe-s-payment-method-factory-orchestrating-agents-for-rep",
+   "beat": "agentic-engineering",
+   "date": "2026-10-02",
+   "title": "Stripe's Payment Method Factory: Orchestrating agents for repeated, custom integrations",
+   "author": "David Dunne, Xenofon Vourliotis, and Sai Samant (Stripe)",
+   "summary": "Stripe built a factory of more than 100 reusable prompts, hardened by agents that watch implementation runs and kept current by feeding back each run's learnings, and says it has built three new payment method integrations and migrated ten existing ones. It is a clear case of turning a repeated engineering job into a reusable agent pipeline.",
+   "url": "https://stripe.dev/blog/stripes-payment-method-factory-orchestrating-agents-for-repeated-custom-integrations",
+   "also_fits": [],
+   "seq": 199
+  },
+  {
+   "id": "2026-10-02-what-it-actually-takes-to-build-a-software-factory",
+   "beat": "agentic-engineering",
+   "date": "2026-10-02",
+   "title": "What It Actually Takes to Build a Software Factory",
+   "author": "Tereza Tížková (Factory), AI Engineer",
+   "summary": "Tereza Tížková says Factory runs worker agents in sequence rather than as a swarm, so each starts with fresh context, uses validators that check code they did not write (one clicks through the app), and has runs lasting hours to weeks. Separate validators and fresh context per worker are design choices Zakk can apply directly.",
+   "url": "https://www.youtube.com/watch?v=vGCJ7diEtrw",
+   "also_fits": [],
+   "seq": 200
+  },
+  {
+   "id": "2026-10-02-building-self-improving-agent-software-factories",
+   "beat": "agentic-engineering",
+   "date": "2026-10-02",
+   "title": "Building Self-Improving Agent Software Factories",
+   "author": "Suraj Gupta (Warp), AI Engineer",
+   "summary": "Suraj Gupta, who leads harness development at Warp, demos three ways a factory improves: an outer-loop agent that opens PRs to update a skill from run feedback, a versioned memory store of facts across runs, and routing cheap tasks to cheaper models. Skill updates go through Git and human review, which is a workable pattern for keeping a team's skills current.",
+   "url": "https://www.youtube.com/watch?v=TN3mj92oZ8I",
+   "also_fits": [],
+   "seq": 201
+  },
+  {
+   "id": "2026-10-02-the-death-of-the-code-review-what-the-data-actually-says",
+   "beat": "agentic-engineering",
+   "date": "2026-10-02",
+   "title": "The Death of the Code Review: What the Data Actually Says",
+   "author": "Laurie Voss (Arize AI), AI Engineer",
+   "summary": "Laurie Voss cites data that developers using autonomous agents wrote 741% more code but shipped only 30% more software, that reviewer effectiveness drops past about 400 lines, and that many benchmark-passing PRs would not be merged, then covers how Cursor and GitHub run review in production. It frames review as the constraint Zakk will hit once agents write most of the code.",
+   "url": "https://www.youtube.com/watch?v=_mi3alkqy4s",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 202
   },
   {
    "id": "2026-09-25-here-s-how-i-shipped-2-500-prs-last-month",
