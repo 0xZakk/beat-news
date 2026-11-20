@@ -152,6 +152,11 @@
    "summary": ""
   },
   {
+   "beat": "agentic-engineering",
+   "date": "2026-11-06",
+   "summary": "Backfilled issue. Will Larson on rolling out the verification pattern at Imprint, OpenAI's new Git backend for agent-scale work, Lauren Tan on adversarial review, Shopify's Reflex architecture, and Dropbox's account of delegating tasks to agents."
+  },
+  {
    "beat": "agents",
    "date": "2026-11-05",
    "summary": ""
@@ -2227,6 +2232,61 @@
    "url": "https://www.grokbotwiki.com/guides/skills-vs-routines",
    "also_fits": [],
    "seq": 23
+  },
+  {
+   "id": "2026-11-06-self-reinforcing-quality-adopting-verification-pattern",
+   "beat": "agentic-engineering",
+   "date": "2026-11-06",
+   "title": "Self-reinforcing quality / adopting verification pattern",
+   "author": "Will Larson (Imprint)",
+   "summary": "Will Larson describes rolling out the verification pattern popularized by pstack at Imprint, where every PR must include a verifications/{pr_num}.md file listing each step the agent took to verify the change and what it could not verify. It is a first-hand rollout account from an engineering leader, including the confusion teams had about what the pattern means.",
+   "url": "https://lethain.com/adopting-verification-pattern/",
+   "also_fits": [],
+   "seq": 226
+  },
+  {
+   "id": "2026-11-06-scaling-git-at-openai",
+   "beat": "agentic-engineering",
+   "date": "2026-11-06",
+   "title": "Scaling Git at OpenAI",
+   "author": "Aaron Friel, Taylor Blau, and Ted Nyman (OpenAI)",
+   "summary": "OpenAI built Pando, a new Git-compatible backend, because Codex sharply increased branches, pushes, and fetches, and says it cut median push latency nearly 5x and now serves nearly a petabyte of Git data a day. Together with Anthropic's Scion post it shows source control becoming a constraint when agents work in parallel.",
+   "url": "https://openai.com/index/scaling-git-at-openai/",
+   "also_fits": [],
+   "seq": 227
+  },
+  {
+   "id": "2026-11-06-lauren-tan-adversarial-reviews-are-mostly-a-waste-of-tokens",
+   "beat": "agentic-engineering",
+   "date": "2026-11-06",
+   "title": "Lauren Tan: adversarial reviews are mostly a waste of tokens",
+   "author": "Lauren Tan (@poteto)",
+   "summary": "Lauren Tan says she now considers adversarial code reviews mostly a waste of tokens, prefers empirical plus formal verification, and has updated pstack to use its interrogate skill less. It is a direct signal on where she thinks review effort should go.",
+   "url": "https://x.com/poteto/status/2117437607940681849",
+   "also_fits": [],
+   "seq": 228
+  },
+  {
+   "id": "2026-11-06-reflex-an-architecture-for-building-mobile-apps-with-agents",
+   "beat": "agentic-engineering",
+   "date": "2026-11-06",
+   "title": "Reflex: an architecture for building mobile apps with agents",
+   "author": "Thiago Magalhaes (Shopify)",
+   "summary": "Shopify's Reflex runs app logic with no UI, exposes each screen's state and actions through one contract, and drives that contract from a CLI on both iOS and Android with a shared test file. It is an example of reshaping an architecture so agents get fast feedback without a simulator.",
+   "url": "https://shopify.engineering/reflex",
+   "also_fits": [],
+   "seq": 229
+  },
+  {
+   "id": "2026-11-06-how-ai-assisted-development-helped-us-build-the-new-dropbox",
+   "beat": "agentic-engineering",
+   "date": "2026-11-06",
+   "title": "How AI-assisted development helped us build the new Dropbox experience",
+   "author": "Pravi Garg, Sourabh Yerfule, and Gennadiy Civil (Dropbox)",
+   "summary": "Dropbox says its web team moved from AI help on individual steps to delegating defined tasks, each starting from a written plan agreed with the agent, and finished a cleanup split into 53 tasks in one week after it had been deferred for two quarters. It shows the task format and review rules a large team used to delegate.",
+   "url": "https://dropbox.tech/machine-learning/how-aiassisted-development-helped-us-build-the-new-dropbox-experience",
+   "also_fits": [],
+   "seq": 230
   },
   {
    "id": "2026-11-05-the-harness-and-memory-architecture-behind-self-updating-doc",
