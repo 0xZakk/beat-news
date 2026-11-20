@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T08:29:32-06:00",
+ "updated": "2026-11-20T09:03:11-06:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -10,6 +10,11 @@
    "beat": "ai-enablement",
    "date": "2026-11-20",
    "summary": "This issue leads with HSBC's CEO giving training and results numbers for the bank's AI Academy, then Sumitomo Life's leader-driven ChatGPT Enterprise rollout and an ACA/NSCP survey showing most financial firms have AI policies but few formally test AI output. It also covers Lloyds Banking Group's public responsible-AI guide, Microsoft IT's account of what it took to get employees using Copilot Cowork after launch, and Maybank's CTO on keeping agents internal until they are auditable."
+  },
+  {
+   "beat": "agentic-engineering",
+   "date": "2026-11-20",
+   "summary": "This week's issue covers OpenAI's Codex-run Performance Factory for fixing latency regressions, Brain Co.'s ticket-to-merge agent pipeline, Lauren Tan's cut to shorter pstack skill texts, and the No AI Slop Manifesto from AIE Code Summit speakers."
   },
   {
    "beat": "swarms",
@@ -302,6 +307,52 @@
     "agents"
    ],
    "seq": 180
+  },
+  {
+   "id": "2026-11-20-how-openai-s-performance-factory-keeps-chatgpt-fast",
+   "beat": "agentic-engineering",
+   "date": "2026-11-20",
+   "title": "How OpenAI's Performance Factory keeps ChatGPT fast",
+   "author": "Okay Zed and Cyrus Forbes (OpenAI)",
+   "summary": "OpenAI's performance team turned its investigation process into a perf-forensics Codex skill, tested it with evals built from past regressions, and then built a task tracker where engineers define each workflow as a config file of states plus a Markdown prompt per step, with a dispatch loop and event subscriptions waking agents; OpenAI says the regression workflow ran more than 1,700 investigations and root-caused over 600 in about three months. It lays out the path from asking an agent questions, to a shared skill, to a workflow that runs from alert to verified fix, which is a template for any recurring engineering job.",
+   "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+   "also_fits": [],
+   "seq": 181
+  },
+  {
+   "id": "2026-11-20-how-we-build-ship-and-support-software-with-ai-agents",
+   "beat": "agentic-engineering",
+   "date": "2026-11-20",
+   "title": "How we build, ship, and support software with AI agents",
+   "author": "Ruhi Reddypalli (Brain Co.)",
+   "summary": "Brain Co. describes its pipeline: a Linear ticket or a Slack emoji reaction starts a background agent in a dev sandbox with MCP access to Linear, Notion, Slack, Granola, and Datadog, a PR Babysitter agent fixes CI and review feedback while keeping PR context between runs, and routine PRs are auto-approved only when a policy reviewer recommends it and a separate checker confirms the change qualifies. It is a full end-to-end setup from a small team, including the rule that changes requested in review need the human author's agreement.",
+   "url": "https://brain.co/blog/how-we-build-ship-and-support-software-with-ai-agents",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 182
+  },
+  {
+   "id": "2026-11-20-pstack-shorter-skill-texts-worker-md-and-opus-first-routing",
+   "beat": "agentic-engineering",
+   "date": "2026-11-20",
+   "title": "pstack: shorter skill texts, worker.md, and Opus-first routing (#1249)",
+   "author": "Lauren Tan (cursor/plugins)",
+   "summary": "In pstack PR #1249 (merged Nov 16) Lauren Tan cut 14 principle skills, the Opening a PR, Babysit, and multi-phase plan playbooks, and /reflect down to much shorter texts that keep each rule and its test, and deleted a plan-checking script nothing used anymore; two days earlier she posted that asking agents for the smallest or quickest fix spreads bad patterns the next agent copies (x.com/poteto/status/2121646643124809848). The diff shows which rules she kept when trimming, which is a useful guide for pruning long skill and AGENTS.md files.",
+   "url": "https://github.com/cursor/plugins/commit/2f87c854fe3e2fcda44ca86b46ede35aad3c46b7",
+   "also_fits": [],
+   "seq": 183
+  },
+  {
+   "id": "2026-11-20-the-no-ai-slop-manifesto",
+   "beat": "agentic-engineering",
+   "date": "2026-11-20",
+   "title": "The No AI Slop Manifesto",
+   "author": "Dex Horthy and AIE Code Summit 2026 speakers and attendees",
+   "summary": "Written at AIE Code Summit in SF and modeled on the Agile Manifesto, it defines slop as work that took less effort to produce than it asks the reader to spend understanding it, and commits signers to disclosing agent-written work, checking the parts that matter before sending, and still reviewing some subset of agent output based on the stakes. It gives Zakk shared, outside language for team norms on agent-written PRs, docs, and messages.",
+   "url": "https://gist.github.com/dexhorthy/4cc96f01be5b1208519e75dad250a948",
+   "also_fits": [],
+   "seq": 184
   },
   {
    "id": "2026-11-19-grok-bot-changelog-1-2-3-adds-per-tool-permissions-and-routi",
