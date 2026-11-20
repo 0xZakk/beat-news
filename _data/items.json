@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-19T09:04:41-06:00",
+ "updated": "2026-11-20T07:39:35-06:00",
  "issues": [
+  {
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "summary": "No new Grok Bot release since 1.2.3, so this issue is mostly about competitors and setups. OpenAI started rolling out dots, its always-on personal agents, to all US ChatGPT Business Standard members and testing them with some Plus users. Obsidian now ships an official Grok Bot plugin built on its open-source Obsidian Skills. Microsoft's IT team wrote up how it is rolling out Autopilot to its own employees, with each agent as a real directory identity that reports to a human sponsor. Superhuman announced a personal assistant in Go that manages a user's team of agents, Tony Zhang open-sourced Linger, a personal agent that runs on local models, and Ras Mic's walkthrough with Greg Isenberg shows a one-bot-per-project setup with Grok Bot handing coding to Claude Code."
+  },
   {
    "beat": "swarms",
    "date": "2026-11-19",
@@ -143,6 +148,84 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-20-openai-rolls-out-dots-to-chatgpt-business-standard-and-start",
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "title": "OpenAI rolls out dots to ChatGPT Business Standard and starts testing them on Plus",
+   "author": "OpenAI (Tibo Sottiaux)",
+   "summary": "OpenAI's Tibo Sottiaux said on Nov 19 that OpenAI is testing dots, its always-on personal agents that keep working between chats on their own cloud computer, with a small number of ChatGPT Plus users, and OpenAI's Business release notes say dots are rolling out to eligible US Business Standard members, with one personal dot per member and usage limits (Tibo's post: https://x.com/thsottiaux/status/2123556256392847657). Business Standard is the plan most small companies buy, so this puts a direct Grok Bot competitor in front of small teams; OpenAI's help center also says billing for enabled dots starts January 14, 2027.",
+   "url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 169
+  },
+  {
+   "id": "2026-11-20-obsidian-ships-an-official-grok-bot-plugin-built-on-obsidian",
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "title": "Obsidian ships an official Grok Bot plugin built on Obsidian Skills",
+   "author": "Obsidian",
+   "summary": "Obsidian's Skills help page now lists Obsidian as an official plugin for Grok Bot, ChatGPT, Codex, and Cursor, packaging its open-source Agent Skills for Obsidian Markdown, Bases, Canvas, the Obsidian CLI, Obsidian Headless sync and publish, Defuddle web extraction, and Knap templates (Grok Bot listing: https://x.ai/bot/plugin/88871845; skills repo: https://github.com/obsidianmd/obsidian-skills). For anyone already pointing bots at an Obsidian vault, this is an official set of skills to compare against homegrown vault instructions; Obsidian's account also said on X that one bot can run Headless Sync and other bots on a team can then work with the same vault.",
+   "url": "https://obsidian.md/help/skills",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 170
+  },
+  {
+   "id": "2026-11-20-microsoft-it-explains-how-it-is-rolling-out-autopilot-person",
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "title": "Microsoft IT explains how it is rolling out Autopilot personal agents to its own employees",
+   "author": "Microsoft Inside Track (Alex Fleck)",
+   "summary": "Microsoft Digital, the company's IT group, says each Autopilot is a real tenant identity with its own Entra Agent ID, Outlook mailbox, and OneDrive, lists its sponsoring employee as its manager, and is being rolled out in phases after a voluntary pilot, with a deployment guide promised for early 2027. Its takeaways (a human sponsor and business purpose for every agent, least-privilege access first, and plans for inactivity reviews, sponsor changes, and retirement) are a usable checklist for how a company should govern a fleet of team bots.",
+   "url": "https://www.microsoft.com/insidetrack/blog/launching-the-personal-agent-era-how-were-rolling-out-autopilot-at-microsoft/",
+   "also_fits": [
+    "ai-enablement"
+   ],
+   "seq": 171
+  },
+  {
+   "id": "2026-11-20-superhuman-adds-a-personal-assistant-to-go-that-manages-your",
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "title": "Superhuman adds a personal assistant to Go that manages your team of agents",
+   "author": "Superhuman",
+   "summary": "Superhuman announced on Nov 19 a nameable personal assistant in Go that flags what needs attention across connected tools, drafts in the user's voice, and manages the user's other agents, plus a generally available Go platform SDK with more than 20 partner agents, including Saifr from Fidelity Labs, and agents you can share Superhuman Docs with and @-mention. Superhuman says Go has passed 1 million monthly active users, and its model of one assistant coordinating many specialist agents is the same shape as a chief-of-staff bot routing to specialist Grok Bots.",
+   "url": "https://blog.superhuman.com/superhuman-expands-go-unveils-personal-ai-assistant/",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 172
+  },
+  {
+   "id": "2026-11-20-linger-an-open-source-personal-agent-that-runs-on-local-mode",
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "title": "Linger: an open-source personal agent that runs on local models",
+   "author": "SimplexAI Labs (Tony Zhang)",
+   "summary": "Tony Zhang open-sourced Linger on Nov 18, a personal agent that runs on your own Mac or PC with local models first, keeps memory on your own disk, and connects your apps, files, and past conversations; the GitHub repo had about 2,560 stars when I checked (launch post: https://x.com/zhangboknight/status/2123237197050794364). It is an early but real reference for a fully local alternative to hosted agents like Grok Bot, which matters for any work where notes or data should not leave a company machine.",
+   "url": "https://github.com/simplexai-labs/linger",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 173
+  },
+  {
+   "id": "2026-11-20-ras-mic-s-grok-bot-setup-one-bot-per-project-with-claude-cod",
+   "beat": "grok-bot",
+   "date": "2026-11-20",
+   "title": "Ras Mic's Grok Bot setup: one bot per project, with Claude Code doing the coding",
+   "author": "Greg Isenberg and Ras Mic",
+   "summary": "In a Nov 11 episode of Greg Isenberg's show that was recirculating on X this week, Ras Mic shows how he gives each serious project its own bot and deletes bots when they stop being useful, uses Grok Bot as the orchestrator that hands coding to Claude Code, runs a content bot on a 9 a.m. and 5 p.m. schedule that scans X for topics, and has the agent build a design system in Paper over MCP before any code. The one-bot-per-project rule and the review-the-plan-before-building step are patterns you could copy for your own bots; some of his bigger claims, such as the value of his Claude Code plan in API credits, are his own and not shown in the video.",
+   "url": "https://www.youtube.com/watch?v=1cWZ7Ekff6E",
+   "also_fits": [
+    "agentic-engineering"
+   ],
+   "seq": 174
+  },
   {
    "id": "2026-11-19-grok-bot-changelog-1-2-3-adds-per-tool-permissions-and-routi",
    "beat": "grok-bot",
