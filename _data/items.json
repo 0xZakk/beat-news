@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-23T07:45:36-06:00",
+ "updated": "2026-11-23T08:31:33-06:00",
  "issues": [
   {
    "beat": "grok-bot",
    "date": "2026-11-23",
    "summary": "The official Grok Bot changelog still ends at 1.2.3 (Nov 18); @blankspeaker posted 1.3.0 direct downloads on Nov 20, but SpaceXSI hasn't listed that release yet. Coinbase published a breakdown of which AI agents trade on Coinbase for Agents, with Grok Bot at 40.4% of notional volume for Nov 9 to 15. Harper, an insurance brokerage, wrote up how it runs its back office on Grok Bot ambient agents, and SpaceXSI's Team Bots workshop says 15 Harper employees built about 85 bots. Lauren Tan of the Grok Bot team posted a long guide on going from goal to process to routines. Anthropic opened computer use in beta to Claude Team and Enterprise, and Ron Biscardi told Molly O'Shea his team used Grok Bot to put on a 5,000-person conference in about six months."
+  },
+  {
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "summary": "This issue leads with a JetBrains and Carnegie Mellon study that tests whether engineers' token spend tracks their output, then covers two Hong Kong regulator-side surveys on how large financial firms are adopting AI and agents, Crédit Agricole moving staff from a secure chat tool to an agent-building platform, Credit Saison's ChatGPT Enterprise pilot numbers, and Yuanta Securities' tiered in-house AI training program."
   },
   {
    "beat": "grok-bot",
@@ -303,6 +308,76 @@
    "url": "https://x.com/MollySOShea/status/2124215518341017719",
    "also_fits": [],
    "seq": 249
+  },
+  {
+   "id": "2026-11-23-jetbrains-and-cmu-study-what-an-engineer-s-token-spend-measu",
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "title": "JetBrains and CMU study: what an engineer's token spend measures",
+   "author": "Shyam Agarwal, Bogdan Vasilescu (Carnegie Mellon), Olga Lvova, Agnia Sergeyuk, Timofey Bryksin (JetBrains) and Thomas Zimmermann (UC Irvine)",
+   "summary": "The authors linked five weeks of coding-agent token usage to the commits of 404 JetBrains engineers and found spend varied 39 to 240 times between the 10th and 90th percentile at similar commit counts, while doubling an engineer's spend went with only about 10% more commits. If you track AI adoption by token usage, this is the first solid data saying to use it for budgeting only and to judge agent work by tasks and outcomes instead.",
+   "url": "https://arxiv.org/abs/2611.13396",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 250
+  },
+  {
+   "id": "2026-11-23-hong-kong-sfc-publishes-its-first-large-firm-ai-readiness-su",
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "title": "Hong Kong SFC publishes its first Large Firm AI Readiness Survey",
+   "author": "Securities and Futures Commission of Hong Kong",
+   "summary": "The SFC surveyed 20 large firms covering over 75% of Hong Kong securities transactions and reports that 30% already use agentic AI in operations, 25% are piloting it, and 90% have connected AI tools to internal systems. It is a regulator's view of what large securities firms are actually doing with agents, including the barriers they report (moving pilots to production, unclear business value, accountability as autonomy grows).",
+   "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR182",
+   "also_fits": [],
+   "seq": 251
+  },
+  {
+   "id": "2026-11-23-hkimr-report-on-ai-adoption-governance-and-compliance-in-hon",
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "title": "HKIMR report on AI adoption, governance and compliance in Hong Kong financial services",
+   "author": "Hong Kong Institute for Monetary and Financial Research (HKMA)",
+   "summary": "The HKMA's research arm says current or planned GenAI adoption among Hong Kong financial firms reached 90% (up from 75% in 2025), with 13% having implemented agentic AI and 56% planning to. The report focuses on compliance use cases, where 86% of firms have adopted or plan to adopt GenAI, which is the closest public benchmark for AI in regulated compliance work.",
+   "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261117-3/",
+   "also_fits": [],
+   "seq": 252
+  },
+  {
+   "id": "2026-11-23-cr-dit-agricole-moves-staff-from-its-s-curi-chat-tool-to-s-c",
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "title": "Crédit Agricole moves staff from its Sécuri'Chat tool to Sécur'IA, a platform for building agents",
+   "author": "Crédit Agricole",
+   "summary": "Crédit Agricole says nearly 9 in 10 trained Crédit Agricole S.A. employees regularly use its internal Sécuri'Chat, and it is now rolling out Sécur'IA (built with Prisme.ai) so business teams can build and share agents connected to bank systems, alongside a Mistral partnership under its \"AI for All\" program. It shows a large bank's next step after a governed chat rollout: letting non-engineers build connected agents inside a governed platform.",
+   "url": "https://www.credit-agricole.com/chaines-d-infos/toutes-les-chaines-d-info-du-groupe-credit-agricole/a-la-une/le-credit-agricole-s-allie-a-des-acteurs-europeens-de-premier-plan-pour-accelerer-le-deploiement-industriel-de-l-intelligence-artificielle",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 253
+  },
+  {
+   "id": "2026-11-23-credit-saison-reports-954-roi-from-a-315-person-chatgpt-ente",
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "title": "Credit Saison reports 954% ROI from a 315-person ChatGPT Enterprise pilot",
+   "author": "OpenAI (customer story)",
+   "summary": "OpenAI says the Japanese card issuer's pilot, which included every executive and someone from every department, saved 14 hours per participant per month against a 7.5-hour target, and the company approved a companywide rollout a month after it ended. The pilot design (set targets up front, put executives in the cohort, share wins and failures in a Slack channel run by a CoE) is a template for running a pilot that ends in a clear decision; the ROI figure is based on reported time savings.",
+   "url": "https://openai.com/index/credit-saison/",
+   "also_fits": [],
+   "seq": 254
+  },
+  {
+   "id": "2026-11-23-yuanta-securities-launches-a-tiered-in-house-ai-training-pro",
+   "beat": "ai-enablement",
+   "date": "2026-11-23",
+   "title": "Yuanta Securities launches a tiered in-house AI training program",
+   "author": "Yuanta Securities (via The Asia Business Daily)",
+   "summary": "Yuanta's \"AIbility Academy Step Up\" runs separate tracks for executives, department heads and staff, then an advanced track for 130 selected employees solving real department problems with agents, and a \"Master\" track for 20 graduates to become in-house AI instructors. It is a concrete version of a champions model where the top tier is trained to teach, so the program does not depend on outside trainers.",
+   "url": "https://www.asiae.co.kr/en/article/2026110509141881832",
+   "also_fits": [],
+   "seq": 255
   },
   {
    "id": "2026-11-20-openai-rolls-out-dots-to-chatgpt-business-standard-and-start",
