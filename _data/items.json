@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:31:33-06:00",
+ "updated": "2026-11-23T08:33:30-06:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -10,6 +10,11 @@
    "beat": "ai-enablement",
    "date": "2026-11-23",
    "summary": "This issue leads with a JetBrains and Carnegie Mellon study that tests whether engineers' token spend tracks their output, then covers two Hong Kong regulator-side surveys on how large financial firms are adopting AI and agents, Crédit Agricole moving staff from a secure chat tool to an agent-building platform, Credit Saison's ChatGPT Enterprise pilot numbers, and Yuanta Securities' tiered in-house AI training program."
+  },
+  {
+   "beat": "agents",
+   "date": "2026-11-23",
+   "summary": "This week's Agents issue leads with HubSpot's write-up of Aviator, the Java harness behind its agents, then two new memory papers (GrepMem, which keeps a raw log and searches it with regex, and AdMem, which shows naive cross-task memory can make agents worse), a long teardown comparing four open and closed harnesses, Red Hat's case for keeping enforcement outside the model, and the MCP working group's early file upload and download extension."
   },
   {
    "beat": "grok-bot",
@@ -378,6 +383,74 @@
    "url": "https://www.asiae.co.kr/en/article/2026110509141881832",
    "also_fits": [],
    "seq": 255
+  },
+  {
+   "id": "2026-11-23-aviator-hubspot-s-agent-harness",
+   "beat": "agents",
+   "date": "2026-11-23",
+   "title": "Aviator: HubSpot's Agent Harness",
+   "author": "Ze'ev Klapow (HubSpot Engineering)",
+   "summary": "HubSpot describes Aviator, the in-house Java harness behind Breeze Assistant and its internal agents, covering a provider-agnostic transcript format that lets agents switch models mid-conversation, existing RPCs exposed as tools, tool search across thousands of tools, SKILL.md skills, and a WASM Python/Bash sandbox (Boomslang). It is a detailed account of why a company standardized on one custom harness for hundreds of teams and what they had to get right (prompt caching, tool calling, context management).",
+   "url": "https://hubspot.engineering/blog/aviator-hubspots-agent-harness/",
+   "also_fits": [],
+   "seq": 256
+  },
+  {
+   "id": "2026-11-23-forget-freely-grep-later-lossless-index-free-memory-for-long",
+   "beat": "agents",
+   "date": "2026-11-23",
+   "title": "Forget Freely, Grep Later: Lossless, Index-Free Memory for Long-Horizon LLM Agents",
+   "author": "Ziyan Yang, Taiwei Shi, Jieyu Zhao et al.",
+   "summary": "GrepMem keeps an append-only plain-text log of an agent's full history plus a regex search tool, with no embeddings, index, or memory extraction, and the authors report 95 to 97 percent on ContextBench versus at most 21 percent for summarization and masking baselines. It is evidence that a log-plus-grep memory, which is cheap to build into a harness, can beat lossy compaction on exact recall.",
+   "url": "https://arxiv.org/abs/2611.25123",
+   "also_fits": [],
+   "seq": 257
+  },
+  {
+   "id": "2026-11-23-admem-expectation-grounded-procedural-memory-for-long-horizo",
+   "beat": "agents",
+   "date": "2026-11-23",
+   "title": "AdMem: Expectation-Grounded Procedural Memory for Long-Horizon Task-Solving Agents",
+   "author": "Runzhe Wang, Huilin Lu, Shengjie Liu, Li Dong, Zhihuai Zhu et al.",
+   "summary": "The authors show that naively accumulating cross-task experience made agents worse than a memoryless ReAct agent in seven of eight AgentBoard domains, then propose AdMem, where the agent predicts each action's outcome, a critic scores it, and every stored entry gets a utility score that drives retrieval, merging, and eviction (441 of 707 tasks solved versus 388 for ReAct). It is a concrete design for giving skill or procedural memory a lifecycle instead of letting it grow unchecked.",
+   "url": "https://arxiv.org/abs/2611.20605",
+   "also_fits": [],
+   "seq": 258
+  },
+  {
+   "id": "2026-11-23-the-agent-harness-landscape-a-common-skeleton-ten-design-poi",
+   "beat": "agents",
+   "date": "2026-11-23",
+   "title": "The Agent Harness Landscape: A Common Skeleton, Ten Design Points and Four Product Architectures",
+   "author": "Haning",
+   "summary": "A long teardown comparing four desktop agent harnesses (Tencent WorkBuddy, DeepSeek Harness, Pi, and OpenAI Codex) on a shared skeleton and ten design points such as context assembly, permissions, session storage, and extension surfaces, with redrawn architecture diagrams. It doubles as a checklist for building a custom harness, and its point that instructions, skills, and MCP servers are the most portable investment across harnesses is directly useful.",
+   "url": "https://haning.me/en/notes/20261115-agent-harness-architecture.html",
+   "also_fits": [],
+   "seq": 259
+  },
+  {
+   "id": "2026-11-23-agent-harness-engineering-separating-model-capabilities-from",
+   "beat": "agents",
+   "date": "2026-11-23",
+   "title": "Agent harness engineering: Separating model capabilities from enforcement",
+   "author": "Mark Vaykhansky and Uri Shaket (Red Hat)",
+   "summary": "Red Hat's authors argue that capabilities like planning and tool use keep moving into the model while permissions, identity, isolation, and budgets have to move out into harness infrastructure, and they compare workflow, coding, research, and runtime harnesses. It gives a simple rule for deciding which parts of a harness to thin out as models improve and which to harden.",
+   "url": "https://developers.redhat.com/articles/2026/11/12/agent-harness-engineering-separating-model-capabilities-enforcement",
+   "also_fits": [
+    "ai-security"
+   ],
+   "seq": 260
+  },
+  {
+   "id": "2026-11-23-exploring-file-uploads-and-downloads-in-mcp",
+   "beat": "agents",
+   "date": "2026-11-23",
+   "title": "Exploring File Uploads and Downloads in MCP",
+   "author": "Den Delimarsky et al. (Model Context Protocol)",
+   "summary": "The MCP maintainers posted an experimental files extension (io.modelcontextprotocol/files) for moving files between clients and tools, inline or out of band, on the stateless 2026-07-28 spec, and a day later announced a six-month spec release cycle with the next version due March 30, 2027. File handoff (a PDF to storage, a CSV into a sandbox) currently needs bespoke tool conventions, so this is worth tracking for any MCP servers Zakk builds.",
+   "url": "https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/",
+   "also_fits": [],
+   "seq": 261
   },
   {
    "id": "2026-11-20-openai-rolls-out-dots-to-chatgpt-business-standard-and-start",
