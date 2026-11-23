@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-20T14:37:01-06:00",
+ "updated": "2026-11-23T07:45:36-06:00",
  "issues": [
+  {
+   "beat": "grok-bot",
+   "date": "2026-11-23",
+   "summary": "The official Grok Bot changelog still ends at 1.2.3 (Nov 18); @blankspeaker posted 1.3.0 direct downloads on Nov 20, but SpaceXSI hasn't listed that release yet. Coinbase published a breakdown of which AI agents trade on Coinbase for Agents, with Grok Bot at 40.4% of notional volume for Nov 9 to 15. Harper, an insurance brokerage, wrote up how it runs its back office on Grok Bot ambient agents, and SpaceXSI's Team Bots workshop says 15 Harper employees built about 85 bots. Lauren Tan of the Grok Bot team posted a long guide on going from goal to process to routines. Anthropic opened computer use in beta to Claude Team and Enterprise, and Ron Biscardi told Molly O'Shea his team used Grok Bot to put on a 5,000-person conference in about six months."
+  },
   {
    "beat": "grok-bot",
    "date": "2026-11-20",
@@ -238,6 +243,67 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-23-coinbase-grok-bot-handled-40-4-of-agent-trading-volume-on-co",
+   "beat": "grok-bot",
+   "date": "2026-11-23",
+   "title": "Coinbase: Grok Bot handled 40.4% of agent trading volume on Coinbase for Agents, Nov 9 to 15",
+   "author": "Coinbase",
+   "summary": "Coinbase posted a chart on Nov 21 of notional trading volume on Coinbase for Agents by LLM client for Nov 9 to 15: Grok Bot 40.4%, Grok 16.4%, Claude 14.9%, custom CLI setups 12.8%, ChatGPT 10.1%, Muse 2.1%, Claude Code 1.5%, other 1.8%. Coinbase also said Claude, ChatGPT, and custom setups are catching up fast and that agent volume keeps hitting all-time highs. It's the first breakdown from a major exchange of which agent clients actually move money, and it comes from the crypto venue Etherealize's market cares most about.",
+   "url": "https://x.com/coinbase/status/2124150603584844208",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 245
+  },
+  {
+   "id": "2026-11-23-harper-explains-how-it-runs-an-insurance-back-office-on-grok",
+   "beat": "grok-bot",
+   "date": "2026-11-23",
+   "title": "Harper explains how it runs an insurance back office on Grok Bot ambient agents",
+   "author": "Harper (Aryan Jadhav)",
+   "summary": "Harper's Aryan Jadhav wrote on Nov 5 that the brokerage runs event-triggered ambient agents in Grok Bot: each bot gets skills that describe a carrier portal and a workflow, plus a trigger that wakes it. They use computer-use agents where a carrier has no API, and a person signs off before money moves. Harper says one agent has brought more than 200 small businesses current with their premium-finance lender since September, covering over $500,000 in annual premium. In SpaceXSI's Nov 12 Team Bots workshop, Beatrice Del Negro said 15 Harper employees across sales, operations, servicing, and billing built about 85 bots (video: https://www.youtube.com/watch?v=FNQkRPR4h2Y). This is a detailed public account of a regulated financial-services firm putting Grok Bot into production, and the skills-plus-trigger setup and human sign-off before payments are patterns worth copying.",
+   "url": "https://www.harperinsure.com/engineering/ambient-agents/",
+   "also_fits": [
+    "ai-enablement"
+   ],
+   "seq": 246
+  },
+  {
+   "id": "2026-11-23-lauren-tan-automate-anything-with-grok-bot",
+   "beat": "grok-bot",
+   "date": "2026-11-23",
+   "title": "Lauren Tan: Automate Anything with Grok Bot",
+   "author": "Lauren Tan (SpaceXSI, Grok Bot team)",
+   "summary": "Lauren Tan's Nov 18 X article lays out how she sets up a new bot. Start with the goal, not the process. Dictate the steps, checks, tools, and feedback sources. Have the bot interview you one question at a time and walk through examples before automating. Give it access to its own feedback so it can propose improvements, use consistent IDs across tools, and only then add routines for triggers or schedules. She also published Dr Eggbot, a bot that designs other bots. It's the Grok Bot team's own playbook for writing skills and routines, and Zakk can hand it to teammates who are setting up their first bots.",
+   "url": "https://x.com/poteto/status/2123159537016533493",
+   "also_fits": [],
+   "seq": 247
+  },
+  {
+   "id": "2026-11-23-anthropic-opens-claude-computer-use-in-beta-to-team-and-ente",
+   "beat": "grok-bot",
+   "date": "2026-11-23",
+   "title": "Anthropic opens Claude computer use in beta to Team and Enterprise plans",
+   "author": "Anthropic",
+   "summary": "Anthropic's Nov 20 release notes say Claude can now see a user's screen and work in the desktop apps they allow, on Team and Enterprise plans. It's off by default and only an Owner can turn it on, and Enterprise can limit it by role. Anthropic's setup guide warns there is no sandbox between Claude and the user's apps, that folder limits and read-only settings don't apply, and that screenshots are saved with the chat (setup guide: https://support.claude.com/en/articles/18483812-set-up-computer-use-for-team-and-enterprise-plans). This brings Claude's team plans closer to what Grok Bot does on its own computer. Anthropic's own list of what the controls don't cover is a useful checklist to compare against before letting any agent drive a work laptop.",
+   "url": "https://support.claude.com/en/articles/12138966-release-notes",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 248
+  },
+  {
+   "id": "2026-11-23-ron-biscardi-says-his-team-used-grok-bot-to-put-on-the-5-000",
+   "beat": "grok-bot",
+   "date": "2026-11-23",
+   "title": "Ron Biscardi says his team used Grok Bot to put on the 5,000-person TomorrowX Summit",
+   "author": "Molly O'Shea (interview with Ron Biscardi)",
+   "summary": "In a clip Molly O'Shea posted on Nov 21, Ron Biscardi says his team used Grok Bot to set up the TomorrowX Summit, a 5,000-person arena event, in six or seven months instead of the usual 18. He says his COO ran about a dozen Grok Bot agents and handled about half of the lead-up herself, and that the team built the website, dashboards, and mobile app in days. It's a first-hand account from a business owner of a non-engineer running a dozen bots on a real operations project, though he gives no breakdown of what each bot did.",
+   "url": "https://x.com/MollySOShea/status/2124215518341017719",
+   "also_fits": [],
+   "seq": 249
+  },
   {
    "id": "2026-11-20-openai-rolls-out-dots-to-chatgpt-business-standard-and-start",
    "beat": "grok-bot",
