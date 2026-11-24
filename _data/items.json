@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-23T08:33:30-06:00",
+ "updated": "2026-11-24T07:38:41-06:00",
  "issues": [
+  {
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "summary": "No new official Grok Bot release since 1.2.3 on Nov 18. Larsen Cundric of the Grok Bot team posted what 572 users said was burning their usage, with a line to paste into a bot for each cause. Francisco Terpolilli posted results from the Grok Bot London Financial Crime Hackathon with Diligent, where AML alert triage and sanctions screening took the top spots. A widely read X article lays out a 20-bot setup built around a shared folder, sampled audits, and a budget bot. Meta launched its Muse personal agent in the UK. Two small open-source repos show routines used as a webhook inbox for coding agents and as an hourly health heartbeat."
+  },
   {
    "beat": "grok-bot",
    "date": "2026-11-23",
@@ -253,6 +258,84 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-24-larsen-cundric-lists-what-572-users-said-was-burning-their-g",
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "title": "Larsen Cundric lists what 572 users said was burning their Grok Bot usage, with a fix for each",
+   "author": "Larsen Cundric (SpaceXSI, Grok Bot team)",
+   "summary": "On Nov 20, Larsen Cundric, who works on Grok Bot, posted the causes 572 users reported for usage burning too fast, with a line to paste into a bot for each one: bots messaging each other (batch updates, no acknowledgment replies), routines running too often (switch to daily), stuck loops, which he called the top complaint (stop after the same error twice), browser logins (use the connector), media generation (one sample first), and big jobs (plan first, no helpers for small tasks). He said the team is still working on clearer usage breakdowns and lower costs, with no date given. Zakk is a team admin on Etherealize's plan, and these are the official, copy-ready instructions to hand teammates whose bots are using up the shared allowance.",
+   "url": "https://x.com/larsencc/status/2123891636694298977",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 262
+  },
+  {
+   "id": "2026-11-24-grok-bot-london-financial-crime-hackathon-results-aml-alert",
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "title": "Grok Bot London Financial Crime Hackathon results: AML alert triage and sanctions screening win",
+   "author": "Francisco Terpolilli (organizer), with SpaceXSI and Diligent",
+   "summary": "Francisco Terpolilli posted on Nov 23 that the Grok Bot London Financial Crime Hackathon, run with Diligent on Nov 21, drew 314 applicants, 148 builders on site, and 55 projects, judged by people from American Express, Visa, Google, UBS, Checkout, and Diligent. First place went to Keystone, an AML alert triage tool that closes an alert, chases the missing document, or escalates; second to a sanctions-hit classifier that returns match, no match, or human call; third to ClearSight, a screening and analyst desk. A separate finalist team said its SNIFF sanctions tool scored 50 of 50 practice cases with no unsafe clears (https://x.com/Enesi__/status/2124862320145023299). These are compliance workflows close to what an institutional credit platform has to run, and each winner keeps an explicit human-escalation path, which is a design pattern worth copying.",
+   "url": "https://x.com/frankterpo/status/2124957747049554231",
+   "also_fits": [
+    "ai-enablement"
+   ],
+   "seq": 263
+  },
+  {
+   "id": "2026-11-24-chuplung-a-20-bot-grok-bot-setup-built-around-a-shared-folde",
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "title": "chuplung: a 20-bot Grok Bot setup built around a shared folder, sampled audits, and a budget bot",
+   "author": "chuplung (@choopyplug1)",
+   "summary": "This Nov 22 X article, with about 16,500 views, describes a 20-bot setup with three rules: idle bots cost nothing, bots pass file pointers instead of pasting work into chat, and repeated jobs become scripts. All bots share one Ledger folder of task cards with a Goal and a Done-when list. A Factory bot creates new bots from a fixed spec (job, anti-jobs, approval boundary, retire-when). An Auditor checks 1 in 5 finished tasks against the card and never fixes anything itself. A Coach turns corrections into shared skills each week, and a Governor splits the weekly limit into a daily budget and switches modes automatically. The author also warns that bots on one account share a computer with no isolation between them. The sampled audit, the bot spec, and the budget bot are patterns Zakk could reuse for team bots at Etherealize, and the isolation warning matters for anything that touches credentials.",
+   "url": "https://x.com/choopyplug1/status/2124533429123322065",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 264
+  },
+  {
+   "id": "2026-11-24-meta-launches-its-muse-personal-agent-in-the-uk",
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "title": "Meta launches its Muse personal agent in the UK",
+   "author": "Meta",
+   "summary": "Meta said on Nov 24 that Muse, its personal agent built on the Muse Spark model, is now available in the UK on iOS, Android, muse.ai, and WhatsApp. Each user gets their own cloud virtual machine, Muse asks before sending email or making a purchase, it can't see passwords or card details, and it launches with UK retail and travel partners including Marks & Spencer, ASOS, Currys, and easyJet. Muse is the biggest consumer competitor to Grok Bot, and Meta's control model (a per-user VM, a separate Sentinel agent that approves outbound traffic, per-app access levels) is a useful comparison when explaining Grok Bot's permission model to colleagues.",
+   "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 265
+  },
+  {
+   "id": "2026-11-24-grokbot-bridge-lets-claude-code-or-codex-hand-tasks-to-a-gro",
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "title": "grokbot-bridge lets Claude Code or Codex hand tasks to a Grok Bot through a routine webhook",
+   "author": "hetaoBackend (GitHub)",
+   "summary": "grokbot-bridge, an unofficial macOS-only MCP server published Nov 21, gives Claude Code, Codex, Cursor, and other MCP clients four tools: list bots, read cached chats, send a task, and wait for the tagged reply. It sends tasks by POSTing to a webhook-only routine the bot sets up for itself, keeps the webhook key in the macOS Keychain, and reads replies from the desktop app's local cache instead of automating the UI. Using a webhook routine as a bot's inbox is a simple way to let a coding agent delegate to a team bot. The cache-reading half relies on undocumented app internals, so it could break with any update.",
+   "url": "https://github.com/hetaoBackend/grokbot-bridge",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 266
+  },
+  {
+   "id": "2026-11-24-grokbot-splunk-o11y-an-hourly-grok-bot-routine-that-reports",
+   "beat": "grok-bot",
+   "date": "2026-11-24",
+   "title": "grokbot-splunk-o11y: an hourly Grok Bot routine that reports bot health to Splunk",
+   "author": "pfrederiksen (GitHub)",
+   "summary": "This unofficial Nov 23 tutorial repo has a Grok Bot routine send hourly box-health and heartbeat gauges to Splunk Observability Cloud over OpenTelemetry. It includes a detector that fires if the heartbeat goes quiet for 2 hours 15 minutes, keeps tokens in chmod 600 files, and has the routine stay quiet unless two runs in a row fail. Zakk runs several scheduled beat routines on his own bot, and this is a worked example of monitoring routines from outside, so a silent failure gets noticed.",
+   "url": "https://github.com/pfrederiksen/grokbot-splunk-o11y",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 267
+  },
   {
    "id": "2026-11-23-coinbase-grok-bot-handled-40-4-of-agent-trading-volume-on-co",
    "beat": "grok-bot",
