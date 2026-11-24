@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-24T07:38:41-06:00",
+ "updated": "2026-11-24T09:33:30-06:00",
  "issues": [
   {
    "beat": "grok-bot",
    "date": "2026-11-24",
    "summary": "No new official Grok Bot release since 1.2.3 on Nov 18. Larsen Cundric of the Grok Bot team posted what 572 users said was burning their usage, with a line to paste into a bot for each cause. Francisco Terpolilli posted results from the Grok Bot London Financial Crime Hackathon with Diligent, where AML alert triage and sanctions screening took the top spots. A widely read X article lays out a 20-bot setup built around a shared folder, sampled audits, and a budget bot. Meta launched its Muse personal agent in the UK. Two small open-source repos show routines used as a webhook inbox for coding agents and as an hourly health heartbeat."
+  },
+  {
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "summary": "This issue covers Antithesis using AI-written TLA+ models plus trace validation to prove Raft safety for the etcd and HashiCorp libraries, Harmonic's Aristotle adding Rust and Solana smart-contract verification, a Princeton and Snowflake paper that verifies an agent's plan in Dafny before any tool call runs, Datadog's FETCh for catching TLA+ spec drift in production, Columbia and CertiK's TensorLean proofs over production GPU kernels, and a Latent Space survey of the formal verification startups pitching proofs for AI-written code."
   },
   {
    "beat": "grok-bot",
@@ -335,6 +340,76 @@
     "ai-assisted-engineering"
    ],
    "seq": 267
+  },
+  {
+   "id": "2026-11-24-verifying-formal-models-of-raft-implementations",
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "title": "Verifying formal models of Raft implementations",
+   "author": "Antithesis (Rohan Padhye and Hillel Wayne)",
+   "summary": "Antithesis says it used AI to infer TLA+ models of the etcd-raft and HashiCorp Raft libraries, checked those models against real execution traces under fault injection, fixed the bugs and model gaps that turned up, and then proved Election Safety, Leader Completeness and State-Machine Safety for the designs it modeled, with the artifacts published on GitHub. It is a detailed public example of the full loop of AI-drafted spec, trace validation, model checking and proof on production code, and the authors are explicit that the guarantees cover only the features and assumptions they modeled.",
+   "url": "https://antithesis.com/blog/2026/verifying-formal-models/",
+   "also_fits": [],
+   "seq": 268
+  },
+  {
+   "id": "2026-11-24-harmonic-s-aristotle-adds-rust-verification-with-solana-smar",
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "title": "Harmonic's Aristotle adds Rust verification, with Solana smart contract examples",
+   "author": "Harmonic",
+   "summary": "Harmonic announced on Nov 16 that Aristotle can now prove Rust code has no undefined behavior and matches its spec, including inside unsafe blocks, and says it proved 28 results about the Manifest order book on Solana and found a rounding bug there, in a partnership with the Solana Foundation. It is the clearest sign so far of a commercial AI prover aimed at on-chain financial code, which is close to the kind of software Etherealize works with.",
+   "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+   "also_fits": [
+    "ai-security"
+   ],
+   "seq": 269
+  },
+  {
+   "id": "2026-11-24-soteria-formally-verified-planning-with-runtime-enforcement",
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "title": "Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents",
+   "author": "Mike He, Ankush Desai, Sharad Malik, Aarti Gupta (Princeton, Snowflake)",
+   "summary": "The paper has the agent write a structured plan, verifies it in Dafny against tool contracts and policy specs before any tool runs, and then uses a runtime monitor to block calls that would break a spec; the authors report 1.7 times the task success of the best baselines with no policy violations. It shows a concrete way to put formal checks around an agent workflow, where a blocked call falls back to a verified plan instead of leaving the agent stuck.",
+   "url": "https://arxiv.org/abs/2611.17880",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 270
+  },
+  {
+   "id": "2026-11-24-how-we-continuously-validate-formal-specifications-in-produc",
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "title": "How we continuously validate formal specifications in production",
+   "author": "Datadog (Nicolas Couvrat)",
+   "summary": "Datadog built FETCh, which turns TLA+ specs into runtime monitors, and says checking its Husky event store against the spec found conflicting placements that had sat in production for about a year and could have crashed backfill recovery. Spec drift is the weak point of any spec-first workflow for agent-written code, and this is a working answer from a large production team.",
+   "url": "https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/",
+   "also_fits": [],
+   "seq": 271
+  },
+  {
+   "id": "2026-11-24-tensorlean-formal-verification-of-production-gpu-kernels",
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "title": "TensorLean: formal verification of production GPU kernels",
+   "author": "Columbia University and CertiK",
+   "summary": "The TensorLean team says it verified 149 open-source GPU kernel instances at the PTX level in Lean, including 102 from FlashAttention and others from DeepSeek, proved 83 correct, and found 38 bugs that testing had missed. It is a case where formal proof reached real, heavily used code, and the bug count is a useful data point when arguing that tests alone are not enough.",
+   "url": "https://tensorlean.ai/",
+   "also_fits": [],
+   "seq": 272
+  },
+  {
+   "id": "2026-11-24-the-war-against-slop-and-an-emerging-weapon-to-fight-it-form",
+   "beat": "formal-verification",
+   "date": "2026-11-24",
+   "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+   "author": "Latent Space (Richard MacManus)",
+   "summary": "Latent Space surveys Harmonic, Theorem, Axiom Math and the new company &Truth, and quotes &Truth co-founder Clark Barrett saying the cvc5 solver he co-created is now called billions of times a day in Amazon production pipelines. It is a quick map of who is selling proofs for AI-written code and how each one pitches it.",
+   "url": "https://latent.space/p/formal-verification/",
+   "also_fits": [],
+   "seq": 273
   },
   {
    "id": "2026-11-23-coinbase-grok-bot-handled-40-4-of-agent-trading-volume-on-co",
