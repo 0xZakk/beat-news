@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-25T07:38:19-06:00",
+ "updated": "2026-11-25T09:29:51-05:00",
  "issues": [
   {
    "beat": "grok-bot",
    "date": "2026-11-25",
    "summary": "Grok Bot 1.3.0 reached the stable channel for most users on Nov 24, but the official changelog still stops at 1.2.3, so the best list of what changed is from people reading the app. Google made its Workspace MCP servers and CLI generally available and said AI agents will have to use them instead of the REST APIs starting Feb 1, 2027. Anthropic marked MCP's second birthday by letting MCP servers ship skills alongside their tools, and made Tasks and Elicitation generally available in Claude. Two practitioner posts are worth copying: a read-only 30-day audit prompt for stale skills and routines, and a two-founder team's Slack org chart of Grok and Devin bots. Tigerless launched Lara, a company-wide agent whose permissions are enforced by its tools."
+  },
+  {
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "summary": "This issue leads with a Reuters report on how US banks are restricting their own internal AI agents, then covers Sompo Japan's write-up on monitoring 20,000 Gemini Enterprise users and the agents they build, Grant Thornton's adoption-activity-returns measurement model for Copilot, Dukhan Bank's phased Claude rollout, the ECB's November Financial Stability Review feature on AI adoption at euro area banks, and Amwins giving Claude to nearly 8,000 employees alongside an internal MCP server."
   },
   {
    "beat": "grok-bot",
@@ -339,6 +344,74 @@
     "agents"
    ],
    "seq": 279
+  },
+  {
+   "id": "2026-11-25-reuters-some-us-banks-tighten-controls-on-their-own-ai-agent",
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "title": "Reuters: some US banks tighten controls on their own AI agents",
+   "author": "Nupur Anand, Reuters",
+   "summary": "Reuters, citing four banking and industry sources, reports that several large and mid-sized US banks are limiting internal agents' credentials, system access and run time, bringing them under identity and access management, logging which systems they touched and whether a person approved, and testing kill switches and manual fallbacks for loan processing and fraud reviews. It is a concrete list of the controls regulated firms now expect around employee-built agents, which is the policy side of any agent rollout in finance.",
+   "url": "https://www.channelnewsasia.com/business/exclusive-some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-6574571",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 280
+  },
+  {
+   "id": "2026-11-25-sompo-japan-on-running-gemini-enterprise-for-about-20-000-em",
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "title": "Sompo Japan on running Gemini Enterprise for about 20,000 employees",
+   "author": "Google Cloud Japan blog (Sompo Japan Insurance)",
+   "summary": "Sompo Japan says it reached about 80% weekly and over 50% daily active use, sends audit logs to BigQuery to track DAU, WAU, retention and adoption by department, and since May 2026 has let staff build and share custom agents, with automated checks that flag rule-breaking agents and send their owners correction notices. It is a detailed account of letting employees build agents freely and governing them after the fact with monitoring, instead of blocking up front.",
+   "url": "https://cloud.google.com/blog/ja/topics/customers/sompo-japan-promotes-the-use-of-gemini-enterprise/",
+   "also_fits": [],
+   "seq": 281
+  },
+  {
+   "id": "2026-11-25-grant-thornton-on-measuring-copilot-from-adoption-to-returns",
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "title": "Grant Thornton on measuring Copilot from adoption to returns",
+   "author": "Grant Thornton",
+   "summary": "Grant Thornton reports 84% sustained Copilot adoption, 12.5 million actions and more than 10,000 user-built agents in a year, and says it deliberately does not count the vendor estimate of six minutes per action (about 1.2 million hours) as value, only process-level results measured against a baseline. Its baseline, redesign, control, measure, scale table is a usable template for reporting AI results to leadership without inflated time-saved numbers.",
+   "url": "https://www.grantthornton.com/insights/articles/alliances/2026/implementation-to-impact-copilot-at-grant-thornton",
+   "also_fits": [],
+   "seq": 282
+  },
+  {
+   "id": "2026-11-25-dukhan-bank-starts-a-phased-claude-rollout",
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "title": "Dukhan Bank starts a phased Claude rollout",
+   "author": "Dukhan Bank (via Gulf Times)",
+   "summary": "Qatar's Dukhan Bank signed with Anthropic to give Claude to a select group of employees first, for research, knowledge synthesis, productivity and technology work, and says wider use depends on demonstrated value, operational readiness and completed governance and risk assessments under Qatar Central Bank rules. It is another example of a bank structuring rollout as gated phases with each use case assessed before it goes live.",
+   "url": "https://www.gulf-times.com/article/738907/business/dukhan-bank-signs-agreement-with-anthropic-to-build-enterprise-ai-capability",
+   "also_fits": [],
+   "seq": 283
+  },
+  {
+   "id": "2026-11-25-ecb-financial-stability-review-feature-on-ai-adoption-at-ban",
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "title": "ECB Financial Stability Review feature on AI adoption at banks and asset managers",
+   "author": "European Central Bank",
+   "summary": "ECB staff report that the share of euro area banks actively using generative AI rose from 46% to 86% between 2024 and 2025, mostly for IT operations, legal and regulatory work and frontline services, while agentic AI is still mostly at the pilot stage, and they flag reliance on a few US providers as a concentration risk. It gives an official European baseline to set next to the Hong Kong and UK surveys covered earlier on this beat.",
+   "url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/special/html/ecb.fsrart202611_01~dd6e15a84a.en.html",
+   "also_fits": [],
+   "seq": 284
+  },
+  {
+   "id": "2026-11-25-amwins-rolls-out-claude-to-nearly-8-000-employees",
+   "beat": "ai-enablement",
+   "date": "2026-11-25",
+   "title": "Amwins rolls out Claude to nearly 8,000 employees",
+   "author": "Amwins",
+   "summary": "Specialty insurance distributor Amwins says it has given Claude to nearly 8,000 colleagues across five divisions alongside Copilot, and built a custom MCP server for its Amlink platform as part of five AI priorities that include AI-first software development. It shows a financial firm pairing broad chat access with an internal MCP connection to its own data, a setup close to what a smaller firm can copy.",
+   "url": "https://www.amwins.com/who-we-are/newsroom/amwins-pairs-amwins-dna-with-ai-enabled-capabilities--including-claude-deployment-to-all-employees",
+   "also_fits": [],
+   "seq": 285
   },
   {
    "id": "2026-11-24-larsen-cundric-lists-what-572-users-said-was-burning-their-g",
