@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-24T09:33:30-06:00",
+ "updated": "2026-11-25T07:38:19-06:00",
  "issues": [
+  {
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "summary": "Grok Bot 1.3.0 reached the stable channel for most users on Nov 24, but the official changelog still stops at 1.2.3, so the best list of what changed is from people reading the app. Google made its Workspace MCP servers and CLI generally available and said AI agents will have to use them instead of the REST APIs starting Feb 1, 2027. Anthropic marked MCP's second birthday by letting MCP servers ship skills alongside their tools, and made Tasks and Elicitation generally available in Claude. Two practitioner posts are worth copying: a read-only 30-day audit prompt for stale skills and routines, and a two-founder team's Slack org chart of Grok and Devin bots. Tigerless launched Lara, a company-wide agent whose permissions are enforced by its tools."
+  },
   {
    "beat": "grok-bot",
    "date": "2026-11-24",
@@ -263,6 +268,78 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-25-grok-bot-1-3-0-is-rolling-out-before-its-changelog",
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "title": "Grok Bot 1.3.0 is rolling out before its changelog",
+   "author": "Luis Barragan (with Kevin Logan)",
+   "summary": "Luis Barragan posted on Nov 24 that Grok Bot 1.3.0 (Mac build dated Nov 20) is out while the official changelog still ends at 1.2.3, and listed what he found in the app code: price-matched auto-approve for purchases, an Investments page, bookings and refunds, suggested routines and References, clearer team connector screens, safety-review flags on routines that message, spend, or share, and a vault password warning; he said some of it may still be switched off on the server. Kevin Logan posted the same day that 1.3.0 should now be available to everyone, and the changelog still showed 1.2.3 when I checked this morning. As a team admin, Zakk should update and look for the routine safety-review flags and team connector changes, but treat this list as unofficial until SpaceXSI publishes notes.",
+   "url": "https://x.com/luisbarragan/status/2125338561276940753",
+   "also_fits": [],
+   "seq": 274
+  },
+  {
+   "id": "2026-11-25-google-makes-workspace-mcp-servers-and-cli-generally-availab",
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "title": "Google makes Workspace MCP servers and CLI generally available and will require AI agents to use them",
+   "author": "Google Workspace",
+   "summary": "On Nov 24 Google made its Workspace MCP servers (Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, Tasks) and Workspace CLI generally available, and said a new Workspace AI Tools Addendum requires AI agents to connect through them instead of the REST APIs, with technical enforcement starting Feb 1, 2027; external agents must use dedicated OAuth client IDs, and Google says usage quota billing starts Apr 1, 2027. Etherealize runs on Google Workspace and Zakk's bots reach Gmail, Calendar, and Drive through connectors, so it is worth asking now which of those connectors use the REST APIs and what the admin console will show for agent access.",
+   "url": "https://workspace.google.com/blog/product-announcements/built-for-trust-and-control-new-ai-agent-protections-and-developer-tools-in-google-workspace",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 275
+  },
+  {
+   "id": "2026-11-25-claude-adds-skills-over-mcp-in-beta-and-makes-mcp-tasks-and",
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "title": "Claude adds Skills over MCP in beta and makes MCP Tasks and Elicitation generally available",
+   "author": "Anthropic",
+   "summary": "For MCP's second birthday on Nov 24, Anthropic put Skills over MCP into public beta, so an MCP server can publish skills next to its tools and Claude loads them only when needed (Shopify, HubSpot, and Atlassian are early users), and made Tasks (long-running background work) and Elicitation (pausing mid-call to ask the user, as Supabase does before paid or destructive actions) generally available; Anthropic notes these are part of the open MCP spec, not Claude-only. This is the same skills-plus-connector pattern Zakk uses in Grok Bot, and a server that ships its own skills could replace hand-written skills for tools like Linear or Notion.",
+   "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 276
+  },
+  {
+   "id": "2026-11-25-a-read-only-prompt-for-auditing-unused-grok-bot-skills-and-r",
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "title": "A read-only prompt for auditing unused Grok Bot skills and routines",
+   "author": "Michael Fenech",
+   "summary": "Michael Fenech posted that a 30-day audit of his Grok Bot setup found 8 skills and 2 routines that had not been used, and shared the prompt: read-only, list every routine with its last run, group skills by when they were last actually loaded, flag outdated or overlapping skills, and recommend archives with evidence and confidence. His point is that because a team shares one skill library and bots pick skills by task, stale skills raise the chance a bot picks the wrong instructions; Zakk has several bots and a growing shared skill list, so this is a cheap monthly check to run.",
+   "url": "https://x.com/Michael_Fenech_/status/2125254615470162065",
+   "also_fits": [],
+   "seq": 277
+  },
+  {
+   "id": "2026-11-25-a-two-founder-team-s-slack-org-chart-of-grok-and-devin-bots",
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "title": "A two-founder team's Slack org chart of Grok and Devin bots",
+   "author": "Altan Tutar",
+   "summary": "Altan Tutar, founder of More Markets, described how his two-person team runs agents in Slack: long-running Grok Bots for research and ops work (GTM and Intelligence bots) with access to their operational databases, one Slack channel per bot to keep workstreams apart, and two engineering bots per founder, a Grok Bot with Claude Code access and a Devin bot he finds most useful for long-running product work. It is a concrete small-team version of the channel-per-bot layout Zakk is weighing as he moves work onto fewer bots.",
+   "url": "https://x.com/altantutar/status/2124962966311247952",
+   "also_fits": [],
+   "seq": 278
+  },
+  {
+   "id": "2026-11-25-tigerless-launches-lara-a-company-wide-agent-with-tool-enfor",
+   "beat": "grok-bot",
+   "date": "2026-11-25",
+   "title": "Tigerless launches Lara, a company-wide agent with tool-enforced permissions",
+   "author": "Tigerless Health",
+   "summary": "On Nov 24 Tigerless launched Lara in early access, an agent that joins a company's workspace, learns its workflows, and works for the whole team; CEO Zikang Wu said its permissions are enforced by the tools it uses rather than its own judgment, each channel and role reaches only its allowed tools, and its memory, skills, and permissions are stored apart from the agent and exposed over MCP so customers can take them elsewhere. Role-scoped access per channel and portable memory are two things Zakk would want to compare against Grok Bot's team bots.",
+   "url": "https://tigerless.ai/newsroom/tigerless-health-launches-lara",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 279
+  },
   {
    "id": "2026-11-24-larsen-cundric-lists-what-572-users-said-was-burning-their-g",
    "beat": "grok-bot",
