@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T09:29:51-05:00",
+ "updated": "2026-11-25T10:35:27-05:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -10,6 +10,11 @@
    "beat": "ai-enablement",
    "date": "2026-11-25",
    "summary": "This issue leads with a Reuters report on how US banks are restricting their own internal AI agents, then covers Sompo Japan's write-up on monitoring 20,000 Gemini Enterprise users and the agents they build, Grant Thornton's adoption-activity-returns measurement model for Copilot, Dukhan Bank's phased Claude rollout, the ECB's November Financial Stability Review feature on AI adoption at euro area banks, and Amwins giving Claude to nearly 8,000 employees alongside an internal MCP server."
+  },
+  {
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "summary": "This week Anthropic launched Claude Ship, which reviews, fixes, and can approve pull requests under a policy file in the repo, and published a security guide for coding agents that spells out how hooks fail open by default. AWS's Strands team added one-command sandboxing for Claude Code, Codex, and Kiro CLI, Claude Code's new Code Mode changes what hooks and the auto mode classifier actually see, a University of Padua and UC San Diego paper shows how to stop coding agents from gaming benchmark graders, and Revenium and Manifold both shipped per-person budgets for agent spend."
   },
   {
    "beat": "grok-bot",
@@ -412,6 +417,76 @@
    "url": "https://www.amwins.com/who-we-are/newsroom/amwins-pairs-amwins-dna-with-ai-enabled-capabilities--including-claude-deployment-to-all-employees",
    "also_fits": [],
    "seq": 285
+  },
+  {
+   "id": "2026-11-25-anthropic-launches-claude-ship-to-review-fix-and-approve-pul",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "title": "Anthropic launches Claude Ship to review, fix, and approve pull requests",
+   "author": "Anthropic",
+   "summary": "Anthropic released Claude Ship on Nov 23: Code Review (GA) plus two beta agents, PR Steward, which fixes failing CI and merge conflicts but never merges, and Claude Approvals, which approves routine PRs according to a policy file the team writes in the repo; Anthropic says it bills on tokens, admins can set spend limits, and a policy that calls Claude's review triggers a billed review even in observe-only mode. It is the first major vendor product that lets an agent approve code under a written policy, so the policy-file design, the observe-only rollout Anthropic recommends, and the per-PR token cost are the parts to look at before turning on auto-approval anywhere.",
+   "url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "also_fits": [],
+   "seq": 286
+  },
+  {
+   "id": "2026-11-25-anthropic-publishes-an-enterprise-guide-to-securing-coding-a",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "title": "Anthropic publishes an enterprise guide to securing coding agents",
+   "author": "Anthropic",
+   "summary": "Anthropic's new guide for security and engineering leaders lays out layered controls for Claude Code: centrally managed deny rules, PreToolUse and ConfigChange hooks, kernel-level sandboxing with egress allowlists, and per-task cloud VMs, plus a two-week pilot checklist. It states that a hook that fails or times out lets the call through by default and recommends setting onFailure to block and allowManagedHooksOnly, which is a concrete settings list to check any company's Claude Code baseline against.",
+   "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+   "also_fits": [
+    "ai-security"
+   ],
+   "seq": 287
+  },
+  {
+   "id": "2026-11-25-strands-box-adds-native-support-for-claude-code-codex-and-ki",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "title": "Strands Box adds native support for Claude Code, Codex, and Kiro CLI",
+   "author": "Strands Agents (AWS), Mackenzie Zastrow and Abhishek Srinivasa Raju Padmavathi",
+   "summary": "The open source Strands Box sandbox can now start Claude Code, Codex, or Kiro CLI in one command (box run claude), checking every shell command, file access, network request, and MCP call against rules written in its Dogwood policy language, with credentials held outside the box and swapped in at the egress gateway. It is a way to run coding agents without per-step approvals while still capping what they can reach, including rules that look at session history such as a limit on AWS calls per hour.",
+   "url": "https://strandsagents.com/blog/strands-box-cli/",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 288
+  },
+  {
+   "id": "2026-11-25-claude-code-code-mode-changes-what-hooks-and-the-auto-mode-c",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "title": "Claude Code Code Mode changes what hooks and the auto mode classifier see",
+   "author": "Anthropic (Claude Code docs)",
+   "summary": "Code Mode is an experimental Claude Code setting (v2.1.323+, off by default) where the model writes JavaScript that drives Bash, Read, and Edit calls in one script; Anthropic's docs say each call still passes deny rules and PreToolUse hooks, but in auto mode the classifier reviews the script once rather than each call. Anyone relying on hooks that match simple command strings should read the hooks section, since InfoQ notes a git push can now arrive as a compound command and the docs add new ways to find calls that came from code in telemetry.",
+   "url": "https://code.claude.com/docs/en/code-mode",
+   "also_fits": [],
+   "seq": 289
+  },
+  {
+   "id": "2026-11-25-splitbench-separates-running-tests-from-grading-to-stop-codi",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "title": "SplitBench separates running tests from grading to stop coding agents gaming benchmarks",
+   "author": "Nathan Nour Houlamy, Mattia Favretto, Earlence Fernandes, Mauro Conti (University of Padua, UC San Diego)",
+   "summary": "This Nov 20 preprint builds a privilege-separated harness where a trusted grader holds the expected answers, ports 180 of 202 Terminal-Bench and DeepSWE tasks with 98.7% agreement with the native graders, and blocks 75% of attacks from agents that can read the grading code. It is a practical design for any internal eval of coding agents, because the paper documents agents hard-coding expected values and swapping test runners to fake passes.",
+   "url": "https://arxiv.org/abs/2611.27860",
+   "also_fits": [],
+   "seq": 290
+  },
+  {
+   "id": "2026-11-25-revenium-and-manifold-add-per-person-budgets-for-coding-agen",
+   "beat": "ai-assisted-engineering",
+   "date": "2026-11-25",
+   "title": "Revenium and Manifold add per-person budgets for coding agent spend",
+   "author": "Revenium (Jason Cumberland); Manifold (Oleksandr Yaremchuk)",
+   "summary": "On Nov 19 Revenium released Sidekick, which shows budget use, conversation size, and prompt cache state in a Claude Code status line and can warn and then stop work when a budget set in Revenium Guardrails runs out; the same day Manifold launched budgets and spend tracking that follow one person across every agent they use. Both target the gap Revenium describes, where coding spend shows up on a dashboard weeks later, and give a model for in-session limits that warn before they block.",
+   "url": "https://www.revenium.ai/post/introducing-revenium-sidekick",
+   "also_fits": [],
+   "seq": 291
   },
   {
    "id": "2026-11-24-larsen-cundric-lists-what-572-users-said-was-burning-their-g",
