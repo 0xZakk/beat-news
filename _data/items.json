@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:30:58-05:00",
+ "updated": "2026-11-26T10:08:54-05:00",
  "issues": [
   {
    "beat": "swarms",
@@ -10,6 +10,11 @@
    "beat": "grok-bot",
    "date": "2026-11-26",
    "summary": "SpaceXAI published the official Grok Bot 1.3.0 changelog, with bot-to-bot handoffs in Slack and new org and team admin controls. Perplexity added a Multiagent effort level that splits work across up to 16 agents and put its teammates on phones. A builder who runs about 29 bots wrote up how to move empty routine checks outside Grok Bot and wake bots by webhook, and a Grok Bot engineer's open call for complaints drew more than 1,000 replies about usage limits, model quality, and memory."
+  },
+  {
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "summary": "Six accounts of people using LLMs to find real bugs, with the workflow spelled out where the authors give it. A Day 1 recap of DeFi Security Summit 2026 collects how Dedaub, ack3, Oak Security, Consensys Diligence and Trail of Bits run AI auditors on real smart contract audits. CyberScoop's Greg Otto describes finding a WordPress plugin CVE in six hours with Gemini and GLM-5.3-Flash as a non-coder. Khan Bank's Yalguun Tumenkhuu explains how he uses agents to hunt incomplete fixes across MariaDB's connectors, which produced 14 CVEs. MiniMax reports an internal model producing practical breaks of past NIST candidates and recent cryptographic schemes, CertiK and university researchers report an evolved smart contract scanner finishing third of 896 in a live audit contest, and pwn.ai credits GPT 5.6 Sol with finding the Ghostscript bug behind Upload2Shell."
   },
   {
    "beat": "grok-bot",
@@ -395,6 +400,75 @@
     "agents"
    ],
    "seq": 300
+  },
+  {
+   "id": "2026-11-26-ai-security-at-defi-security-summit-2026-day-1",
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "title": "AI security at DeFi Security Summit 2026, Day 1",
+   "author": "Jiri123 (recap of talks by Dedaub, ack3, Oak Security, Consensys Diligence, Trail of Bits and others)",
+   "summary": "This recap of the Nov 1 talks in Mumbai collects how audit teams actually run AI on smart contracts: Dedaub's Mohamad Mansouri hid the reports from 8 past client audits and found one agent caught 45% of medium-and-above Solidity bugs, all agents together 73% including every critical, plus 16 bugs the humans had missed; Oak Security has several models from different providers hunt separately and then has other models try to disprove each finding in a fresh context; Consensys Diligence found a one-sentence prompt beat a 40-agent swarm; and Trail of Bits' nisedo says to have the agent write its own goal (prove an unprivileged user can steal funds, with a PoC), hunt a bug class rather than one bug, and give each agent one attack surface. It is the most concrete set of crypto-specific AI auditing methods in one place, and the speakers are blunt that AI already pays off for bounties but cannot yet replace a full audit.",
+   "url": "https://www.jiri123.xyz/posts/dss-2026-ai-security-day-1/",
+   "also_fits": [
+    "formal-verification",
+    "swarms"
+   ],
+   "seq": 301
+  },
+  {
+   "id": "2026-11-26-i-ve-never-hunted-for-a-software-vulnerability-before-ai-hel",
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "title": "I've never hunted for a software vulnerability before. AI helped me find one in six hours.",
+   "author": "Greg Otto, CyberScoop",
+   "summary": "Otto, a reporter who says he cannot read code like an engineer, used Gemini Flash 3.8 to pick a target and walk him through WPIDE's code until its guardrails stopped him, then switched to GLM-5.3-Flash, which diffed two plugin versions on its own, found that a July patch was incomplete, wrote PoCs and drafted the Patchstack submission; Patchstack reproduced it within about a day and it became CVE-2026-124251 (CVSS 8.8). It is a first-hand account of how little skill an incomplete-fix bug now takes to find, including where a frontier model refused and an open-weight model did not.",
+   "url": "https://cyberscoop.com/finding-software-vulnerability-with-ai-wordpress-patchstack/",
+   "also_fits": [],
+   "seq": 302
+  },
+  {
+   "id": "2026-11-26-fix-the-class-not-the-instance-yalguun-tumenkhuu-on-hunting",
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "title": "Fix the class, not the instance: Yalguun Tumenkhuu on hunting bugs in MariaDB's connectors",
+   "author": "MariaDB Foundation (interview with Yalguun Tumenkhuu, fg0x0)",
+   "summary": "Tumenkhuu, Cyber Security Lead at Khan Bank, says he has filed more than 90 security reports on MariaDB, most of them in its connectors, 14 with CVEs so far, using AI agents to map large codebases, list every place a pattern appears and check a patch against all its sibling code paths, then building the exact released version and running a PoC with a negative control before anything leaves his hands. It is a practitioner's account of the agent-for-leads, human-for-proof split applied to incomplete fixes, from someone working in banking security.",
+   "url": "https://mariadb.org/fix-the-class-not-the-instance-yalguun-tumenkhuu-on-hunting-bugs-in-mariadbs-connectors/",
+   "also_fits": [],
+   "seq": 303
+  },
+  {
+   "id": "2026-11-26-practical-cryptanalysis-with-minimax-s-latest-internal-model",
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "title": "Practical cryptanalysis with MiniMax's latest Internal Model",
+   "author": "MiniMax Research",
+   "summary": "MiniMax says an internal-only model, run on the Tier 2 set of CryptanalysisBench (NIST competition candidates with no known practical attacks), produced working attacks it calls the first practical breaks of several of them, including collisions for the SHA-3 candidate Waterfall-256 in 0.045 seconds and key recovery for the ASIACRYPT 2025 signature scheme SBC-VOLE from one signature, with every attack required to run as code that recovers the secret; it shared results with the scheme authors in advance and published the reasoning traces and PoC code. It matters for anyone relying on newer cryptographic designs, and MiniMax itself notes the work covers academic designs and past candidates, not deployed standards.",
+   "url": "https://www.minimax.io/blog/practical-cryptanalysis-with-minimaxs-latest-internal-model",
+   "also_fits": [],
+   "seq": 304
+  },
+  {
+   "id": "2026-11-26-shuttle-dependency-attributed-workflow-evolution-for-smart-c",
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "title": "Shuttle: Dependency-Attributed Workflow Evolution for Smart Contract Auditing",
+   "author": "Yue Xue, Ronghui Gu, et al. (CertiK, Columbia, NTU; arXiv 2611.31929)",
+   "summary": "The authors had coding agents revise their LLM smart contract auditing workflow, LucidScan, while tracing exactly which step lost a clue and protecting steps that already found bugs, and they report that the evolved scanner, paired with scope filtering, deduplication and PoC checks, submitted 84 findings in a live public audit contest with 896 researchers that ended this month, had 78 confirmed, tied for first on High-severity recall and finished third overall. It is one of the few papers reporting real contest results instead of benchmark scores, at a stated average scan cost of about $4 per project.",
+   "url": "https://arxiv.org/abs/2611.31929",
+   "also_fits": [],
+   "seq": 305
+  },
+  {
+   "id": "2026-11-26-how-we-hacked-the-pipes-upload2shell",
+   "beat": "ai-security",
+   "date": "2026-11-26",
+   "title": "How We Hacked the Pipes: Upload2Shell",
+   "author": "pwn.ai (Paulos Yibelo)",
+   "summary": "pwn.ai traced how ordinary image uploads and previews in PHP, Python and other stacks hand files to Ghostscript, and says GPT 5.6 Sol, working with Yibelo, found a missing type check in the .putgstringcopy font helper that the team turned into a use-after-free, a write-what-where primitive and a -dSAFER bypass, now CVE-2026-125396 and fixed in Ghostscript 10.08.0. The post says little about the model's part beyond that credit, but it is a clear example of a human mapping reachability across products while the model finds the bug in the interpreter.",
+   "url": "https://pwn.ai/upload2shell/research.html",
+   "also_fits": [],
+   "seq": 306
   },
   {
    "id": "2026-11-25-grok-bot-1-3-0-is-rolling-out-before-its-changelog",
