@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-26T08:47:09-05:00",
+ "updated": "2026-11-26T09:30:58-05:00",
  "issues": [
+  {
+   "beat": "swarms",
+   "date": "2026-11-26",
+   "summary": "This week three separate groups tested whether more agents actually beat one agent, and they disagree in useful ways. Paradigm 3 finds swarms are faster but slightly worse than a single agent at the same token budget, Replit finds Claude swarms scale well on performance work with many independent pieces, and a UIUC study finds parallel subagents add 1 to 5 points at up to 3.8x the cost on repo-building tasks. Also: a budget-aware router for multi-agent systems and AWS Quick's new multi-agent orchestration."
+  },
   {
    "beat": "grok-bot",
    "date": "2026-11-26",
@@ -329,6 +334,67 @@
    "url": "https://x.com/Baconbrix/status/2125747621331611811",
    "also_fits": [],
    "seq": 295
+  },
+  {
+   "id": "2026-11-26-swarms-do-not-yet-raise-the-roof",
+   "beat": "swarms",
+   "date": "2026-11-26",
+   "title": "Swarms do not yet raise the roof",
+   "author": "Niccolò Zanichelli and Gavin Leech, Paradigm 3",
+   "summary": "Paradigm 3 ran more than 1,100 runs comparing teams of 2, 4, and 8 agents (and on one task 16 and 32) against a single agent with the same token budget, and reports swarms finished about 6x sooner but scored about 7% lower, with no swarm clearly beating a single agent that can restart with a fresh context. It's the most careful matched-budget test of swarms so far, and its main point for anyone building orchestration is that the fair baseline is one agent that restarts its session, not one agent that grinds on in a stale context.",
+   "url": "https://www.paradigm3.org/research/swarms/",
+   "also_fits": [],
+   "seq": 296
+  },
+  {
+   "id": "2026-11-26-throwing-headcount-at-the-problem-scaling-agent-swarms-on-pe",
+   "beat": "swarms",
+   "date": "2026-11-26",
+   "title": "Throwing Headcount at the Problem: scaling agent swarms on performance engineering",
+   "author": "Replit",
+   "summary": "Replit says a 32-agent Claude Opus 5.5 swarm sped up NumPy workloads 18.9x in two hours against 3.7x for a single Opus agent, while GPT-6.2 Astra swarms got worse as they grew, and it is releasing the tasks as Optimization-Bench. The useful detail is how the good swarms organized themselves: Replit reports they claimed tasks and shared results on a common board, and the ones that routed everything through the coordinator bogged down as its inbox grew.",
+   "url": "https://frontier.replit.com/throwing-headcount-at-the-problem/",
+   "also_fits": [],
+   "seq": 297
+  },
+  {
+   "id": "2026-11-26-when-are-parallel-subagents-effective-for-coding-an-empirica",
+   "beat": "swarms",
+   "date": "2026-11-26",
+   "title": "When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction",
+   "author": "Zhiheng Lyu, Chengyu Yin, and Lingming Zhang (arXiv 2611.33893)",
+   "summary": "The authors compared a single coding agent with a main agent delegating to parallel subagents on NL2Repo and ProgramBench and report subagents raised hidden-test pass rates by only about 1 to 5 points at up to 3.8x the cost, with bigger gains on hard tasks. They trace most of the gain to self-checking, fresh context, and more modular code, and show one prompt sentence telling a single agent to probe the reference program recovers most of it, which gives a concrete checklist for when fanning out is worth paying for.",
+   "url": "https://arxiv.org/abs/2611.33893",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 298
+  },
+  {
+   "id": "2026-11-26-meterrouter-budget-aware-dynamic-routing-for-multi-agent-sys",
+   "beat": "swarms",
+   "date": "2026-11-26",
+   "title": "MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems",
+   "author": "Yue Xu, Leikun Yin, Ruiming Min, et al. (arXiv 2611.34327)",
+   "summary": "MeterRouter builds the agent collaboration graph per query, picking each agent's role, model, connections, and when to stop, under a per-query dollar budget, and the authors report it matches the strongest multi-agent systems at 82% lower cost than the strongest multi-agent router. It treats spend as a hard input to orchestration rather than something measured afterward, which is the piece most swarm setups are missing.",
+   "url": "https://arxiv.org/abs/2611.34327",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 299
+  },
+  {
+   "id": "2026-11-26-aws-quick-adds-multi-agent-orchestration",
+   "beat": "swarms",
+   "date": "2026-11-26",
+   "title": "AWS Quick adds multi-agent orchestration",
+   "author": "Hillary Lovric, AWS",
+   "summary": "AWS says agents in Quick can now pull in several specialized agents at once, each keeping its own instructions, knowledge, and context, and combine their work into one answer that shows what each agent contributed. It's an enterprise example of a pattern where each team owns and maintains its own agent and a front agent fans out to them, which is close to how a company-wide agent setup would be organized.",
+   "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 300
   },
   {
    "id": "2026-11-25-grok-bot-1-3-0-is-rolling-out-before-its-changelog",
