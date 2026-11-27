@@ -421,7 +421,7 @@
    "date": "2026-11-27",
    "title": "Will Larson: Shipping 100+ PRs to production in a week",
    "author": "Will Larson (Imprint)",
-   "summary": "Will Larson, CTO at the fintech Imprint, lays out the ten bottlenecks he worked through over 2026 to reach 115 production PRs in a week, from cleaning stale docs out of agent context to a cloud harness called fleet, single-approver rules for harness changes, pstack's verification and formal verification patterns, and a /my-open-work skill he runs daily to triage his open agent work. It is the closest public example to Etherealize's situation (regulated finance, an older codebase retrofitted for agents), and he now reviews verification files first and only opens the PR when those leave doubt, which is a review rule you could copy.",
+   "summary": "Will Larson, CTO at the fintech Imprint, lays out the ten bottlenecks he worked through over 2026 to reach 115 production PRs in a week, from cleaning stale docs out of agent context to a cloud harness called fleet, single-approver rules for harness changes, pstack's verification and formal verification patterns, and a /my-open-work skill he runs daily to triage his open agent work. It is a rare public account from a regulated finance company that had to retrofit its process for agents rather than start AI-native, and he now reviews verification files first and only opens the PR when those leave doubt, which is a review rule you could copy.",
    "url": "https://lethain.com/passing-100-prs-in-a-week/",
    "also_fits": [
     "formal-verification"
