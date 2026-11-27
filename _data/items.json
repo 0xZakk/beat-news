@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T09:29:10-05:00",
+ "updated": "2026-11-27T09:57:41-05:00",
  "issues": [
   {
    "beat": "grok-bot",
@@ -10,6 +10,11 @@
    "beat": "ai-enablement",
    "date": "2026-11-27",
    "summary": "A quiet holiday week, so this issue leans on detailed write-ups: Coinbase on how it let internal agents onto the platform that touches customer accounts, Piramal Finance's usage numbers for an assistant used by most of its 18,000 staff, Mirae Asset Life's AI Champions program, CBIZ's training-gated Copilot rollout, and Prosus's claim that all 40,000 employees run on shared agents."
+  },
+  {
+   "beat": "agentic-engineering",
+   "date": "2026-11-27",
+   "summary": "This week: Will Larson's account of how Imprint, a fintech, got him to 100+ production PRs a week by working bottlenecks one at a time (including adopting pstack verification); Runway's write-up of handing each delivery stage to agents, with a risk-rating agent deciding who approves; Thorsten Ball's list of 14 agent habits he now calls theater; a new /reframe skill in pstack; and Sillage's nine-stage subagent pipeline with three scoped reviewers per PR."
   },
   {
    "beat": "swarms",
@@ -409,6 +414,67 @@
    "url": "https://www.londonstockexchange.com/en/news/article/0A28/half-year-financial-report/3138-ab-87-c5-4c-4eddaa",
    "also_fits": [],
    "seq": 315
+  },
+  {
+   "id": "2026-11-27-will-larson-shipping-100-prs-to-production-in-a-week",
+   "beat": "agentic-engineering",
+   "date": "2026-11-27",
+   "title": "Will Larson: Shipping 100+ PRs to production in a week",
+   "author": "Will Larson (Imprint)",
+   "summary": "Will Larson, CTO at the fintech Imprint, lays out the ten bottlenecks he worked through over 2026 to reach 115 production PRs in a week, from cleaning stale docs out of agent context to a cloud harness called fleet, single-approver rules for harness changes, pstack's verification and formal verification patterns, and a /my-open-work skill he runs daily to triage his open agent work. It is the closest public example to Etherealize's situation (regulated finance, an older codebase retrofitted for agents), and he now reviews verification files first and only opens the PR when those leave doubt, which is a review rule you could copy.",
+   "url": "https://lethain.com/passing-100-prs-in-a-week/",
+   "also_fits": [
+    "formal-verification"
+   ],
+   "seq": 316
+  },
+  {
+   "id": "2026-11-27-runway-building-a-software-factory",
+   "beat": "agentic-engineering",
+   "date": "2026-11-27",
+   "title": "Runway: Building a Software Factory",
+   "author": "Alejandro Alvarez (Runway)",
+   "summary": "Runway describes handing seven delivery jobs to agents one at a time: an internal cloud service that keeps an agent on each PR until CI is green, a separate agent that rates each PR low, medium or high risk (rounding up when unsure) to decide who may approve it, and a friction map built from agent PR records that points to where a cleanup, a doc or a test will cut review work. Runway reports agents drove 38% of merged PRs in October, median wait for first approval fell from over two hours to about five minutes, and agent-approved changes were reverted no more often than human-approved ones; the risk-rating gate and friction map are concrete patterns you could adopt.",
+   "url": "https://runway.com/news/engineering/building-a-software-factory",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 317
+  },
+  {
+   "id": "2026-11-27-thorsten-ball-how-to-not-use-agents-in-november-26",
+   "beat": "agentic-engineering",
+   "date": "2026-11-27",
+   "title": "Thorsten Ball: How to Not Use Agents in November '26",
+   "author": "Thorsten Ball (Amp)",
+   "summary": "Thorsten Ball posted a 14-item list of agent habits he says are now theater, including reviewing a diff before the agent has run and tested it, throwing piles of skills at an agent, hiding production logs from it, splitting work up by hand, and running agents only on a laptop; in replies he says he wrote it by hand and that many teams he talked to in the last six weeks still work this way. It is a quick checklist to hold against your own setup, and his ask for proof (test matrices, end-to-end videos, logs) before code review matches what Larson and Runway describe this week.",
+   "url": "https://x.com/thorstenball/status/2126006279176921404",
+   "also_fits": [],
+   "seq": 318
+  },
+  {
+   "id": "2026-11-27-pstack-adds-reframe-to-learn-the-expert-words-for-what-you-r",
+   "beat": "agentic-engineering",
+   "date": "2026-11-27",
+   "title": "pstack adds /reframe to learn the expert words for what you're building",
+   "author": "Lauren Tan (Cursor)",
+   "summary": "Lauren Tan added a /reframe skill to pstack (PR #1324, followed by #1326) that reads your files and description and returns 8 to 12 ranked expert terms with links to real projects, two or three neighboring fields with where each analogy breaks, and your description rewritten with the new words; the PR says separate agents checked all 42 cited links in test runs. She pitches it as a companion to /sharpen for when you know what you want but can't say it, which suits scoping work in areas like credit markets or formal methods where the right vocabulary changes what an agent builds.",
+   "url": "https://github.com/cursor/plugins/commit/2dd5c0ccc5b207dc23a69759871a35954082cbf7",
+   "also_fits": [],
+   "seq": 319
+  },
+  {
+   "id": "2026-11-27-sillage-designing-an-engineering-team-around-coding-agents",
+   "beat": "agentic-engineering",
+   "date": "2026-11-27",
+   "title": "Sillage: Designing an engineering team around coding agents",
+   "author": "Sillage",
+   "summary": "Sillage's CTPO describes how their seven-person startup runs every feature through one feature-pipeline skill: discovery, vision, plan, pre-mortem, one implementer subagent per PR in its own worktree, three read-only reviewers per PR (security, duplication, business edge cases), a DB audit, and verification on an isolated environment, all defined in markdown in one repo the whole company clones. The split from one reviewer to three scoped reviewers in October, and slicing PRs by risk rather than size so migrations and auth changes land alone, are specific choices you could try.",
+   "url": "https://www.getsillage.com/blog/designing-an-engineering-team-around-coding-agents",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 320
   },
   {
    "id": "2026-11-26-grok-bot-1-3-0-changelog-bot-to-bot-handoffs-in-slack-domain",
