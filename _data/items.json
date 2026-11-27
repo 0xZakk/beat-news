@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-26T10:08:54-05:00",
+ "updated": "2026-11-27T08:40:05-05:00",
  "issues": [
+  {
+   "beat": "grok-bot",
+   "date": "2026-11-27",
+   "summary": "A quiet Thanksgiving week. Sam Sokolin of the Grok Bot team says plans now get about 11% more usage and routines up to 50% more, a Grok Bot user shows how he hands work to a self-hosted Hermes agent over Tailscale, Roma pitches itself as the shared to-do list across Claude, ChatGPT, Muse and several Grok Bots, and Kevin Logan's notes on the 1.4.0 pre-release builds show what is coming next."
+  },
   {
    "beat": "swarms",
    "date": "2026-11-26",
@@ -293,6 +298,56 @@
   }
  ],
  "items": [
+  {
+   "id": "2026-11-27-sam-sokolin-grok-bot-plans-get-11-more-usage-routines-up-to",
+   "beat": "grok-bot",
+   "date": "2026-11-27",
+   "title": "Sam Sokolin: Grok Bot plans get 11% more usage, routines up to 50% more",
+   "author": "Sam Sokolin (Grok Bot team, SpaceXSI)",
+   "summary": "Sam Sokolin posted on Nov 26 that Grok Bot plans now go about 11% further and routines up to 50% further, and said the team changed the routine harness so simple, repetitive steps no longer make a model call. This follows his Nov 16 post about 7% and 15%, and it means scheduled routines like these beat digests should cost noticeably less per run; he says a write-up on how they did it is coming.",
+   "url": "https://x.com/SamSokolin/status/2126027973568466949",
+   "also_fits": [
+    "ai-assisted-engineering"
+   ],
+   "seq": 307
+  },
+  {
+   "id": "2026-11-27-handing-grok-bot-work-to-a-self-hosted-hermes-agent-over-tai",
+   "beat": "grok-bot",
+   "date": "2026-11-27",
+   "title": "Handing Grok Bot work to a self-hosted Hermes agent over Tailscale",
+   "author": "Aymane (@aymanemsi)",
+   "summary": "Aymane wrote up how he connected his Grok Bot chief-of-staff bot to a Hermes agent on his own VPS using the Tailscale plugin, so Grok Bot can send it tasks and get results back; he notes the link only goes one way. The post got about 96,000 views and 2,000 bookmarks, and it is a concrete pattern for pushing heavy or long-running work off the Grok Bot plan onto a machine you control, with the access boundary set by the tailnet.",
+   "url": "https://x.com/aymanemsi/status/2125950183099801639",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 308
+  },
+  {
+   "id": "2026-11-27-roma-2-0-one-task-list-shared-by-claude-chatgpt-muse-and-sev",
+   "beat": "grok-bot",
+   "date": "2026-11-27",
+   "title": "Roma 2.0: one task list shared by Claude, ChatGPT, Muse and several Grok Bots",
+   "author": "Roma (YC F26)",
+   "summary": "Roma launched 2.0 on Nov 11 as a to-do list that hands each task to an agent such as Claude, ChatGPT, Muse, Grok Bot or its own Operator, keeps a full history of every handoff, and lets teammates bring their own agents to the same task; Roma said on LinkedIn this week that each connected Grok Bot now shows up as its own agent you can delegate to. It is a competing take on the coordination layer Zakk is building with multiple bots, and its task-history-as-shared-context design is worth comparing against routines plus memory.",
+   "url": "https://roma.app/news/roma-the-to-do-list-for-your-ai-agents",
+   "also_fits": [
+    "swarms"
+   ],
+   "seq": 309
+  },
+  {
+   "id": "2026-11-27-grok-bot-1-4-0-pre-release-builds-message-your-main-bot-from",
+   "beat": "grok-bot",
+   "date": "2026-11-27",
+   "title": "Grok Bot 1.4.0 pre-release builds: message your main Bot from any app, admin-added connectors",
+   "author": "Kevin Logan",
+   "summary": "Kevin Logan compared app text across Grok Bot 1.4.0 pre-release builds and lists changes such as messaging your main Bot from any app, a screen-region picker for Quick Chat, team admins adding a connector for everyone, a price check before purchases, and Auto-publish waiting for a pull request to merge. These are unofficial and may change before release, but the admin-added connectors and team publishing changes bear directly on how Etherealize's team plan gets rolled out.",
+   "url": "https://x.com/Kevin_Logan/status/2126014371843145954",
+   "also_fits": [],
+   "seq": 310
+  },
   {
    "id": "2026-11-26-grok-bot-1-3-0-changelog-bot-to-bot-handoffs-in-slack-domain",
    "beat": "grok-bot",
