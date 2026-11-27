@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-27T08:40:05-05:00",
+ "updated": "2026-11-27T09:29:10-05:00",
  "issues": [
   {
    "beat": "grok-bot",
    "date": "2026-11-27",
    "summary": "A quiet Thanksgiving week. Sam Sokolin of the Grok Bot team says plans now get about 11% more usage and routines up to 50% more, a Grok Bot user shows how he hands work to a self-hosted Hermes agent over Tailscale, Roma pitches itself as the shared to-do list across Claude, ChatGPT, Muse and several Grok Bots, and Kevin Logan's notes on the 1.4.0 pre-release builds show what is coming next."
+  },
+  {
+   "beat": "ai-enablement",
+   "date": "2026-11-27",
+   "summary": "A quiet holiday week, so this issue leans on detailed write-ups: Coinbase on how it let internal agents onto the platform that touches customer accounts, Piramal Finance's usage numbers for an assistant used by most of its 18,000 staff, Mirae Asset Life's AI Champions program, CBIZ's training-gated Copilot rollout, and Prosus's claim that all 40,000 employees run on shared agents."
   },
   {
    "beat": "swarms",
@@ -347,6 +352,63 @@
    "url": "https://x.com/Kevin_Logan/status/2126014371843145954",
    "also_fits": [],
    "seq": 310
+  },
+  {
+   "id": "2026-11-27-coinbase-on-putting-internal-ai-agents-behind-the-same-contr",
+   "beat": "ai-enablement",
+   "date": "2026-11-27",
+   "title": "Coinbase on putting internal AI agents behind the same controls as staff in Control Center",
+   "author": "Coinbase (Brindal Patel and Teja Prakash Dadi)",
+   "summary": "Coinbase engineers describe how they opened Control Center, the internal platform that reads sensitive data and acts on customer accounts, to agents through a governed MCP tool catalog with human approval for multi-step work, and say agent calls grew 25x in the first four months. It is a crypto firm's concrete pattern for rolling out agents to operations staff without loosening authorization, audit, or rate limits, which maps closely to what Etherealize will need; it also fits the Agents beat.",
+   "url": "https://www.coinbase.com/blog/governance-first-an-architecture-for-ai-agents-in-sensitive-operations",
+   "also_fits": [
+    "agents"
+   ],
+   "seq": 311
+  },
+  {
+   "id": "2026-11-27-piramal-finance-says-over-80-of-its-18-000-employees-use-its",
+   "beat": "ai-enablement",
+   "date": "2026-11-27",
+   "title": "Piramal Finance says over 80% of its 18,000 employees use its internal agentic assistant weekly",
+   "author": "MongoDB (Piramal Finance customer story)",
+   "summary": "MongoDB's write-up says the Indian lender's in-house assistant handles about 15,000 queries a day across HR, support, sales, and engineering, with role-based access tied to SSO and more than 25 MCP servers behind it, and that sales reps using it performed 2x better than non-users during contests. It is a rare set of usage and outcome numbers from a finance company that built its own assistant rather than buying seats, though the figures come from a vendor story.",
+   "url": "https://www.mongodb.com/company/blog/innovation/piramal-finance-scales-internal-agentic-ai-assistant",
+   "also_fits": [],
+   "seq": 312
+  },
+  {
+   "id": "2026-11-27-mirae-asset-life-runs-an-ai-champions-program-with-26-employ",
+   "beat": "ai-enablement",
+   "date": "2026-11-27",
+   "title": "Mirae Asset Life runs an AI Champions program with 26 employees working on 37 projects",
+   "author": "Mirae Asset Life Insurance (via Newspim)",
+   "summary": "The Korean insurer picked 26 staff of any role or seniority in May, gave them vibe-coding and AI training, paid AI subscriptions, a budget, and forward-deployed engineers from its AI team, and has them automating repetitive work across 20 divisions, with top performers becoming mentors for the next cohort. It is a specific champions design (open call, embedded engineer support, shared project logs, mentor ladder) that a small team could copy at a smaller scale.",
+   "url": "https://ir.newspim.com/news/view/20261119000623",
+   "also_fits": [],
+   "seq": 313
+  },
+  {
+   "id": "2026-11-27-cbiz-vp-of-ai-david-fisher-on-reaching-99-copilot-adoption-b",
+   "beat": "ai-enablement",
+   "date": "2026-11-27",
+   "title": "CBIZ VP of AI David Fisher on reaching 99% Copilot adoption by making training the gate",
+   "author": "AI-Native Accounting podcast (Kacee Johnson with David Fisher, CBIZ)",
+   "summary": "Fisher says CBIZ set principles and an acceptable use policy first, then required a 60-minute AI Fundamentals course before anyone got Copilot, and reached 98% adoption at 100 days and 99% now across about 9,500 people, against what he calls a 70 to 75% best-in-class benchmark. It gives Zakk a sequencing argument (policy, then training, then access) with numbers from a regulated professional-services firm, plus the champions, Copilot Cup, and AI bounty tactics used to sustain it.",
+   "url": "https://ainativeaccounting.org/david-fisher-cbiz-ai-adoption/",
+   "also_fits": [],
+   "seq": 314
+  },
+  {
+   "id": "2026-11-27-prosus-says-all-40-000-employees-work-through-shared-agents",
+   "beat": "ai-enablement",
+   "date": "2026-11-27",
+   "title": "Prosus says all 40,000 employees work through shared agents on its Toqan platform",
+   "author": "Prosus (interim results, Nov 25)",
+   "summary": "In its half-year report Prosus says Toqan lets all 40,000 employees use optimized, shared AI agents, that its own commerce models serve AI up to 40 times cheaper than commercial models, and the company generates 20 trillion tokens a month. It is a company-wide claim filed in an official results document from a group that also runs fintech businesses (PayU, iyzico, iFood Pago), and it shows shared agents being treated as the default way staff work, not as an add-on.",
+   "url": "https://www.londonstockexchange.com/en/news/article/0A28/half-year-financial-report/3138-ab-87-c5-4c-4eddaa",
+   "also_fits": [],
+   "seq": 315
   },
   {
    "id": "2026-11-26-grok-bot-1-3-0-changelog-bot-to-bot-handoffs-in-slack-domain",
